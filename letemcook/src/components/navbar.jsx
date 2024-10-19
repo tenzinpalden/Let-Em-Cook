@@ -1,17 +1,37 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './navbar.css';
 
-const NavbarComponent = () => {
-    return (
-        <nav className="navbar">
-            <ul className="navbar-links">
-                <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
-                <li><NavLink to="/discussion" activeClassName="active">Discussion Page</NavLink></li> 
-                <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
-            </ul>
-        </nav>
-    );
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div>
+      <button className="menu-button" onClick={toggleNavbar}>
+        ☰ {/* Menu icon or text */}
+      </button>
+      
+      {/* Sidebar */}
+      <div className={`navbar ${isOpen ? "open" : ""}`}>
+        <button className="close-btn" onClick={toggleNavbar}>
+          &times; {/* Close icon */}
+        </button>
+        <ul className="navbar-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      {/* Overlay when navbar is open */}
+      {isOpen && <div className="overlay" onClick={toggleNavbar}></div>}
+    </div>
+  );
 };
 
-export default NavbarComponent;
+export default Navbar;

@@ -1,32 +1,73 @@
-/* NavbarComponent.css */
-
-.navbar {
-    display: flex;
-    justify-content: center; /* Centers the navbar horizontally */
-    background-color: white;
-    padding-bottom: 15px;
-}
-
-.navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
+/* Styles for the button */
+.menu-button {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001; /* Ensures it stays above other elements */
+  }
+  
+  /* Sidebar styles */
+  .navbar {
+    height: 100%;
+    width: 250px; /* Width of the sidebar */
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start off-screen */
+    background-color: #111;
+    padding-top: 60px; /* Padding for the links */
+    transition: 0.5s; /* Smooth slide transition */
+    z-index: 1000; /* To appear above main content */
+  }
+  
+  /* Sidebar open state */
+  .navbar.open {
+    left: 0; /* Moves the sidebar into view */
+  }
+  
+  /* Sidebar links */
+  .navbar-links {
+    list-style-type: none;
     padding: 0;
-}
-
-.navbar-links li {
-    margin: 0 10px;
-}
-
-.navbar-links a {
-    color: black;
+  }
+  
+  .navbar-links li {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .navbar-links li a {
     text-decoration: none;
-    font-size: 18px;
-}
-
-.navbar-links a:hover,
-.navbar-links .active {
-    font-weight: bold;
-    text-decoration: underline;
-}
+    color: white;
+    display: block;
+    font-size: 25px;
+  }
+  
+  .navbar-links li a:hover {
+    background-color: #575757;
+    color: white;
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Overlay when the navbar is open */
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
