@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
-import { saveRecipe } from '../localStorage'; // Import the saveRecipe function
+import { saveRecipe, getRecipes } from '../localStorage'; // Import the necessary functions
 
 const HomePage = () => {
     useEffect(() => {
@@ -32,24 +32,26 @@ const HomePage = () => {
             title: "Spaghetti Carbonara",
             description: "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
             picture: "https://example.com/spaghetti-carbonara.jpg", // Replace with a valid image URL
-            path: "/spaghetti" // Link path for the recipe
         },
         {
             title: "Chicken Curry",
             description: "A flavorful dish made with chicken, spices, and coconut milk.",
             picture: "https://example.com/chicken-curry.jpg", // Replace with a valid image URL
-            path: "/chicken-curry" // Link path for the recipe
         },
         {
             title: "Vegetable Stir-Fry",
             description: "A quick and easy stir-fry with seasonal vegetables and soy sauce.",
             picture: "https://example.com/vegetable-stir-fry.jpg", // Replace with a valid image URL
-            path: "/vegetable-stir-fry" // Link path for the recipe
         },
     ];
 
-    // Save sample recipes to localStorage (optional)
-    recipes.forEach(recipe => saveRecipe(recipe));
+    // Save sample recipes to localStorage only if they don't exist
+    useEffect(() => {
+        const existingRecipes = getRecipes();
+        if (existingRecipes.length === 0) {
+            recipes.forEach(recipe => saveRecipe(recipe));
+        }
+    }, []); // Empty dependency array to run once on mount
 
     return (
         <div className="homepage-container">
@@ -67,7 +69,7 @@ const HomePage = () => {
                     <h2>Featured Recipes</h2>
                     <div className="dance-cards">
                         {recipes.map((recipe, index) => (
-                            <Link to={recipe.path} className="dance-card scroll-zoom-in" key={index}>
+                            <Link to={`/recipe/${recipe.title.replace(/\s+/g, '-').toLowerCase()}`} className="dance-card scroll-zoom-in" key={index}>
                                 <img src={recipe.picture} alt={recipe.title} />
                                 <h3>{recipe.title}</h3>
                                 <p>{recipe.description}</p>

@@ -2,13 +2,9 @@
 
 // Save a recipe to localStorage
 export const saveRecipe = (recipe) => {
-    let recipes = JSON.parse(localStorage.getItem('recipes')) || [];
-    recipes.push({
-      title: recipe.title,
-      description: recipe.description,
-      picture: recipe.picture, // This should be a URL or base64 string
-    });
-    localStorage.setItem('recipes', JSON.stringify(recipes));
+    const existingRecipes = JSON.parse(localStorage.getItem('recipes')) || [];
+    existingRecipes.push(recipe);
+    localStorage.setItem('recipes', JSON.stringify(existingRecipes));
   };
   
   // Get all recipes from localStorage
