@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
+import { saveRecipe } from '../localStorage'; // Import the saveRecipe function
 
 const HomePage = () => {
-
     useEffect(() => {
         const observerOptions = {
             threshold: 0.2 // Trigger when 20% of the element is visible
@@ -26,38 +26,53 @@ const HomePage = () => {
         };
     }, []);
 
+    // Sample recipes
+    const recipes = [
+        {
+            title: "Spaghetti Carbonara",
+            description: "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+            picture: "https://example.com/spaghetti-carbonara.jpg", // Replace with a valid image URL
+            path: "/spaghetti" // Link path for the recipe
+        },
+        {
+            title: "Chicken Curry",
+            description: "A flavorful dish made with chicken, spices, and coconut milk.",
+            picture: "https://example.com/chicken-curry.jpg", // Replace with a valid image URL
+            path: "/chicken-curry" // Link path for the recipe
+        },
+        {
+            title: "Vegetable Stir-Fry",
+            description: "A quick and easy stir-fry with seasonal vegetables and soy sauce.",
+            picture: "https://example.com/vegetable-stir-fry.jpg", // Replace with a valid image URL
+            path: "/vegetable-stir-fry" // Link path for the recipe
+        },
+    ];
+
+    // Save sample recipes to localStorage (optional)
+    recipes.forEach(recipe => saveRecipe(recipe));
+
     return (
         <div className="homepage-container">
             <header className="hero-section">
                 <div className="hero-content scroll-fade-in">
                     <h1>LET 'EM COOK</h1>
                     <p>Explore the diverse recipes</p>
-                    {/* Wrap the button with Link */}
                     <Link to="/discover">
                         <button className="cta-button">Discover More</button>
                     </Link>
                 </div>
             </header>
             <main className="main-content">
-
                 <section className="explore-section scroll-fade-in">
                     <h2>Featured Recipes</h2>
                     <div className="dance-cards">
-                        <Link to="/tibetan" className="dance-card scroll-zoom-in">
-                            <img src="" alt="ex1 pic" />
-                            <h3>ex1</h3>
-                            <p>ex1 desc</p>
-                        </Link>
-                        <Link to="/bhutanese" className="dance-card scroll-zoom-in">
-                            <img src="ex2" alt="ex2 pic" />
-                            <h3>ex2</h3>
-                            <p>ex2 desc</p>
-                        </Link>
-                        <Link to="/nepali" className="dance-card scroll-zoom-in">
-                        <img src="ex3" alt="ex3 pic" />
-                            <h3>ex3</h3>
-                            <p>ex3 desc</p>
-                        </Link>
+                        {recipes.map((recipe, index) => (
+                            <Link to={recipe.path} className="dance-card scroll-zoom-in" key={index}>
+                                <img src={recipe.picture} alt={recipe.title} />
+                                <h3>{recipe.title}</h3>
+                                <p>{recipe.description}</p>
+                            </Link>
+                        ))}
                     </div>
                 </section>
 
@@ -67,7 +82,6 @@ const HomePage = () => {
                         ABOUT US INFORMATION
                     </p>
                 </section>
-                
             </main>
         </div>
     );
