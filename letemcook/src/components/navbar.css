@@ -1,0 +1,32 @@
+/* NavbarComponent.css */
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers the navbar horizontally */
+    background-color: white;
+    padding-bottom: 15px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 10px;
+}
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-links a:hover,
+.navbar-links .active {
+    font-weight: bold;
+    text-decoration: underline;
+}
