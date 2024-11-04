@@ -1,89 +1,49 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './savedrecipes.css';
 
-const recipes = [
-  {
-    id: 1,
-    title: "Pasta Alfredo",
-    image: "https://example.com/pasta-image.jpg", // Replace with actual image URLs
-    cookTime: "20 mins",
-    rating: 4,
-  },
-  {
-    id: 2,
-    title: "Fried Rice",
-    image: "https://example.com/fried-rice-image.jpg",
-    cookTime: "15 mins",
-    rating: 5,
-  },
-  {
-    id: 3,
-    title: "Beef Stew",
-    image: "https://example.com/beef-stew-image.jpg",
-    cookTime: "40 mins",
-    rating: 3,
-  },
-];
+function SavedRecipes() {
+  const [recipes, setRecipes] = useState([]);
+  const [favorites, setFavorites] = useState([]);
 
-const RecipeList = () => {
-  const recipeListStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    backgroundColor: '#f7d5a1',
-    padding: '20px',
-  };
+  useEffect(() => {
+    // Fetch recipes data
+    fetch('/recipes.json')
+      .then((response) => response.json())
+      .then((data) => setRecipes(data))
+      .catch((error) => console.error('Error fetching recipes:', error));
 
-  const recipeCardStyle = {
-    display: 'flex',
-    marginBottom: '20px',
-    backgroundColor: '#f5e3c6',
-    borderRadius: '10px',
-    padding: '10px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  };
+    // Load favorites from localStorage
+    const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    setFavorites(savedFavorites);
+  }, []);
 
-  const recipeImageStyle = {
-    width: '100px',
-    height: '100px',
-    borderRadius: '10px',
-    marginRight: '15px',
-    objectFit: 'cover',
-  };
-
-  const recipeDetailsStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-  };
-
-  const recipeTitleStyle = {
-    margin: '0',
-    fontSize: '20px',
-    color: '#333',
-  };
-
-  const recipeTextStyle = {
-    margin: '5px 0',
-    fontSize: '16px',
-    color: '#555',
-  };
+  // Filter recipes to only show favorites
+  const favoriteRecipes = recipes.filter((recipe) => favorites.includes(recipe.id));
 
   return (
-    <div style={recipeListStyle}>
-      {recipes.map(recipe => (
-        <div key={recipe.id} style={recipeCardStyle}>
-          <img src={recipe.image} alt={recipe.title} style={recipeImageStyle} />
-          <div style={recipeDetailsStyle}>
-            <h2 style={recipeTitleStyle}>{recipe.title}</h2>
-            <p style={recipeTextStyle}>Cook time: {recipe.cookTime}</p>
-            <p style={recipeTextStyle}>
-              Rating: {"★".repeat(recipe.rating)}{"☆".repeat(5 - recipe.rating)} (out of 5 stars)
-            </p>
-          </div>
-        </div>
-      ))}
+    <div className="saved-recipes-container">
+      <h2>Your Favorite Recipes</h2>
+      {favoriteRecipes.length > 0 ? (
+        <ul className="saved-recipe-list">
+          {favoriteRecipes.map((recipe) => (
+            <li key={recipe.id} className="saved-recipe-item">
+              <Link to={`/recipe/${recipe.id}`} className="saved-recipe-link">
+                <img src={recipe.image} alt={recipe.title} className="saved-recipe-image" />
+                <div className="saved-recipe-info">
+                  <h3>{recipe.title}</h3>
+                  <p>Estimated Price: ${recipe.estimatedPrice}</p>
+                  <p>Cook Time: {recipe.cookTime} minutes</p>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="no-favorites-message">You haven't saved any recipes yet.</p>
+      )}
     </div>
   );
-};
+}
 
-export default RecipeList;
+export default SavedRecipes;

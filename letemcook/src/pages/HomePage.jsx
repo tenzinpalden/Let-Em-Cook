@@ -4,14 +4,20 @@ import './HomePage.css';
 
 function HomePage() {
   const [recipes, setRecipes] = useState([]);
+  const [favorites, setFavorites] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredRecipes, setFilteredRecipes] = useState([]);
 
   useEffect(() => {
+    // Fetch recipes from the recipes.json file in the public folder
     fetch('/recipes.json')
       .then((response) => response.json())
       .then((data) => setRecipes(data))
       .catch((error) => console.error('Error fetching recipes:', error));
+
+    // Load favorites from localStorage
+    const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    setFavorites(savedFavorites);
   }, []);
 
   const handleSearchChange = (e) => {
@@ -27,6 +33,20 @@ function HomePage() {
     }
   };
 
+  const toggleFavorite = (id) => {
+    let updatedFavorites;
+    if (favorites.includes(id)) {
+      // Remove from favorites
+      updatedFavorites = favorites.filter((favoriteId) => favoriteId !== id);
+    } else {
+      // Add to favorites
+      updatedFavorites = [...favorites, id];
+    }
+    setFavorites(updatedFavorites);
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+  };
+
+  // Display only a subset of recipes for the Explore Recipes section
   const featuredRecipes = recipes.slice(0, 4);
 
   return (
@@ -45,20 +65,6 @@ function HomePage() {
             />
             <button type="submit" className="search-button">Search</button>
           </form>
-          {filteredRecipes.length > 0 && (
-            <div className="dropdown">
-              <ul>
-                {filteredRecipes.map((recipe) => (
-                  <li key={recipe.id} className="dropdown-item">
-                    <Link to={`/recipe/${recipe.id}`} className="dropdown-link">
-                      <img src={recipe.image} alt={recipe.title} className="dropdown-image" />
-                      <span>{recipe.title}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
         </div>
       </section>
       <section className="recipe-list-section">
@@ -69,11 +75,17 @@ function HomePage() {
               <Link to={`/recipe/${recipe.id}`} className="recipe-link">
                 <img src={recipe.image} alt={recipe.title} className="recipe-image" />
                 <h3>{recipe.title}</h3>
-                <div className="recipe-details">
-                  <p>Estimated Price: ${recipe.estimatedPrice}</p>
-                  <p>Cook Time: {recipe.cookTime} minutes</p>
-                </div>
               </Link>
+              <div className="recipe-details">
+                <p>Estimated Price: ${recipe.estimatedPrice}</p>
+                <p>Cook Time: {recipe.cookTime} minutes</p>
+              </div>
+              <button
+                onClick={() => toggleFavorite(recipe.id)}
+                className={`favorite-button ${favorites.includes(recipe.id) ? 'favorited' : ''}`}
+              >
+                {favorites.includes(recipe.id) ? '★' : '☆'}
+              </button>
             </li>
           ))}
         </ul>

@@ -1,0 +1,75 @@
+/* Saved Recipes Container */
+.saved-recipes-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.saved-recipes-container h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.no-favorites-message {
+  font-size: 1.1em;
+  color: #777;
+  margin-top: 30px;
+}
+
+/* Saved Recipe List */
+.saved-recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+/* Saved Recipe Item */
+.saved-recipe-item {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 220px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.saved-recipe-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Link Styling */
+.saved-recipe-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Recipe Image */
+.saved-recipe-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* Recipe Info */
+.saved-recipe-info {
+  padding: 15px;
+}
+
+.saved-recipe-info h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.saved-recipe-info p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 4px 0;
+}
