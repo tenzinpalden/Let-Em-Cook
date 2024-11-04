@@ -24,24 +24,30 @@ function RecipePage() {
 
   return (
     <div className="recipe-page">
-      <h2>{recipe.title}</h2>
-      <img src={recipe.image} alt={recipe.title} className="recipe-image" />
-      <p><strong>Estimated Price:</strong> ${recipe.estimatedPrice}</p>
-      <p><strong>Cook Time:</strong> {recipe.cookTime} minutes</p>
-      <h3>Ingredients:</h3>
-      <ul>
+        <h2>{recipe.title}</h2>
+        <div className="recipe-image-container">
+            <img src={recipe.image} alt={recipe.title} className="recipe-image" />
+    </div>
+    <p><strong>Estimated Price:</strong> ${recipe.estimatedPrice}</p>
+    <p><strong>Cook Time:</strong> {recipe.cookTime} minutes</p>
+  
+    <div className="ingredients-container">
+        <h3>Ingredients:</h3>
+        <ul className="ingredients-list">
         {recipe.ingredients.map((ingredient, index) => (
-          <li key={index}>{ingredient}</li>
+            <li key={index}>{ingredient}</li>
         ))}
-      </ul>
-      <h3>Instructions:</h3>
-      <p>{recipe.instructions}</p>
-      {recipe.additionalTips && (
+        </ul>
+    </div>
+
+    <h3>Instructions:</h3>
+    <p>{recipe.instructions}</p>
+    {recipe.additionalTips && (
         <>
-          <h3>Additional Tips:</h3>
-          <p>{recipe.additionalTips}</p>
+            <h3>Additional Tips:</h3>
+            <p>{recipe.additionalTips}</p>
         </>
-      )}
+        )}
     </div>
   );
 }

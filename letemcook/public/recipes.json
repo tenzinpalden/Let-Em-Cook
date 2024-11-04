@@ -2,7 +2,7 @@
     {
       "id": 1,
       "title": "Easy Pasta Salad",
-      "image": "https://example.com/pasta.jpg",
+      "image": "https://www.allrecipes.com/thmb/LUZ2ZXjuWFO-6c_dVuV2y_TUhUQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/14385-pasta-salad-mfs-62-2cbb356b049740e7832e4bbb899881de.jpg",
       "ingredients": ["Pasta", "Tomatoes", "Olive Oil", "Cheese", "Salt", "Pepper"],
       "instructions": "Cook pasta, mix all ingredients together, and serve cold.",
       "estimatedPrice": 5,
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "title": "Budget-Friendly Stir Fry",
-      "image": "https://example.com/stirfry.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ba4QHI6UpD9qchErdmWBlV3h_rpq-y1d_Q&s",
       "ingredients": ["Rice", "Vegetables", "Soy Sauce", "Garlic", "Chicken (optional)"],
       "instructions": "Stir-fry vegetables and protein, serve with rice.",
       "estimatedPrice": 4,
@@ -22,7 +22,7 @@
     {
       "id": 3,
       "title": "Quick Veggie Wrap",
-      "image": "https://example.com/wrap.jpg",
+      "image": "https://www.bowlofdelicious.com/wp-content/uploads/2014/01/Veggie-Wraps-square.jpg",
       "ingredients": ["Tortilla", "Lettuce", "Tomato", "Cheese", "Hummus"],
       "instructions": "Spread hummus on tortilla, add veggies, wrap, and enjoy.",
       "estimatedPrice": 3,
@@ -32,7 +32,7 @@
     {
       "id": 4,
       "title": "Avocado Toast",
-      "image": "https://example.com/avocado_toast.jpg",
+      "image": "https://www.eatingbirdfood.com/wp-content/uploads/2023/12/avocado-toast-hero-cropped.jpg",
       "ingredients": ["Bread", "Avocado", "Salt", "Pepper", "Olive Oil"],
       "instructions": "Toast bread, spread avocado, season with salt and pepper, drizzle with olive oil.",
       "estimatedPrice": 2,
@@ -42,7 +42,7 @@
     {
       "id": 5,
       "title": "Microwave Mug Cake",
-      "image": "https://example.com/mugcake.jpg",
+      "image": "https://tastesbetterfromscratch.com/wp-content/uploads/2022/12/Chocolate-Mug-Cake-1.jpg",
       "ingredients": ["Flour", "Sugar", "Cocoa Powder", "Milk", "Vegetable Oil"],
       "instructions": "Mix ingredients in a mug, microwave for 1 minute.",
       "estimatedPrice": 1,
@@ -52,7 +52,7 @@
     {
       "id": 6,
       "title": "Simple Omelette",
-      "image": "https://example.com/omelette.jpg",
+      "image": "https://schoolnightvegan.com/wp-content/uploads/2022/08/Vegan-Omelette1860.jpg",
       "ingredients": ["Eggs", "Salt", "Pepper", "Butter", "Cheese"],
       "instructions": "Beat eggs, season, cook in a pan with butter, add cheese, and fold.",
       "estimatedPrice": 2,
@@ -62,7 +62,7 @@
     {
       "id": 7,
       "title": "Chicken Quesadilla",
-      "image": "https://example.com/quesadilla.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYjivxMKfupKbKpr7AFH2O1GHat2Lr54EGZg&s",
       "ingredients": ["Tortilla", "Cheese", "Cooked Chicken", "Salsa"],
       "instructions": "Place chicken and cheese on a tortilla, fold, cook until cheese melts.",
       "estimatedPrice": 4,
@@ -72,7 +72,7 @@
     {
       "id": 8,
       "title": "Vegetable Soup",
-      "image": "https://example.com/vegsoup.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIQH49waX_-KXhT09Z5dF19nv292n22KbwZQ&s",
       "ingredients": ["Carrots", "Potatoes", "Celery", "Onion", "Broth"],
       "instructions": "Chop vegetables, simmer in broth until tender.",
       "estimatedPrice": 3,
@@ -82,7 +82,7 @@
     {
       "id": 9,
       "title": "Fruit Smoothie",
-      "image": "https://example.com/smoothie.jpg",
+      "image": "https://www.acouplecooks.com/wp-content/uploads/2020/11/Chia-Seed-Smoothie-004.jpg",
       "ingredients": ["Banana", "Strawberries", "Yogurt", "Milk", "Honey"],
       "instructions": "Blend all ingredients until smooth.",
       "estimatedPrice": 2,
@@ -92,7 +92,7 @@
     {
       "id": 10,
       "title": "Grilled Cheese Sandwich",
-      "image": "https://example.com/grilledcheese.jpg",
+      "image": "https://static01.nyt.com/images/2023/02/28/multimedia/ep-air-fryer-grilled-cheese-vpmf/ep-air-fryer-grilled-cheese-vpmf-superJumbo.jpg",
       "ingredients": ["Bread", "Cheese", "Butter"],
       "instructions": "Butter bread, add cheese, and grill until golden brown.",
       "estimatedPrice": 2,

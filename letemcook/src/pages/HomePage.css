@@ -100,133 +100,167 @@ body {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
   
-  /* Dropdown Styles */
-  .dropdown {
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    max-height: 200px;
-    overflow-y: auto;
-    width: 70%;
-    margin-top: 5px;
-    z-index: 10;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .dropdown ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .dropdown-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .dropdown-image {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 5px;
-    object-fit: cover;
-  }
-  
-  /* Explore Recipes Section */
-.recipe-list-section {
-    padding: 40px 20px;
-    margin-top: -40px;
-    text-align: center;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .recipe-list-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-    font-weight: 600;
-  }
-  
-  .recipe-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .recipe-item {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    width: 200px;
-    text-align: center;
-    padding-bottom: 15px;
-  }
-  
-  .recipe-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  }
-  
-  .recipe-image {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-  }
-  
-  .recipe-item h3 {
-    margin: 15px 0 5px;
-    font-size: 1.2em;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .recipe-details {
-    font-size: 0.9em;
-    color: #555;
-  }
-  
-  .recipe-details p {
-    margin: 5px 0;
-    line-height: 1.4;
-  }
+/* Dropdown Styles */
+.dropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 250px;
+  overflow-y: auto;
+  width: 80%; /* Matches the width of the search input */
+  margin-top: 5px;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-  /* Remove default link styles */
-.recipe-link, .dropdown-link {
-    text-decoration: none;
-    color: inherit;
-  }
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 1em;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f7f7f7;
+}
+
+.dropdown-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.dropdown-link:hover {
+  color: inherit;
+}
+
+.dropdown-item span {
+  font-weight: 500;
+  font-size: 1em;
+  color: #333;
+}
   
-  .recipe-link:hover, .dropdown-link:hover {
-    color: inherit;
-  }
-  
-  /* favorite feature */
-  .favorite-button {
+ /* Explore Recipes Section */
+.recipe-list-section {
+  padding: 40px 20px;
+  margin-top: -40px;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recipe-list-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recipe-item {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 220px; /* Adjust width as needed */
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.recipe-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-image-container {
+  width: 100%;
+  height: 140px; /* Set a fixed height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipe-item h3 {
+  margin: 15px 0 5px;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 500;
+}
+
+.recipe-details {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.recipe-details p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+/* Remove default link styles */
+.recipe-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding-bottom: 15px;
+}
+
+.recipe-link:hover {
+  color: inherit;
+}
+
+/* Favorite button styling */
+.favorite-button {
   background: none;
   border: none;
   font-size: 1.5em;
   cursor: pointer;
   color: #ffcc00;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   transition: transform 0.2s ease;
 }
 
@@ -235,15 +269,5 @@ body {
 }
 
 .favorited {
-  color: #ff6600; /* Color for favorited star */
-}
-
-.recipe-item {
-  position: relative;
-}
-
-.favorite-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  color: #ff6600;
 }

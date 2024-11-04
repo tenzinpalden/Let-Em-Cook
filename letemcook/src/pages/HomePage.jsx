@@ -90,15 +90,20 @@ function HomePage() {
           {featuredRecipes.map((recipe) => (
             <li key={recipe.id} className="recipe-item">
               <Link to={`/recipe/${recipe.id}`} className="recipe-link">
-                <img src={recipe.image} alt={recipe.title} className="recipe-image" />
+                <div className="recipe-image-container">
+                  <img src={recipe.image} alt={recipe.title} className="recipe-image" />
+                </div>
                 <h3>{recipe.title}</h3>
+                <div className="recipe-details">
+                  <p>Estimated Price: ${recipe.estimatedPrice}</p>
+                  <p>Cook Time: {recipe.cookTime} minutes</p>
+                </div>
               </Link>
-              <div className="recipe-details">
-                <p>Estimated Price: ${recipe.estimatedPrice}</p>
-                <p>Cook Time: {recipe.cookTime} minutes</p>
-              </div>
               <button
-                onClick={() => toggleFavorite(recipe.id)}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevents the link from triggering when clicking the favorite button
+                  toggleFavorite(recipe.id);
+                }}
                 className={`favorite-button ${favorites.includes(recipe.id) ? 'favorited' : ''}`}
               >
                 {favorites.includes(recipe.id) ? '★' : '☆'}
