@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 
-const Navbar = () => {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -10,28 +10,38 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <>
       <button className="menu-button" onClick={toggleNavbar}>
-        ☰ {/* Menu icon or text */}
+        ☰
       </button>
-      
-      {/* Sidebar */}
-      <div className={`navbar ${isOpen ? "open" : ""}`}>
+      {isOpen && <div className="overlay" onClick={toggleNavbar}></div>}
+      <nav className={`navbar ${isOpen ? 'open' : ''}`}>
         <button className="close-btn" onClick={toggleNavbar}>
-          &times; {/* Close icon */}
+          &times;
         </button>
         <ul className="navbar-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li>
+            <Link to="/" onClick={toggleNavbar}>Home</Link>
+          </li>
+          <li>
+            <Link to="/savedrecipes" onClick={toggleNavbar}>Saved Recipes</Link>
+          </li>
+          <li>
+            <Link to="/createrecipe" onClick={toggleNavbar}>Create Recipes</Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={toggleNavbar}>Contact</Link>
+          </li>
+          <li>
+            <Link to="/faq" onClick={toggleNavbar}>FAQ</Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={toggleNavbar}>About</Link>
+          </li>
         </ul>
-      </div>
-      
-      {/* Overlay when navbar is open */}
-      {isOpen && <div className="overlay" onClick={toggleNavbar}></div>}
-    </div>
+      </nav>
+    </>
   );
-};
+}
 
 export default Navbar;
