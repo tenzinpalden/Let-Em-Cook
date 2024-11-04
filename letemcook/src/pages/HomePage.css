@@ -58,36 +58,47 @@ body {
     line-height: 1.5;
     color: white;
   }
-  
-  .search-bar-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .search-input {
-    width: 70%;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-  }
-  
-  .search-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .search-button:hover {
-    background-color: #cc5200;
-  }
+
+  /* Search Bar Form */
+.search-bar-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-input {
+  width: 80%;
+  padding: 12px 15px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-button {
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #cc5200;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
   
   /* Dropdown Styles */
   .dropdown {
