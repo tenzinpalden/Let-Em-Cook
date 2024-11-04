@@ -8,7 +8,6 @@ function HomePage() {
   const [filteredRecipes, setFilteredRecipes] = useState([]);
 
   useEffect(() => {
-    // Fetch recipes from the recipes.json file in the public folder
     fetch('/recipes.json')
       .then((response) => response.json())
       .then((data) => setRecipes(data))
@@ -19,7 +18,6 @@ function HomePage() {
     const query = e.target.value;
     setSearchQuery(query);
     if (query) {
-      // Filter recipes based on search query
       const matches = recipes.filter((recipe) =>
         recipe.title.toLowerCase().includes(query.toLowerCase())
       );
@@ -28,6 +26,8 @@ function HomePage() {
       setFilteredRecipes([]);
     }
   };
+
+  const featuredRecipes = recipes.slice(0, 4);
 
   return (
     <div className="homepage-container">
@@ -64,13 +64,15 @@ function HomePage() {
       <section className="recipe-list-section">
         <h2>Explore Recipes</h2>
         <ul className="recipe-list">
-          {recipes.map((recipe) => (
+          {featuredRecipes.map((recipe) => (
             <li key={recipe.id} className="recipe-item">
               <Link to={`/recipe/${recipe.id}`} className="recipe-link">
                 <img src={recipe.image} alt={recipe.title} className="recipe-image" />
                 <h3>{recipe.title}</h3>
-                <p>Estimated Price: ${recipe.estimatedPrice}</p>
-                <p>Cook Time: {recipe.cookTime} minutes</p>
+                <div className="recipe-details">
+                  <p>Estimated Price: ${recipe.estimatedPrice}</p>
+                  <p>Cook Time: {recipe.cookTime} minutes</p>
+                </div>
               </Link>
             </li>
           ))}
