@@ -1,0 +1,102 @@
+[
+    {
+      "id": 1,
+      "title": "Easy Pasta Salad",
+      "image": "https://example.com/pasta.jpg",
+      "ingredients": ["Pasta", "Tomatoes", "Olive Oil", "Cheese", "Salt", "Pepper"],
+      "instructions": "Cook pasta, mix all ingredients together, and serve cold.",
+      "estimatedPrice": 5,
+      "cookTime": 15,
+      "additionalTips": "Add some basil for extra flavor."
+    },
+    {
+      "id": 2,
+      "title": "Budget-Friendly Stir Fry",
+      "image": "https://example.com/stirfry.jpg",
+      "ingredients": ["Rice", "Vegetables", "Soy Sauce", "Garlic", "Chicken (optional)"],
+      "instructions": "Stir-fry vegetables and protein, serve with rice.",
+      "estimatedPrice": 4,
+      "cookTime": 20,
+      "additionalTips": "Try using tofu for a vegan option."
+    },
+    {
+      "id": 3,
+      "title": "Quick Veggie Wrap",
+      "image": "https://example.com/wrap.jpg",
+      "ingredients": ["Tortilla", "Lettuce", "Tomato", "Cheese", "Hummus"],
+      "instructions": "Spread hummus on tortilla, add veggies, wrap, and enjoy.",
+      "estimatedPrice": 3,
+      "cookTime": 10,
+      "additionalTips": "Add some avocado for a creamier texture."
+    },
+    {
+      "id": 4,
+      "title": "Avocado Toast",
+      "image": "https://example.com/avocado_toast.jpg",
+      "ingredients": ["Bread", "Avocado", "Salt", "Pepper", "Olive Oil"],
+      "instructions": "Toast bread, spread avocado, season with salt and pepper, drizzle with olive oil.",
+      "estimatedPrice": 2,
+      "cookTime": 5,
+      "additionalTips": "Top with cherry tomatoes or a poached egg."
+    },
+    {
+      "id": 5,
+      "title": "Microwave Mug Cake",
+      "image": "https://example.com/mugcake.jpg",
+      "ingredients": ["Flour", "Sugar", "Cocoa Powder", "Milk", "Vegetable Oil"],
+      "instructions": "Mix ingredients in a mug, microwave for 1 minute.",
+      "estimatedPrice": 1,
+      "cookTime": 2,
+      "additionalTips": "Add chocolate chips for extra sweetness."
+    },
+    {
+      "id": 6,
+      "title": "Simple Omelette",
+      "image": "https://example.com/omelette.jpg",
+      "ingredients": ["Eggs", "Salt", "Pepper", "Butter", "Cheese"],
+      "instructions": "Beat eggs, season, cook in a pan with butter, add cheese, and fold.",
+      "estimatedPrice": 2,
+      "cookTime": 5,
+      "additionalTips": "Add veggies or ham for extra flavor."
+    },
+    {
+      "id": 7,
+      "title": "Chicken Quesadilla",
+      "image": "https://example.com/quesadilla.jpg",
+      "ingredients": ["Tortilla", "Cheese", "Cooked Chicken", "Salsa"],
+      "instructions": "Place chicken and cheese on a tortilla, fold, cook until cheese melts.",
+      "estimatedPrice": 4,
+      "cookTime": 10,
+      "additionalTips": "Serve with guacamole or sour cream."
+    },
+    {
+      "id": 8,
+      "title": "Vegetable Soup",
+      "image": "https://example.com/vegsoup.jpg",
+      "ingredients": ["Carrots", "Potatoes", "Celery", "Onion", "Broth"],
+      "instructions": "Chop vegetables, simmer in broth until tender.",
+      "estimatedPrice": 3,
+      "cookTime": 30,
+      "additionalTips": "Add beans or pasta for a heartier soup."
+    },
+    {
+      "id": 9,
+      "title": "Fruit Smoothie",
+      "image": "https://example.com/smoothie.jpg",
+      "ingredients": ["Banana", "Strawberries", "Yogurt", "Milk", "Honey"],
+      "instructions": "Blend all ingredients until smooth.",
+      "estimatedPrice": 2,
+      "cookTime": 3,
+      "additionalTips": "Add protein powder for an energy boost."
+    },
+    {
+      "id": 10,
+      "title": "Grilled Cheese Sandwich",
+      "image": "https://example.com/grilledcheese.jpg",
+      "ingredients": ["Bread", "Cheese", "Butter"],
+      "instructions": "Butter bread, add cheese, and grill until golden brown.",
+      "estimatedPrice": 2,
+      "cookTime": 5,
+      "additionalTips": "Add tomato or ham for extra flavor."
+    }
+  ]

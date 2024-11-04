@@ -1,92 +1,45 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import './HomePage.css';
-import { saveRecipe, getRecipes } from '../localStorage'; // Import the necessary functions
 
-const HomePage = () => {
-    useEffect(() => {
-        const observerOptions = {
-            threshold: 0.2 // Trigger when 20% of the element is visible
-        };
+function HomePage() {
+  const [searchQuery, setSearchQuery] = useState('');
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
 
-        const targets = document.querySelectorAll('.scroll-fade-in, .scroll-zoom-in');
-        targets.forEach(target => observer.observe(target));
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    console.log("Searching for:", searchQuery);
+    // Add logic here to filter or search recipes based on `searchQuery`
+    // This could be done via API call or filtering a recipe list in state
+  };
 
-        // Cleanup observer on unmount
-        return () => {
-            targets.forEach(target => observer.unobserve(target));
-        };
-    }, []);
-
-    // Sample recipes
-    const recipes = [
-        {
-            title: "Spaghetti Carbonara",
-            description: "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
-            picture: "https://example.com/spaghetti-carbonara.jpg", // Replace with a valid image URL
-        },
-        {
-            title: "Chicken Curry",
-            description: "A flavorful dish made with chicken, spices, and coconut milk.",
-            picture: "https://example.com/chicken-curry.jpg", // Replace with a valid image URL
-        },
-        {
-            title: "Vegetable Stir-Fry",
-            description: "A quick and easy stir-fry with seasonal vegetables and soy sauce.",
-            picture: "https://example.com/vegetable-stir-fry.jpg", // Replace with a valid image URL
-        },
-    ];
-
-    // Save sample recipes to localStorage only if they don't exist
-    useEffect(() => {
-        const existingRecipes = getRecipes();
-        if (existingRecipes.length === 0) {
-            recipes.forEach(recipe => saveRecipe(recipe));
-        }
-    }, []); // Empty dependency array to run once on mount
-
-    return (
-        <div className="homepage-container">
-            <header className="hero-section">
-                <div className="hero-content scroll-fade-in">
-                    <h1>LET 'EM COOK</h1>
-                    <p>Explore the diverse recipes</p>
-                    <Link to="/discover">
-                        <button className="cta-button">Discover More</button>
-                    </Link>
-                </div>
-            </header>
-            <main className="main-content">
-                <section className="explore-section scroll-fade-in">
-                    <h2>Featured Recipes</h2>
-                    <div className="dance-cards">
-                        {recipes.map((recipe, index) => (
-                            <Link to={`/recipe/${recipe.title.replace(/\s+/g, '-').toLowerCase()}`} className="dance-card scroll-zoom-in" key={index}>
-                                <img src={recipe.picture} alt={recipe.title} />
-                                <h3>{recipe.title}</h3>
-                                <p>{recipe.description}</p>
-                            </Link>
-                        ))}
-                    </div>
-                </section>
-
-                <section className="about-section scroll-fade-in">
-                    <h2>About Us</h2>
-                    <p>
-                        ABOUT US INFORMATION
-                    </p>
-                </section>
-            </main>
+  return (
+    <div className="homepage-container">
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1>Welcome to Let 'Em Cook</h1>
+          <p>Find easy, budget-friendly recipes tailored for college students.</p>
+          <form onSubmit={handleSearchSubmit} className="search-bar-form">
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={handleSearchChange}
+              placeholder="Search for recipes by ingredients, type, or budget..."
+              className="search-input"
+            />
+            <button type="submit" className="search-button">Search</button>
+          </form>
         </div>
-    );
-};
+      </section>
+      <section className="explore-section">
+        <h2>Explore Recipes</h2>
+        <p>Browse through our collection of recipes to find the perfect meal for any occasion.</p>
+        {/* Additional content for displaying recipes */}
+      </section>
+    </div>
+  );
+}
 
 export default HomePage;
