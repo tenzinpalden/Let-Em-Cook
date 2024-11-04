@@ -23,12 +23,15 @@ function HomePage() {
   const handleSearchChange = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
+
     if (query) {
+      // Filter recipes based on search query
       const matches = recipes.filter((recipe) =>
         recipe.title.toLowerCase().includes(query.toLowerCase())
       );
       setFilteredRecipes(matches);
     } else {
+      // Clear filtered recipes if search query is empty
       setFilteredRecipes([]);
     }
   };
@@ -65,6 +68,20 @@ function HomePage() {
             />
             <button type="submit" className="search-button">Search</button>
           </form>
+          {filteredRecipes.length > 0 && (
+            <div className="dropdown">
+              <ul>
+                {filteredRecipes.map((recipe) => (
+                  <li key={recipe.id} className="dropdown-item">
+                    <Link to={`/recipe/${recipe.id}`} className="dropdown-link">
+                      <img src={recipe.image} alt={recipe.title} className="dropdown-image" />
+                      <span>{recipe.title}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </section>
       <section className="recipe-list-section">
