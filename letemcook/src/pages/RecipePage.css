@@ -57,3 +57,38 @@
   .ingredients-list li {
     margin-bottom: 5px;
   }
+
+  .recipe-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-header h2 {
+    flex: 1;
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .favorite-button {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #ffcc00;
+    transition: transform 0.2s ease;
+  }
+  
+  .favorite-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .favorited {
+    color: #ff6600;
+  }
