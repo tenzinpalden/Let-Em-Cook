@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
@@ -9,34 +9,49 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
+
+  // Close the navbar when the Escape key is pressed
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape' && isOpen) {
+        closeNavbar();
+      }
+    };
+
+    // Add event listener for keydown
+    document.addEventListener('keydown', handleKeyDown);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isOpen]);
+
   return (
     <>
-      <button className="menu-button" onClick={toggleNavbar}>
+      <div className="navbar-toggle" onClick={toggleNavbar}>
         ☰
-      </button>
-      {isOpen && <div className="overlay" onClick={toggleNavbar}></div>}
-      <nav className={`navbar ${isOpen ? 'open' : ''}`}>
-        <button className="close-btn" onClick={toggleNavbar}>
-          &times;
-        </button>
+      </div>
+      {isOpen && <div className="overlay" onClick={closeNavbar}></div>}
+      <nav className={`navbar-popup ${isOpen ? 'open' : ''}`}>
         <ul className="navbar-links">
           <li>
-            <Link to="/" onClick={toggleNavbar}>Home</Link>
+            <Link to="/" className="navbar-link" onClick={closeNavbar}>Home</Link>
           </li>
           <li>
-            <Link to="/savedrecipes" onClick={toggleNavbar}>Saved Recipes</Link>
+            <Link to="/savedrecipes" className="navbar-link" onClick={closeNavbar}>Saved Recipes</Link>
           </li>
           <li>
-            <Link to="/createrecipe" onClick={toggleNavbar}>Create Recipes</Link>
+            <Link to="/createrecipe" className="navbar-link" onClick={closeNavbar}>Create Recipe</Link>
           </li>
           <li>
-            <Link to="/contact" onClick={toggleNavbar}>Contact</Link>
+            <Link to="/contact" className="navbar-link" onClick={closeNavbar}>Contact</Link>
           </li>
           <li>
-            <Link to="/faq" onClick={toggleNavbar}>FAQ</Link>
-          </li>
-          <li>
-            <Link to="/about" onClick={toggleNavbar}>About</Link>
+            <Link to="/faq" className="navbar-link" onClick={closeNavbar}>FAQ</Link>
           </li>
         </ul>
       </nav>
