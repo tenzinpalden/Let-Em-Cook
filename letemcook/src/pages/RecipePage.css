@@ -1,94 +1,128 @@
 .recipe-page {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .recipe-page h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .recipe-image-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  .recipe-image {
-    width: 250px; /* Adjust width as needed */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .recipe-page p {
-    font-size: 1.1em;
-    color: #555;
-  }
-  
-  .recipe-page h3 {
-    margin-top: 20px;
-    color: #333;
-  }
-  
-  .recipe-page ul {
-    list-style: disc;
-    padding-left: 20px;
-    text-align: left;
-  }
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
 
-  .ingredients-container {
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: -20px;
-  }
-  
-  .ingredients-list {
-    display: inline-block; 
-    text-align: left; 
-    padding-left: 0;
-    list-style-type: none;
-    margin-top: -10px;
-  }
-  
-  .ingredients-list li {
-    margin-bottom: 5px;
-  }
+.recipe-page h2 {
+font-size: 2em;
+margin-bottom: 10px;
+color: #333;
+}
 
-  .recipe-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .recipe-header h2 {
-    flex: 1;
-    font-size: 2em;
-    color: #333;
-    text-align: center;
-    margin: 0;
-  }
-  
-  .favorite-button {
-    position: absolute;
-    right: 0;
-    background: none;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    color: #ffcc00;
-    transition: transform 0.2s ease;
-  }
-  
-  .favorite-button:hover {
-    transform: scale(1.1);
-  }
-  
-  .favorited {
-    color: #ff6600;
-  }
+.recipe-image-container {
+display: flex;
+justify-content: center;
+margin: 20px 0;
+}
+
+.recipe-image {
+width: 250px; /* Adjust width as needed */
+height: auto; /* Maintains aspect ratio */
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-page p {
+font-size: 1.1em;
+color: #555;
+}
+
+.recipe-page h3 {
+margin-top: 20px;
+color: #333;
+}
+
+.recipe-page ul {
+list-style: disc;
+padding-left: 20px;
+text-align: left;
+}
+
+.ingredients-container {
+text-align: center;
+margin-top: 15px;
+margin-bottom: -20px;
+}
+
+.ingredients-list {
+display: inline-block; 
+text-align: left; 
+padding-left: 0;
+list-style-type: none;
+margin-top: -10px;
+}
+
+.ingredients-list li {
+margin-bottom: 5px;
+}
+
+.recipe-header {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+margin-bottom: 20px;
+}
+
+.recipe-header h2 {
+flex: 1;
+font-size: 2em;
+color: #333;
+text-align: center;
+margin: 0;
+}
+
+.favorite-button {
+position: absolute;
+right: 0;
+background: none;
+border: none;
+font-size: 1.2em;
+cursor: pointer;
+color: #ffcc00;
+transition: transform 0.2s ease;
+}
+
+.favorite-button:hover {
+transform: scale(1.1);
+}
+
+.favorited {
+color: #ff6600;
+}
+
+.labels-container {
+margin: 10px 0;
+display: flex;
+gap: 10px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.recipe-label {
+background-color: #e0f7fa;
+color: #00796b;
+padding: 5px 10px;
+font-size: 0.9em;
+font-weight: bold;
+border-radius: 12px;
+display: inline-block;
+text-transform: uppercase;
+}
+
+.recipe-label.gluten-free {
+background-color: #f8e1e1;
+color: #d32f2f;
+}
+
+.recipe-label.vegan {
+background-color: #e8f5e9;
+color: #388e3c;
+}
+
+.recipe-label.vegetarian {
+background-color: #fff3e0;
+color: #f57c00;
+}

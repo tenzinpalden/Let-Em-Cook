@@ -7,7 +7,8 @@
       "instructions": "Cook pasta, mix all ingredients together, and serve cold.",
       "estimatedPrice": 5,
       "cookTime": 15,
-      "additionalTips": "Add some basil for extra flavor."
+      "additionalTips": "Add some basil for extra flavor.",
+      "labels": ["Vegetarian"]
     },
     {
       "id": 2,
@@ -17,7 +18,8 @@
       "instructions": "Stir-fry vegetables and protein, serve with rice.",
       "estimatedPrice": 4,
       "cookTime": 20,
-      "additionalTips": "Try using tofu for a vegan option."
+      "additionalTips": "Try using tofu for a vegan option.",
+      "labels": ["Vegan (with Tofu)", "Gluten-Free (check soy sauce)"]
     },
     {
       "id": 3,
@@ -27,7 +29,8 @@
       "instructions": "Spread hummus on tortilla, add veggies, wrap, and enjoy.",
       "estimatedPrice": 3,
       "cookTime": 10,
-      "additionalTips": "Add some avocado for a creamier texture."
+      "additionalTips": "Add some avocado for a creamier texture.",
+      "labels": ["Vegetarian"]
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "instructions": "Toast bread, spread avocado, season with salt and pepper, drizzle with olive oil.",
       "estimatedPrice": 2,
       "cookTime": 5,
-      "additionalTips": "Top with cherry tomatoes or a poached egg."
+      "additionalTips": "Top with cherry tomatoes or a poached egg.",
+      "labels": ["Vegan"]
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "instructions": "Mix ingredients in a mug, microwave for 1 minute.",
       "estimatedPrice": 1,
       "cookTime": 2,
-      "additionalTips": "Add chocolate chips for extra sweetness."
+      "additionalTips": "Add chocolate chips for extra sweetness.",
+      "labels": ["Vegetarian"]
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "instructions": "Beat eggs, season, cook in a pan with butter, add cheese, and fold.",
       "estimatedPrice": 2,
       "cookTime": 5,
-      "additionalTips": "Add veggies or ham for extra flavor."
+      "additionalTips": "Add veggies or ham for extra flavor.",
+      "labels": ["Vegetarian", "Gluten-Free"]
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "instructions": "Place chicken and cheese on a tortilla, fold, cook until cheese melts.",
       "estimatedPrice": 4,
       "cookTime": 10,
-      "additionalTips": "Serve with guacamole or sour cream."
+      "additionalTips": "Serve with guacamole or sour cream.",
+      "labels": ["Contains Meat"]
     },
     {
       "id": 8,
@@ -77,7 +84,8 @@
       "instructions": "Chop vegetables, simmer in broth until tender.",
       "estimatedPrice": 3,
       "cookTime": 30,
-      "additionalTips": "Add beans or pasta for a heartier soup."
+      "additionalTips": "Add beans or pasta for a heartier soup.",
+      "labels": ["Vegan", "Gluten-Free"]
     },
     {
       "id": 9,
@@ -87,7 +95,8 @@
       "instructions": "Blend all ingredients until smooth.",
       "estimatedPrice": 2,
       "cookTime": 3,
-      "additionalTips": "Add protein powder for an energy boost."
+      "additionalTips": "Add protein powder for an energy boost.",
+      "labels": ["Vegetarian", "Gluten-Free"]
     },
     {
       "id": 10,
@@ -97,6 +106,7 @@
       "instructions": "Butter bread, add cheese, and grill until golden brown.",
       "estimatedPrice": 2,
       "cookTime": 5,
-      "additionalTips": "Add tomato or ham for extra flavor."
+      "additionalTips": "Add tomato or ham for extra flavor.",
+      "labels": ["Vegetarian"]
     }
   ]

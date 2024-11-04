@@ -54,6 +54,18 @@ function RecipePage() {
           {isFavorite ? '★ Favorited' : '☆ Add to Favorites'}
         </button>
       </div>
+
+      {/* Labels Section */}
+      {recipe.labels && (
+        <div className="labels-container">
+          {recipe.labels.map((label, index) => (
+            <span key={index} className={`recipe-label ${label.toLowerCase().replace(" ", "-")}`}>
+            {label}
+          </span>
+          ))}
+        </div>
+      )}
+
       <div className="recipe-image-container">
         <img src={recipe.image} alt={recipe.title} className="recipe-image" />
       </div>
