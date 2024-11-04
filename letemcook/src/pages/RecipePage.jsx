@@ -1,29 +1,49 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getRecipes } from '../localStorage'; // Import the function to get recipes
 import './RecipePage.css';
 
-const RecipePage = () => {
-    const { title } = useParams(); // Get the recipe title from the URL
-    const [recipe, setRecipe] = useState(null);
+function RecipePage() {
+  const { id } = useParams(); // Get recipe ID from the route
+  const [recipe, setRecipe] = useState(null);
 
-    useEffect(() => {
-        const recipes = getRecipes();
-        const selectedRecipe = recipes.find(recipe => recipe.title.replace(/\s+/g, '-').toLowerCase() === title);
-        setRecipe(selectedRecipe); // Set the selected recipe
-    }, [title]);
+  useEffect(() => {
+    // Fetch recipes data from recipes.json
+    fetch('/recipes.json')
+      .then((response) => response.json())
+      .then((data) => {
+        // Find the recipe by ID and set it in state
+        const selectedRecipe = data.find((item) => item.id === parseInt(id, 10));
+        setRecipe(selectedRecipe);
+      })
+      .catch((error) => console.error('Error fetching recipe:', error));
+  }, [id]);
 
-    if (!recipe) {
-        return <h2>Recipe not found</h2>; // Show a message if no recipe is found
-    }
+  if (!recipe) {
+    return <p>Loading recipe...</p>;
+  }
 
-    return (
-        <div className="recipe-page">
-            <h1>{recipe.title}</h1>
-            <img src={recipe.picture} alt={recipe.title} />
-            <p>{recipe.description}</p>
-        </div>
-    );
-};
+  return (
+    <div className="recipe-page">
+      <h2>{recipe.title}</h2>
+      <img src={recipe.image} alt={recipe.title} className="recipe-image" />
+      <p><strong>Estimated Price:</strong> ${recipe.estimatedPrice}</p>
+      <p><strong>Cook Time:</strong> {recipe.cookTime} minutes</p>
+      <h3>Ingredients:</h3>
+      <ul>
+        {recipe.ingredients.map((ingredient, index) => (
+          <li key={index}>{ingredient}</li>
+        ))}
+      </ul>
+      <h3>Instructions:</h3>
+      <p>{recipe.instructions}</p>
+      {recipe.additionalTips && (
+        <>
+          <h3>Additional Tips:</h3>
+          <p>{recipe.additionalTips}</p>
+        </>
+      )}
+    </div>
+  );
+}
 
 export default RecipePage;

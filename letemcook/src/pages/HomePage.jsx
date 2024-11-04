@@ -1,18 +1,32 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 function HomePage() {
+  const [recipes, setRecipes] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
+  const [filteredRecipes, setFilteredRecipes] = useState([]);
+
+  useEffect(() => {
+    // Fetch recipes from the recipes.json file in the public folder
+    fetch('/recipes.json')
+      .then((response) => response.json())
+      .then((data) => setRecipes(data))
+      .catch((error) => console.error('Error fetching recipes:', error));
+  }, []);
 
   const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
-  };
-
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    console.log("Searching for:", searchQuery);
-    // Add logic here to filter or search recipes based on `searchQuery`
-    // This could be done via API call or filtering a recipe list in state
+    const query = e.target.value;
+    setSearchQuery(query);
+    if (query) {
+      // Filter recipes based on search query
+      const matches = recipes.filter((recipe) =>
+        recipe.title.toLowerCase().includes(query.toLowerCase())
+      );
+      setFilteredRecipes(matches);
+    } else {
+      setFilteredRecipes([]);
+    }
   };
 
   return (
@@ -21,22 +35,46 @@ function HomePage() {
         <div className="hero-content">
           <h1>Welcome to Let 'Em Cook</h1>
           <p>Find easy, budget-friendly recipes tailored for college students.</p>
-          <form onSubmit={handleSearchSubmit} className="search-bar-form">
+          <form onSubmit={(e) => e.preventDefault()} className="search-bar-form">
             <input
               type="text"
               value={searchQuery}
               onChange={handleSearchChange}
-              placeholder="Search for recipes by ingredients, type, or budget..."
+              placeholder="Search for recipes..."
               className="search-input"
             />
             <button type="submit" className="search-button">Search</button>
           </form>
+          {filteredRecipes.length > 0 && (
+            <div className="dropdown">
+              <ul>
+                {filteredRecipes.map((recipe) => (
+                  <li key={recipe.id} className="dropdown-item">
+                    <Link to={`/recipe/${recipe.id}`} className="dropdown-link">
+                      <img src={recipe.image} alt={recipe.title} className="dropdown-image" />
+                      <span>{recipe.title}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </section>
-      <section className="explore-section">
+      <section className="recipe-list-section">
         <h2>Explore Recipes</h2>
-        <p>Browse through our collection of recipes to find the perfect meal for any occasion.</p>
-        {/* Additional content for displaying recipes */}
+        <ul className="recipe-list">
+          {recipes.map((recipe) => (
+            <li key={recipe.id} className="recipe-item">
+              <Link to={`/recipe/${recipe.id}`} className="recipe-link">
+                <img src={recipe.image} alt={recipe.title} className="recipe-image" />
+                <h3>{recipe.title}</h3>
+                <p>Estimated Price: ${recipe.estimatedPrice}</p>
+                <p>Cook Time: {recipe.cookTime} minutes</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );
