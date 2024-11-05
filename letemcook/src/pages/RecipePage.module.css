@@ -20,13 +20,14 @@
 }
 
 .recipeImage {
-  width: 100%;
-  max-width: 700px; /* Set a maximum width to prevent oversized images */
-  height: auto;
+  max-width: 400px; /* Set a maximum width */
+  max-height: 400px; /* Set a maximum height */
+  width: 100%; /* Allow the width to scale down responsively */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
-
 .recipePage p {
   font-size: 1.1em;
   color: #555;
