@@ -1,112 +1,176 @@
 [
-    {
-      "id": 1,
-      "title": "Easy Pasta Salad",
-      "image": "https://www.allrecipes.com/thmb/LUZ2ZXjuWFO-6c_dVuV2y_TUhUQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/14385-pasta-salad-mfs-62-2cbb356b049740e7832e4bbb899881de.jpg",
-      "ingredients": ["Pasta", "Tomatoes", "Olive Oil", "Cheese", "Salt", "Pepper"],
-      "instructions": "Cook pasta, mix all ingredients together, and serve cold.",
-      "estimatedPrice": 5,
-      "cookTime": 15,
-      "additionalTips": "Add some basil for extra flavor.",
-      "labels": ["Vegetarian"]
-    },
-    {
-      "id": 2,
-      "title": "Budget-Friendly Stir Fry",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ba4QHI6UpD9qchErdmWBlV3h_rpq-y1d_Q&s",
-      "ingredients": ["Rice", "Vegetables", "Soy Sauce", "Garlic", "Chicken (optional)"],
-      "instructions": "Stir-fry vegetables and protein, serve with rice.",
-      "estimatedPrice": 4,
-      "cookTime": 20,
-      "additionalTips": "Try using tofu for a vegan option.",
-      "labels": ["Vegan (with Tofu)", "Gluten-Free (check soy sauce)"]
-    },
-    {
-      "id": 3,
-      "title": "Quick Veggie Wrap",
-      "image": "https://www.bowlofdelicious.com/wp-content/uploads/2014/01/Veggie-Wraps-square.jpg",
-      "ingredients": ["Tortilla", "Lettuce", "Tomato", "Cheese", "Hummus"],
-      "instructions": "Spread hummus on tortilla, add veggies, wrap, and enjoy.",
-      "estimatedPrice": 3,
-      "cookTime": 10,
-      "additionalTips": "Add some avocado for a creamier texture.",
-      "labels": ["Vegetarian"]
-    },
-    {
-      "id": 4,
-      "title": "Avocado Toast",
-      "image": "https://www.eatingbirdfood.com/wp-content/uploads/2023/12/avocado-toast-hero-cropped.jpg",
-      "ingredients": ["Bread", "Avocado", "Salt", "Pepper", "Olive Oil"],
-      "instructions": "Toast bread, spread avocado, season with salt and pepper, drizzle with olive oil.",
-      "estimatedPrice": 2,
-      "cookTime": 5,
-      "additionalTips": "Top with cherry tomatoes or a poached egg.",
-      "labels": ["Vegan"]
-    },
-    {
-      "id": 5,
-      "title": "Microwave Mug Cake",
-      "image": "https://tastesbetterfromscratch.com/wp-content/uploads/2022/12/Chocolate-Mug-Cake-1.jpg",
-      "ingredients": ["Flour", "Sugar", "Cocoa Powder", "Milk", "Vegetable Oil"],
-      "instructions": "Mix ingredients in a mug, microwave for 1 minute.",
-      "estimatedPrice": 1,
-      "cookTime": 2,
-      "additionalTips": "Add chocolate chips for extra sweetness.",
-      "labels": ["Vegetarian"]
-    },
-    {
-      "id": 6,
-      "title": "Simple Omelette",
-      "image": "https://schoolnightvegan.com/wp-content/uploads/2022/08/Vegan-Omelette1860.jpg",
-      "ingredients": ["Eggs", "Salt", "Pepper", "Butter", "Cheese"],
-      "instructions": "Beat eggs, season, cook in a pan with butter, add cheese, and fold.",
-      "estimatedPrice": 2,
-      "cookTime": 5,
-      "additionalTips": "Add veggies or ham for extra flavor.",
-      "labels": ["Vegetarian", "Gluten-Free"]
-    },
-    {
-      "id": 7,
-      "title": "Chicken Quesadilla",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYjivxMKfupKbKpr7AFH2O1GHat2Lr54EGZg&s",
-      "ingredients": ["Tortilla", "Cheese", "Cooked Chicken", "Salsa"],
-      "instructions": "Place chicken and cheese on a tortilla, fold, cook until cheese melts.",
-      "estimatedPrice": 4,
-      "cookTime": 10,
-      "additionalTips": "Serve with guacamole or sour cream.",
-      "labels": ["Contains Meat"]
-    },
-    {
-      "id": 8,
-      "title": "Vegetable Soup",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIQH49waX_-KXhT09Z5dF19nv292n22KbwZQ&s",
-      "ingredients": ["Carrots", "Potatoes", "Celery", "Onion", "Broth"],
-      "instructions": "Chop vegetables, simmer in broth until tender.",
-      "estimatedPrice": 3,
-      "cookTime": 30,
-      "additionalTips": "Add beans or pasta for a heartier soup.",
-      "labels": ["Vegan", "Gluten-Free"]
-    },
-    {
-      "id": 9,
-      "title": "Fruit Smoothie",
-      "image": "https://www.acouplecooks.com/wp-content/uploads/2020/11/Chia-Seed-Smoothie-004.jpg",
-      "ingredients": ["Banana", "Strawberries", "Yogurt", "Milk", "Honey"],
-      "instructions": "Blend all ingredients until smooth.",
-      "estimatedPrice": 2,
-      "cookTime": 3,
-      "additionalTips": "Add protein powder for an energy boost.",
-      "labels": ["Vegetarian", "Gluten-Free"]
-    },
-    {
-      "id": 10,
-      "title": "Grilled Cheese Sandwich",
-      "image": "https://static01.nyt.com/images/2023/02/28/multimedia/ep-air-fryer-grilled-cheese-vpmf/ep-air-fryer-grilled-cheese-vpmf-superJumbo.jpg",
-      "ingredients": ["Bread", "Cheese", "Butter"],
-      "instructions": "Butter bread, add cheese, and grill until golden brown.",
-      "estimatedPrice": 2,
-      "cookTime": 5,
-      "additionalTips": "Add tomato or ham for extra flavor.",
-      "labels": ["Vegetarian"]
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Easy Pasta Salad",
+    "image": "https://www.allrecipes.com/thmb/LUZ2ZXjuWFO-6c_dVuV2y_TUhUQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/14385-pasta-salad-mfs-62-2cbb356b049740e7832e4bbb899881de.jpg",
+    "ingredients": ["Pasta", "Tomatoes", "Olive Oil", "Cheese", "Salt", "Pepper"],
+    "instructions": [
+      "Boil water in a large pot, adding a pinch of salt.",
+      "Once the water reaches a rolling boil, add the pasta and cook for about 6 minutes or until al dente.",
+      "Drain the pasta and rinse it under cold water to stop the cooking process.",
+      "In a large bowl, combine the pasta with chopped tomatoes, diced cheese, and a drizzle of olive oil.",
+      "Season with salt and pepper to taste, and toss everything together until well mixed.",
+      "Serve chilled or at room temperature and enjoy!"
+    ],
+    "estimatedPrice": 5,
+    "cookTime": 15,
+    "additionalTips": "Add some basil for extra flavor.",
+    "labels": ["Vegetarian"]
+  },
+  {
+    "id": 2,
+    "title": "Budget-Friendly Stir Fry",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ba4QHI6UpD9qchErdmWBlV3h_rpq-y1d_Q&s",
+    "ingredients": ["Rice", "Vegetables", "Soy Sauce", "Garlic", "Chicken (optional)"],
+    "instructions": [
+      "Cook rice according to package instructions and set aside.",
+      "Heat a tablespoon of oil in a large skillet over medium-high heat.",
+      "Add minced garlic and stir for about 30 seconds until fragrant.",
+      "Add your choice of vegetables (like bell peppers, broccoli, or carrots) and stir-fry for 5-7 minutes until tender.",
+      "If using, add cooked chicken pieces and stir until heated through.",
+      "Pour soy sauce over the mixture and stir well to combine.",
+      "Serve the stir-fry over the cooked rice."
+    ],
+    "estimatedPrice": 4,
+    "cookTime": 20,
+    "additionalTips": "Try using tofu for a vegan option.",
+    "labels": ["Vegan (with Tofu)", "Gluten-Free (check soy sauce)"]
+  },
+  {
+    "id": 3,
+    "title": "Quick Veggie Wrap",
+    "image": "https://www.bowlofdelicious.com/wp-content/uploads/2014/01/Veggie-Wraps-square.jpg",
+    "ingredients": ["Tortilla", "Lettuce", "Tomato", "Cheese", "Hummus"],
+    "instructions": [
+      "Lay the tortilla flat on a clean surface.",
+      "Spread a generous layer of hummus across the tortilla.",
+      "Add a layer of lettuce, followed by slices of tomato and cheese.",
+      "Roll the tortilla tightly, starting from one edge, to form a wrap.",
+      "Cut in half diagonally and serve immediately."
+    ],
+    "estimatedPrice": 3,
+    "cookTime": 10,
+    "additionalTips": "Add some avocado for a creamier texture.",
+    "labels": ["Vegetarian"]
+  },
+  {
+    "id": 4,
+    "title": "Avocado Toast",
+    "image": "https://www.eatingbirdfood.com/wp-content/uploads/2023/12/avocado-toast-hero-cropped.jpg",
+    "ingredients": ["Bread", "Avocado", "Salt", "Pepper", "Olive Oil"],
+    "instructions": [
+      "Toast the bread to your desired crispness.",
+      "In a small bowl, mash the avocado with a fork and season with salt and pepper.",
+      "Spread the mashed avocado generously over the toasted bread.",
+      "Drizzle with olive oil for added flavor.",
+      "Optional: Top with cherry tomatoes or a poached egg before serving."
+    ],
+    "estimatedPrice": 2,
+    "cookTime": 5,
+    "additionalTips": "Top with cherry tomatoes or a poached egg.",
+    "labels": ["Vegan"]
+  },
+  {
+    "id": 5,
+    "title": "Microwave Mug Cake",
+    "image": "https://tastesbetterfromscratch.com/wp-content/uploads/2022/12/Chocolate-Mug-Cake-1.jpg",
+    "ingredients": ["Flour", "Sugar", "Cocoa Powder", "Milk", "Vegetable Oil"],
+    "instructions": [
+      "In a microwave-safe mug, combine flour, sugar, cocoa powder, and a pinch of salt.",
+      "Add milk and vegetable oil, mixing until smooth.",
+      "Microwave on high for 1 minute, watching closely to prevent overflow.",
+      "Allow to cool for a few minutes before enjoying directly from the mug."
+    ],
+    "estimatedPrice": 1,
+    "cookTime": 2,
+    "additionalTips": "Add chocolate chips for extra sweetness.",
+    "labels": ["Vegetarian"]
+  },
+  {
+    "id": 6,
+    "title": "Simple Omelette",
+    "image": "https://schoolnightvegan.com/wp-content/uploads/2022/08/Vegan-Omelette1860.jpg",
+    "ingredients": ["Eggs", "Salt", "Pepper", "Butter", "Cheese"],
+    "instructions": [
+      "In a bowl, beat the eggs until well mixed, adding salt and pepper to taste.",
+      "Heat a non-stick skillet over medium heat and melt butter.",
+      "Pour the eggs into the skillet, tilting to spread them evenly.",
+      "As the edges begin to set, gently lift them with a spatula, allowing uncooked egg to flow underneath.",
+      "Once almost set, sprinkle cheese on one half and fold the omelette.",
+      "Cook for an additional minute until cheese is melted, then serve."
+    ],
+    "estimatedPrice": 2,
+    "cookTime": 5,
+    "additionalTips": "Add veggies or ham for extra flavor.",
+    "labels": ["Vegetarian", "Gluten-Free"]
+  },
+  {
+    "id": 7,
+    "title": "Chicken Quesadilla",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYjivxMKfupKbKpr7AFH2O1GHat2Lr54EGZg&s",
+    "ingredients": ["Tortilla", "Cheese", "Cooked Chicken", "Salsa"],
+    "instructions": [
+      "Place a tortilla in a skillet over medium heat.",
+      "Spread a layer of cheese on half of the tortilla.",
+      "Add cooked chicken pieces and some salsa on top of the cheese.",
+      "Fold the tortilla over and cook for 2-3 minutes until the cheese melts.",
+      "Flip carefully and cook for another 1-2 minutes until golden brown.",
+      "Cut into wedges and serve with additional salsa on the side."
+    ],
+    "estimatedPrice": 4,
+    "cookTime": 10,
+    "additionalTips": "Serve with guacamole or sour cream.",
+    "labels": ["Contains Meat"]
+  },
+  {
+    "id": 8,
+    "title": "Vegetable Soup",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIQH49waX_-KXhT09Z5dF19nv292n22KbwZQ&s",
+    "ingredients": ["Carrots", "Potatoes", "Celery", "Onion", "Broth"],
+    "instructions": [
+      "Chop all vegetables into bite-sized pieces.",
+      "In a large pot, heat broth over medium heat until simmering.",
+      "Add chopped vegetables and cook for about 20-25 minutes until tender.",
+      "Season with salt and pepper to taste.",
+      "For added heartiness, consider adding beans or small pasta."
+    ],
+    "estimatedPrice": 3,
+    "cookTime": 30,
+    "additionalTips": "Add beans or pasta for a heartier soup.",
+    "labels": ["Vegan", "Gluten-Free"]
+  },
+  {
+    "id": 9,
+    "title": "Fruit Smoothie",
+    "image": "https://www.acouplecooks.com/wp-content/uploads/2020/11/Chia-Seed-Smoothie-004.jpg",
+    "ingredients": ["Banana", "Strawberries", "Yogurt", "Milk", "Honey"],
+    "instructions": [
+      "In a blender, combine banana, strawberries, yogurt, milk, and honey.",
+      "Blend until smooth and creamy.",
+      "If the mixture is too thick, add more milk to reach desired consistency.",
+      "Pour into a glass and enjoy immediately."
+    ],
+    "estimatedPrice": 2,
+    "cookTime": 3,
+    "additionalTips": "Add protein powder for an energy boost.",
+    "labels": ["Vegetarian", "Gluten-Free"]
+  },
+  {
+    "id": 10,
+    "title": "Grilled Cheese Sandwich",
+    "image": "https://static01.nyt.com/images/2023/02/28/multimedia/ep-air-fryer-grilled-cheese-vpmf/ep-air-fryer-grilled-cheese-vpmf-superJumbo.jpg",
+    "ingredients": ["Bread", "Cheese", "Butter"],
+    "instructions": [
+      "Butter one side of each slice of bread.",
+      "Place one slice butter-side down in a skillet over medium heat.",
+      "Add cheese on top and cover with the second slice, butter-side up.",
+      "Cook for about 2-4 minutes until golden brown, then flip carefully.",
+      "Cook the other side until cheese is melted and bread is golden brown.",
+      "Cut in half and serve hot."
+    ],
+    "estimatedPrice": 2,
+    "cookTime": 5,
+    "additionalTips": "Add tomato or ham for extra flavor.",
+    "labels": ["Vegetarian"]
+  }
+]
