@@ -5,6 +5,7 @@ import styles from './RecipePage.module.css'; // Import as a CSS module
 function RecipePage() {
   const { id } = useParams(); // Get recipe ID from the route
   const [recipe, setRecipe] = useState(null);
+  const [isFavorite, setIsFavorite] = useState(false);
 
   useEffect(() => {
     // Fetch recipes data from recipes.json
@@ -14,6 +15,10 @@ function RecipePage() {
         // Find the recipe by ID and set it in state
         const selectedRecipe = data.find((item) => item.id === parseInt(id, 10));
         setRecipe(selectedRecipe);
+
+        // Check if the recipe is in favorites
+        const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+        setIsFavorite(savedFavorites.includes(selectedRecipe?.id));
       })
       .catch((error) => console.error('Error fetching recipe:', error));
   }, [id]);
@@ -21,9 +26,31 @@ function RecipePage() {
   if (!recipe) {
     return <p>Loading recipe...</p>;
   }
+  
+  const toggleFavorite = () => {
+    const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    let updatedFavorites;
+
+    if (isFavorite) {
+      // Remove from favorites
+      updatedFavorites = savedFavorites.filter((favId) => favId !== recipe.id);
+    } else {
+      // Add to favorites
+      updatedFavorites = [...savedFavorites, recipe.id];
+    }
+
+    setIsFavorite(!isFavorite);
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+  };
 
   return (
     <div className={styles.recipePage}>
+      <button
+          onClick={toggleFavorite}
+          className={`favorite-button ${isFavorite ? 'favorited' : ''}`}
+        >
+          {isFavorite ? '★ Favorited' : '☆ Add to Favorites'}
+        </button>
       <h2>{recipe.title}</h2>
       <div className={styles.recipeImageContainer}>
         <img src={recipe.image} alt={recipe.title} className={styles.recipeImage} />

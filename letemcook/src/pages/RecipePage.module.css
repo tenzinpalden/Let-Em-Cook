@@ -75,25 +75,6 @@ text-align: center;
 margin: 0;
 }
 
-.favorite-button {
-position: absolute;
-right: 0;
-background: none;
-border: none;
-font-size: 1.2em;
-cursor: pointer;
-color: #ffcc00;
-transition: transform 0.2s ease;
-}
-
-.favorite-button:hover {
-transform: scale(1.1);
-}
-
-.favorited {
-color: #ff6600;
-}
-
 .labels-container {
 margin: 10px 0;
 display: flex;
