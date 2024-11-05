@@ -80,3 +80,30 @@
   .favorited {
     color: #ff6600;
   }
+
+  /* Filter Container */
+.filter-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .filter-container label {
+    font-size: 1em;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .filter-container select {
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .filter-container select:focus {
+    outline: none;
+    border-color: #ff6600;
+  }

@@ -5,9 +5,10 @@ import './recipes.css';
 function Recipes() {
   const [recipes, setRecipes] = useState([]);
   const [favorites, setFavorites] = useState([]);
+  const [filter, setFilter] = useState("All");
 
-  // Fetch recipes and retrieve favorites from localStorage
   useEffect(() => {
+    // Fetch recipes and retrieve favorites from localStorage
     fetch('/recipes.json')
       .then((response) => response.json())
       .then((data) => setRecipes(data))
@@ -31,11 +32,29 @@ function Recipes() {
     localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
   };
 
+  // Filter recipes based on the selected label
+  const filteredRecipes = filter === "All"
+    ? recipes
+    : recipes.filter((recipe) => recipe.labels && recipe.labels.includes(filter));
+
   return (
     <div className="recipes-container">
       <h1>All Recipes</h1>
+
+      {/* Filter Dropdown */}
+      <div className="filter-container">
+        <label htmlFor="filter">Filter by:</label>
+        <select id="filter" value={filter} onChange={(e) => setFilter(e.target.value)}>
+          <option value="All">All</option>
+          <option value="Vegan">Vegan</option>
+          <option value="Vegetarian">Vegetarian</option>
+          <option value="Gluten-Free">Gluten-Free</option>
+          <option value="Contains Meat">Contains Meat</option>
+        </select>
+      </div>
+
       <div className="recipes-list">
-        {recipes.map((recipe) => (
+        {filteredRecipes.map((recipe) => (
           <div key={recipe.id} className="recipe-card">
             <Link to={`/recipe/${recipe.id}`} className="recipe-link">
               <img src={recipe.image} alt={recipe.title} className="recipe-image" />
