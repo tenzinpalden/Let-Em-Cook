@@ -21,7 +21,7 @@
 
 .recipeImage {
   width: 100%;
-  max-width: 250px; /* Set a maximum width to prevent oversized images */
+  max-width: 700px; /* Set a maximum width to prevent oversized images */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -57,6 +57,38 @@
 
 .ingredients-list li {
 margin-bottom: 5px;
+}
+
+
+/* Instructions Container */
+.instructionsList {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 15px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+/* Each instruction item layout */
+.instructionItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.instructionItem strong {
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+  flex-shrink: 0;
+  min-width: 60px; /* Ensures all instructions start at the same horizontal position */
+  text-align: right;
+}
+
+.instructionText {
+  line-height: 1.5;
+  color: #555;
+  margin-left: 10px; /* Add left margin for spacing */
 }
 
 .recipe-header {

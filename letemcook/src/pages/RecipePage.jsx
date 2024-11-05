@@ -67,8 +67,16 @@ function RecipePage() {
         </ul>
       </div>
 
+      {/* Instructions List */}
       <h3>Instructions:</h3>
-      <p>{recipe.instructions}</p>
+      <ol className={styles.instructionsList}>
+        {recipe.instructions.map((step, index) => (
+          <li key={index} className={styles.instructionItem}>
+            <strong>Step {index + 1}:</strong> {step}
+          </li>
+        ))}
+      </ol>
+      
       {recipe.additionalTips && (
         <>
           <h3>Additional Tips:</h3>
