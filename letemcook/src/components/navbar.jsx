@@ -42,6 +42,9 @@ function Navbar() {
             <Link to="/" className="navbar-link" onClick={closeNavbar}>Home</Link>
           </li>
           <li>
+            <Link to="/recipes" className="navbar-link" onClick={toggleNavbar}>Recipes</Link>
+          </li>
+          <li>
             <Link to="/savedrecipes" className="navbar-link" onClick={closeNavbar}>Saved Recipes</Link>
           </li>
           <li>

@@ -1,25 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './savedrecipes.css';
+import './recipes.css';
 
-function SavedRecipes() {
+function Recipes() {
   const [recipes, setRecipes] = useState([]);
   const [favorites, setFavorites] = useState([]);
 
+  // Fetch recipes and retrieve favorites from localStorage
   useEffect(() => {
-    // Fetch recipes data
     fetch('/recipes.json')
       .then((response) => response.json())
       .then((data) => setRecipes(data))
       .catch((error) => console.error('Error fetching recipes:', error));
 
-    // Load favorites from localStorage
     const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
     setFavorites(savedFavorites);
   }, []);
-
-  // Filter recipes to only show favorites
-  const favoriteRecipes = recipes.filter((recipe) => favorites.includes(recipe.id));
 
   // Toggle favorite status for a recipe
   const toggleFavorite = (id) => {
@@ -36,34 +32,30 @@ function SavedRecipes() {
   };
 
   return (
-    <div className="saved-recipes-container">
-      <h2>Your Favorite Recipes</h2>
-      {favoriteRecipes.length > 0 ? (
-        <ul className="saved-recipe-list">
-          {favoriteRecipes.map((recipe) => (
-            <li key={recipe.id} className="saved-recipe-item">
-              <Link to={`/recipe/${recipe.id}`} className="saved-recipe-link">
-                <img src={recipe.image} alt={recipe.title} className="saved-recipe-image" />
-                <div className="saved-recipe-info">
-                  <h3>{recipe.title}</h3>
-                  <p>Estimated Price: ${recipe.estimatedPrice}</p>
-                  <p>Cook Time: {recipe.cookTime} minutes</p>
-                </div>
-              </Link>
-              <button
+    <div className="recipes-container">
+      <h1>All Recipes</h1>
+      <div className="recipes-list">
+        {recipes.map((recipe) => (
+          <div key={recipe.id} className="recipe-card">
+            <Link to={`/recipe/${recipe.id}`} className="recipe-link">
+              <img src={recipe.image} alt={recipe.title} className="recipe-image" />
+              <div className="recipe-info">
+                <h2>{recipe.title}</h2>
+                <p>Estimated Price: ${recipe.estimatedPrice}</p>
+                <p>Cook Time: {recipe.cookTime} minutes</p>
+              </div>
+            </Link>
+            <button
               onClick={() => toggleFavorite(recipe.id)}
               className={`favorite-button ${favorites.includes(recipe.id) ? 'favorited' : ''}`}
             >
                 {favorites.includes(recipe.id) ? '★' : '☆'}
             </button>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p className="no-favorites-message">You haven't saved any recipes yet.</p>
-      )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
-export default SavedRecipes;
+export default Recipes;
