@@ -8,11 +8,17 @@ function Recipes() {
   const [filter, setFilter] = useState("All");
 
   useEffect(() => {
-    // Fetch recipes and retrieve favorites from localStorage
-    fetch('/recipes.json')
-      .then((response) => response.json())
-      .then((data) => setRecipes(data))
-      .catch((error) => console.error('Error fetching recipes:', error));
+    // Fetch recipes from the Flask backend
+    fetch(`${process.env.REACT_APP_API_URL}/recipes`)
+      .then((response) => {
+        if (!response.ok) throw new Error("Network response was not ok");
+        return response.json();
+      })
+      .then((data) => {
+        console.log("Fetched recipes:", data); // Debugging log
+        setRecipes(data);
+      })
+      .catch((error) => console.error("Error fetching recipes:", error));
 
     const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
     setFavorites(savedFavorites);
@@ -22,10 +28,8 @@ function Recipes() {
   const toggleFavorite = (id) => {
     let updatedFavorites;
     if (favorites.includes(id)) {
-      // Remove from favorites
       updatedFavorites = favorites.filter((favoriteId) => favoriteId !== id);
     } else {
-      // Add to favorites
       updatedFavorites = [...favorites, id];
     }
     setFavorites(updatedFavorites);

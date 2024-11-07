@@ -1,118 +1,38 @@
 import React, { useState } from 'react';
-import './createrecipe.css';
 
 function CreateRecipe() {
-  const [recipe, setRecipe] = useState({
-    title: '',
-    image: '',
-    ingredients: '',
-    instructions: '',
-    estimatedPrice: '',
-    cookTime: '',
-    additionalTips: ''
-  });
+  const [title, setTitle] = useState('');
+  const [ingredients, setIngredients] = useState('');
+  const [instructions, setInstructions] = useState('');
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setRecipe({ ...recipe, [name]: value });
-  };
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const newRecipe = { title, ingredients, instructions };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add logic to submit the recipe data to the backend or state
-    console.log('Recipe submitted:', recipe);
-    // Clear the form after submission
-    setRecipe({
-      title: '',
-      image: '',
-      ingredients: '',
-      instructions: '',
-      estimatedPrice: '',
-      cookTime: '',
-      additionalTips: ''
-    });
+    try {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/recipes`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newRecipe),
+      });
+
+      if (response.ok) {
+        console.log("Recipe added successfully");
+      } else {
+        console.error("Failed to add recipe");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   return (
-    <div className="create-recipe-container">
-      <h2>Create a New Recipe</h2>
-      <form onSubmit={handleSubmit} className="create-recipe-form">
-        <label>
-          Recipe Title:
-          <input
-            type="text"
-            name="title"
-            value={recipe.title}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        
-        <label>
-          Image URL:
-          <input
-            type="text"
-            name="image"
-            value={recipe.image}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        
-        <label>
-          Ingredients (separated by commas):
-          <textarea
-            name="ingredients"
-            value={recipe.ingredients}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        
-        <label>
-          Instructions:
-          <textarea
-            name="instructions"
-            value={recipe.instructions}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        
-        <label>
-          Estimated Price ($):
-          <input
-            type="text"
-            name="estimatedPrice"
-            value={recipe.estimatedPrice}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        
-        <label>
-          Cook Time (minutes):
-          <input
-            type="text"
-            name="cookTime"
-            value={recipe.cookTime}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        
-        <label>
-          Additional Tips:
-          <textarea
-            name="additionalTips"
-            value={recipe.additionalTips}
-            onChange={handleChange}
-          />
-        </label>
-        
-        <button type="submit" className="submit-button">Submit Recipe</button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title" required />
+      <textarea value={ingredients} onChange={(e) => setIngredients(e.target.value)} placeholder="Ingredients" required />
+      <textarea value={instructions} onChange={(e) => setInstructions(e.target.value)} placeholder="Instructions" required />
+      <button type="submit">Add Recipe</button>
+    </form>
   );
 }
 
