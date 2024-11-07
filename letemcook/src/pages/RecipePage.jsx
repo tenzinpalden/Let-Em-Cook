@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import styles from './RecipePage.module.css'; // Import as a CSS module
+import styles from './RecipePage.module.css';
 
 function RecipePage() {
   const { id } = useParams(); // Get recipe ID from the route
@@ -8,17 +8,20 @@ function RecipePage() {
   const [isFavorite, setIsFavorite] = useState(false);
 
   useEffect(() => {
-    // Fetch recipes data from recipes.json
-    fetch('/recipes.json')
-      .then((response) => response.json())
+    // Fetch the recipe data from the backend using the API
+    fetch(`${process.env.REACT_APP_API_URL}/recipes/${id}`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
       .then((data) => {
-        // Find the recipe by ID and set it in state
-        const selectedRecipe = data.find((item) => item.id === parseInt(id, 10));
-        setRecipe(selectedRecipe);
+        setRecipe(data); // Set the recipe data
 
         // Check if the recipe is in favorites
         const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
-        setIsFavorite(savedFavorites.includes(selectedRecipe?.id));
+        setIsFavorite(savedFavorites.includes(data?.id));
       })
       .catch((error) => console.error('Error fetching recipe:', error));
   }, [id]);
@@ -47,7 +50,7 @@ function RecipePage() {
     <div className={styles.recipePage}>
       <button
           onClick={toggleFavorite}
-          className={`favorite-button ${isFavorite ? 'favorited' : ''}`}
+          className={`${styles.favoriteButton} ${isFavorite ? styles.favorited : ''}`}
         >
           {isFavorite ? '★ Favorited' : '☆ Add to Favorites'}
         </button>

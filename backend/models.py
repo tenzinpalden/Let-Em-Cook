@@ -24,3 +24,15 @@ class Recipe:
             "additionalTips": self.additional_tips,
             "labels": self.labels,
         }
+
+class Favorite:
+    def __init__(self, user_id, recipe_id):
+        self.user_id = user_id
+        self.recipe_id = recipe_id
+
+    def to_dict(self):
+        return {
+            "user_id": self.user_id,
+            "recipe_id": self.recipe_id
+        }
+
