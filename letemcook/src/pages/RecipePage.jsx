@@ -65,7 +65,11 @@ function RecipePage() {
         <h3>Ingredients:</h3>
         <ul className={styles.ingredientsList}>
           {recipe.ingredients.map((ingredient, index) => (
-            <li key={index}>{ingredient}</li>
+            <li key={index}>
+              {ingredient.name} 
+              {ingredient.quantity && ` - ${ingredient.quantity}`} 
+              {ingredient.price && ` - $${ingredient.price}`}
+            </li>
           ))}
         </ul>
       </div>

@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "frontend": "npm start",
-    "backend": "cd ../backend && export FLASK_APP=app.py && flask run",
+    "backend": "cd ../backend && set FLASK_APP=app.py && flask run",
     "dev": "concurrently \"npm run frontend\" \"npm run backend\""
   },
   "eslintConfig": {
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.6.0",
+    "cross-env": "^7.0.3"
   }
 }
