@@ -14,11 +14,15 @@ body {
   }
   
   .hero-section {
+    /* Add the background image */
+    background-image: url('../../public/cattoastingexpanded.gif'); 
+
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     color: white;
     text-align: center;
