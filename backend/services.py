@@ -1,4 +1,5 @@
-# services.py
+import json
+from models import *
 
 class RecipeService:
     def __init__(self, data_file):
@@ -7,11 +8,25 @@ class RecipeService:
         self.favorites = {}  # Use a dictionary to map user_id to a list of favorite recipe IDs
 
     def load_recipes(self):
-        # Load recipes from JSON as before
         try:
             with open(self.data_file, 'r') as file:
                 recipes_data = json.load(file)
-                return [Recipe(**data) for data in recipes_data]
+                recipes = []
+                for data in recipes_data:
+                    ingredients = [Ingredient(name=item) for item in data.get("ingredients", [])]
+                    recipe = Recipe(
+                        id=data["id"],
+                        title=data["title"],
+                        image=data["image"],
+                        ingredients=ingredients,
+                        instructions=data["instructions"],
+                        estimatedPrice=data["estimatedPrice"],
+                        cookTime=data["cookTime"],
+                        additionalTips=data["additionalTips"],
+                        labels=data["labels"]
+                    )
+                    recipes.append(recipe)
+                return recipes
         except (FileNotFoundError, json.JSONDecodeError) as e:
             print(f"Error loading recipes: {e}")
             return []
@@ -25,7 +40,6 @@ class RecipeService:
                 return recipe.to_dict()
         return None
 
-    # Favorite feature methods
     def get_favorites(self, user_id):
         return self.favorites.get(user_id, [])
 

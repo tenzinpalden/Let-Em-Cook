@@ -1,5 +1,11 @@
-# models.py
-class Recipe:
+from abc import ABC, abstractmethod
+
+class RecipeInterface(ABC):
+    @abstractmethod
+    def to_dict(self):
+        pass
+
+class Recipe(RecipeInterface):
     def __init__(self, id, title, image, ingredients, instructions, estimatedPrice, cookTime, additionalTips, labels):
         self.id = id
         self.title = title
@@ -17,7 +23,7 @@ class Recipe:
             "id": self.id,
             "title": self.title,
             "image": self.image,
-            "ingredients": self.ingredients,
+            "ingredients": [ing.to_dict() for ing in self.ingredients],
             "instructions": self.instructions,
             "estimatedPrice": self.estimated_price,
             "cookTime": self.cook_time,
@@ -25,14 +31,24 @@ class Recipe:
             "labels": self.labels,
         }
 
-class Favorite:
-    def __init__(self, user_id, recipe_id):
+class Ingredient:
+    def __init__(self, name, quantity=None, price=None):
+        self.name = name
+        self.quantity = quantity
+        self.price = price
+
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "quantity": self.quantity,
+            "price": self.price
+        }
+
+class Favorite(Recipe):
+    def __init__(self, user_id):
         self.user_id = user_id
-        self.recipe_id = recipe_id
 
     def to_dict(self):
         return {
             "user_id": self.user_id,
-            "recipe_id": self.recipe_id
         }
-

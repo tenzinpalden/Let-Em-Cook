@@ -1,5 +1,4 @@
-# app.py
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from services import RecipeService
 import os
@@ -25,8 +24,6 @@ def get_recipe(recipe_id):
         return jsonify(recipe), 200
     else:
         return jsonify({"error": "Recipe not found"}), 404
-
-        # app.py
 
 @app.route('/favorites', methods=['GET'])
 def get_favorites():
