@@ -9,11 +9,16 @@ function HomePage() {
   const [filteredRecipes, setFilteredRecipes] = useState([]);
 
   useEffect(() => {
-    // Fetch recipes from the recipes.json file in the public folder
-    fetch('/recipes.json')
-      .then((response) => response.json())
-      .then((data) => setRecipes(data))
-      .catch((error) => console.error('Error fetching recipes:', error));
+    fetch(`${process.env.REACT_APP_API_URL}/recipes`)
+    .then((response) => {
+      if (!response.ok) throw new Error("Network response was not ok");
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Fetched recipes:", data); // Debugging log
+      setRecipes(data);
+    })
+    .catch((error) => console.error("Error fetching recipes:", error));
 
     // Load favorites from localStorage
     const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];

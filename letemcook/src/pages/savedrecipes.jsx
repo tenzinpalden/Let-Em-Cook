@@ -7,9 +7,14 @@ function SavedRecipes() {
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
-    // Fetch recipes data
-    fetch('/recipes.json')
-      .then((response) => response.json())
+    // Fetch recipes data from the backend API
+    fetch(`${process.env.REACT_APP_API_URL}/recipes`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
       .then((data) => setRecipes(data))
       .catch((error) => console.error('Error fetching recipes:', error));
 
@@ -51,11 +56,11 @@ function SavedRecipes() {
                 </div>
               </Link>
               <button
-              onClick={() => toggleFavorite(recipe.id)}
-              className={`favorite-button ${favorites.includes(recipe.id) ? 'favorited' : ''}`}
-            >
+                onClick={() => toggleFavorite(recipe.id)}
+                className={`favorite-button ${favorites.includes(recipe.id) ? 'favorited' : ''}`}
+              >
                 {favorites.includes(recipe.id) ? '★' : '☆'}
-            </button>
+              </button>
             </li>
           ))}
         </ul>
