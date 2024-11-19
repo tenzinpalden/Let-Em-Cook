@@ -1,48 +1,68 @@
-/* General Styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  box-sizing: border-box;
-}
-
+/* Main page container */
 .simple-contact-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Center the entire grid vertically */
   min-height: 100vh;
   background-color: #f9f9f9;
+  padding: 20px;
 }
 
+/* Title */
 .contact-title {
   font-size: 2.5em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #333;
+  text-align: center;
 }
 
+/* Grid container */
+.contact-members-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 30px; /* Space between cards */
+  justify-content: center; /* Center each row horizontally */
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Member card */
 .contact-member {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-image-container {
-  width: 150px; /* Adjust size as needed */
-  height: 150px; /* Adjust size as needed */
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%; /* Makes the image circular */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.contact-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile picture */
+.contact-image {
+  width: 150px; /* Larger picture */
+  height: 150px;
+  border-radius: 50%;
   margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
+/* Member name */
 .contact-name {
   font-size: 1.5em;
+  margin-bottom: 10px;
   color: #444;
-  margin: 10px 0;
 }
 
+/* Email link */
 .email-link {
   font-size: 1.2em;
   color: #007BFF;
