@@ -1,4 +1,6 @@
 # services.py
+from models import *
+import json
 
 class RecipeService:
     def __init__(self, data_file):
