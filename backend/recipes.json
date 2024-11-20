@@ -1,98 +1,91 @@
 [
     {
         "id": 1,
-        "title": "Easy Pasta Salad",
-        "image": "https://www.allrecipes.com/thmb/LUZ2ZXjuWFO-6c_dVuV2y_TUhUQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/14385-pasta-salad-mfs-62-2cbb356b049740e7832e4bbb899881de.jpg",
+        "title": "Pasta Primavera",
+        "image": "https://images.themodernproper.com/billowy-turkey/production/posts/PastaPrimavera_10.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1719193287&s=0104e0b241aea73e5709db128503d749",
         "ingredients": [
             {
-                "name": "Pasta",
-                "quantity": "2 cups",
-                "price": "$0.50/lb"
+                "name": "Broccoli Florets",
+                "quantity": "1 cup"
             },
             {
-                "name": "Tomatoes",
-                "quantity": "1 cup",
-                "price": "$2.50/lb"
+                "name": "Sliced Bell Peppers",
+                "quantity": "1 cup"
+            },
+            {
+                "name": "Cherry Tomatoes",
+                "quantity": "1 cup"
+            },
+            {
+                "name": "Pasta",
+                "quantity": "2 cups"
             },
             {
                 "name": "Olive Oil",
-                "quantity": "2 tbsp",
-                "price": "$10.00/lb"
+                "quantity": "2 tbsp"
             },
             {
-                "name": "Cheese",
-                "quantity": "1/2 cup",
-                "price": "$5.00/lb"
+                "name": "Garlic",
+                "quantity": "1 tsp"
             },
             {
                 "name": "Salt",
-                "quantity": "1 tsp",
-                "price": "$0.10/lb"
+                "quantity": ""
             },
             {
                 "name": "Pepper",
-                "quantity": "1/2 tsp",
-                "price": "$3.00/lb"
+                "quantity": ""
             }
         ],
         "instructions": [
             "Boil water in a large pot, adding a pinch of salt.",
             "Once the water reaches a rolling boil, add the pasta and cook for about 6 minutes or until al dente.",
             "Drain the pasta and rinse it under cold water to stop the cooking process.",
-            "In a large bowl, combine the pasta with chopped tomatoes, diced cheese, and a drizzle of olive oil.",
-            "Season with salt and pepper to taste, and toss everything together until well mixed.",
-            "Serve chilled or at room temperature and enjoy!"
+            "In a pan Saute garlic in olive oil.",
+            "Add vegetables and cook for 5 to 7 mins.",
+            "Toss cooked pasta with vegetables.",
+            "Season with salt and pepper to taste."
         ],
-        "estimatedPrice": 5,
-        "cookTime": 15,
-        "additionalTips": "Add some basil for extra flavor.",
+        "estimatedPrice": 10.00,
+        "cookTime": 30,
+        "additionalTips": "Add grated parmesan or nutritional yeast for extra flavor.",
         "labels": [
             "Vegetarian"
         ]
     },
     {
         "id": 2,
-        "title": "Budget-Friendly Stir Fry",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ba4QHI6UpD9qchErdmWBlV3h_rpq-y1d_Q&s",
+        "title": "Zucchini Noodles with Pesto",
+        "image": "https://onepotrecipes.com/wp-content/uploads/2022/04/Zucchini-Noddles-or-Zoodles-With-Pesto-Sauce-500x500.jpg",        
         "ingredients": [
             {
-                "name": "Rice",
-                "quantity": "1 cup",
-                "price": "$1.00/cup"
+                "name": "Zucchini",
+                "quantity": "3"
             },
             {
-                "name": "Vegetables",
-                "quantity": "2 cups",
-                "price": "$2.50/cup"
+                "name": "Basil Pesto",
+                "quantity": "1 cup"
             },
             {
-                "name": "Soy Sauce",
-                "quantity": "2 tbsp",
-                "price": "$3.00/lb"
+                "name": "Olive Oil",
+                "quantity": "2 tbsp"
             },
             {
-                "name": "Garlic",
-                "quantity": "2 cloves",
-                "price": "$2.50/lb"
+                "name": "Salt",
+                "quantity": ""
             },
             {
-                "name": "Chicken",
-                "quantity": "1 cup",
-                "price": "$4.50/lb"
+                "name": "Pepper",
+                "quantity": ""
             }
         ],
         "instructions": [
-            "Cook rice according to package instructions and set aside.",
-            "Heat a tablespoon of oil in a large skillet over medium-high heat.",
-            "Add minced garlic and stir for about 30 seconds until fragrant.",
-            "Add your choice of vegetables (like bell peppers, broccoli, or carrots) and stir-fry for 5-7 minutes until tender.",
-            "If using, add cooked chicken pieces and stir until heated through.",
-            "Pour soy sauce over the mixture and stir well to combine.",
-            "Serve the stir-fry over the cooked rice."
+            "Saute zucchini noodles in olive oil for 3-5 mins.",
+            "Mix with pesto."
         ],
-        "estimatedPrice": 4,
+        "estimatedPrice": 8.00,
         "cookTime": 20,
-        "additionalTips": "Try using tofu for a vegan option.",
+        "additionalTips": "Use cherry tomatoes or pine nuts for garnish.",
         "labels": [
             "Vegan (with Tofu)",
             "Gluten-Free (check soy sauce)"
@@ -100,351 +93,1558 @@
     },
     {
         "id": 3,
-        "title": "Quick Veggie Wrap",
-        "image": "https://www.bowlofdelicious.com/wp-content/uploads/2014/01/Veggie-Wraps-square.jpg",
+        "title": "Spaghetti Bolognese",
+        "image": "https://vikalinka.com/wp-content/uploads/2020/03/Spaghetti-Bolognese-13-Edit.jpg",
         "ingredients": [
             {
-                "name": "Tortilla",
-                "quantity": "1 piece",
-                "price": "$3.00/lb"
+                "name": "Spaghetti",
+                "quantity": "200g"
             },
             {
-                "name": "Lettuce",
-                "quantity": "1/2 cup",
-                "price": "$2.50/cup"
+                "name": "Ground Beef",
+                "quantity": "1/2 lb"
             },
             {
-                "name": "Tomato",
-                "quantity": "1/2 piece",
-                "price": "$2.50/lb"
+                "name": "Tomato Sauce",
+                "quantity": "1 cup"
             },
             {
-                "name": "Cheese",
-                "quantity": "1 slice",
-                "price": "$5.00/lb"
+                "name": "Chopped Onion",
+                "quantity": "1/4 cup"
             },
             {
-                "name": "Hummus",
-                "quantity": "2 tbsp",
-                "price": "$4.00/lb"
+                "name": "Garlic",
+                "quantity": "1 Clove"
+            },
+            {
+                "name": "Olive Oil",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Salt",
+                "quantity": ""
+            },
+            {
+                "name": "Pepper",
+                "quantity": ""
             }
         ],
         "instructions": [
-            "Lay the tortilla flat on a clean surface.",
-            "Spread a generous layer of hummus across the tortilla.",
-            "Add a layer of lettuce, followed by slices of tomato and cheese.",
-            "Roll the tortilla tightly, starting from one edge, to form a wrap.",
-            "Cut in half diagonally and serve immediately."
+            "Boil water in a large pot, adding a pinch of salt.",
+            "Once the water reaches a rolling boil, add the pasta and cook for about 6 minutes or until al dente.",
+            "Saute onion and garlic",
+            "Add ground beef and cook until browned.",
+            "Add tomato sauce, simmer for 10 mins.",
+            "Combine with cooked spaghetti."
         ],
-        "estimatedPrice": 3,
-        "cookTime": 10,
-        "additionalTips": "Add some avocado for a creamier texture.",
+        "estimatedPrice": 12.00,
+        "cookTime": 30,
+        "additionalTips": "Add red chili flakes for extra heat.",
         "labels": [
             "Vegetarian"
         ]
     },
     {
         "id": 4,
-        "title": "Avocado Toast",
-        "image": "https://www.eatingbirdfood.com/wp-content/uploads/2023/12/avocado-toast-hero-cropped.jpg",
+        "title": "Mac and Cheese",
+        "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F03%2F19%2F238691-Simple-Macaroni-And-Cheese-mfs_006.jpg&w=160&q=60&c=sc&poi=auto&orient=true&h=90",
         "ingredients": [
             {
-                "name": "Bread",
-                "quantity": "2 slices",
-                "price": "$3.00/lb"
+                "name": "Elbow Pasta",
+                "quantity": "2 cups"
             },
             {
-                "name": "Avocado",
-                "quantity": "1/2 piece",
-                "price": "$2.50/lb"
+                "name": "Shredded Cheese",
+                "quantity": "2 cups"
+            },
+            {
+                "name": "Milk",
+                "quantity": "1 cup"
+            },
+            {
+                "name": "Butter",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Flour",
+                "quantity": "2 tbsp"
             },
             {
                 "name": "Salt",
-                "quantity": "1/4 tsp",
-                "price": "$0.10/lb"
+                "quantity": ""
             },
             {
                 "name": "Pepper",
-                "quantity": "1/8 tsp",
-                "price": "$3.00/lb"
-            },
-            {
-                "name": "Olive Oil",
-                "quantity": "1 tsp",
-                "price": "$10.00/lb"
+                "quantity": ""
             }
         ],
         "instructions": [
-            "Toast the bread to your desired crispness.",
-            "In a small bowl, mash the avocado with a fork and season with salt and pepper.",
-            "Spread the mashed avocado generously over the toasted bread.",
-            "Drizzle with olive oil for added flavor.",
-            "Optional: Top with cherry tomatoes or a poached egg before serving."
+          "Cook pasta.",
+          "Melt butter, whisk in flour, and slowly add milk to make a roux.",
+          "Mix in cheese until melted.",
+          "Combine with cooked pasta."
         ],
-        "estimatedPrice": 2,
-        "cookTime": 5,
-        "additionalTips": "Top with cherry tomatoes or a poached egg.",
+        "estimatedPrice": 8.00,
+        "cookTime": 25,
+        "additionalTips": "Use breadcrumbs on top for a crispy finish. Bake for 5 mins if desired.",
         "labels": [
-            "Vegan"
+          "Vegetarian"
         ]
     },
     {
         "id": 5,
-        "title": "Microwave Mug Cake",
-        "image": "https://tastesbetterfromscratch.com/wp-content/uploads/2022/12/Chocolate-Mug-Cake-1.jpg",
+        "title": "Fettuccine Alfredo",
+        "image": "https://www.modernhoney.com/wp-content/uploads/2018/08/Fettuccine-Alfredo-Recipe-1.jpg",
         "ingredients": [
             {
-                "name": "Flour",
-                "quantity": "4 tbsp",
-                "price": "$2.50/lb"
+                "name": "Fettuccine",
+                "quantity": "200g"
             },
             {
-                "name": "Sugar",
-                "quantity": "2 tbsp",
-                "price": "$2.00/lb"
+                "name": "Heavy Cream",
+                "quantity": "1/2 cup"
             },
             {
-                "name": "Cocoa Powder",
-                "quantity": "1 tbsp",
-                "price": "$5.00/lb"
+                "name": "Butter",
+                "quantity": "1/4 cup"
             },
             {
-                "name": "Milk",
-                "quantity": "3 tbsp",
-                "price": "$3.50/cup"
+                "name": "Grated Parmesan Cheese",
+                "quantity": "1 cup"
             },
             {
-                "name": "Vegetable Oil",
-                "quantity": "1 tbsp",
-                "price": "$3.00/lb"
+                "name": "Garlic",
+                "quantity": "1 clove, minced"
+            },
+            {
+                "name": "Salt",
+                "quantity": ""
+            },
+            {
+                "name": "Pepper",
+                "quantity": ""
             }
         ],
         "instructions": [
-            "In a microwave-safe mug, combine flour, sugar, cocoa powder, and a pinch of salt.",
-            "Add milk and vegetable oil, mixing until smooth.",
-            "Microwave on high for 1 minute, watching closely to prevent overflow.",
-            "Allow to cool for a few minutes before enjoying directly from the mug."
+            "Cook fettuccine.",
+            "Melt butter, Saute garlic, add cream, and simmer.",
+            "Stir in parmesan.",
+            "Toss pasta with sauce."
         ],
-        "estimatedPrice": 1,
-        "cookTime": 2,
-        "additionalTips": "Add chocolate chips for extra sweetness.",
+        "estimatedPrice": 12.00,
+        "cookTime": 30,
+        "additionalTips": "Serve with parsley and a side of garlic bread.",
         "labels": [
-            "Vegetarian"
+            "Vegetarian",
+            "Pasta"
         ]
     },
     {
         "id": 6,
-        "title": "Simple Omelette",
-        "image": "https://schoolnightvegan.com/wp-content/uploads/2022/08/Vegan-Omelette1860.jpg",
+        "title": "Vegetable Stir-Fry",
+        "image": "https://natashaskitchen.com/wp-content/uploads/2020/08/Vegetable-Stir-Fry-2.jpg",
         "ingredients": [
             {
-                "name": "Eggs",
-                "quantity": "2 pieces",
-                "price": "$3.50/lb"
+                "name": "Mixed Vegetables",
+                "quantity": "2 cups (carrots, broccoli, bell peppers)"
             },
             {
-                "name": "Salt",
-                "quantity": "1/4 tsp",
-                "price": "$0.10/lb"
+                "name": "Soy Sauce",
+                "quantity": "2 tbsp"
             },
             {
-                "name": "Pepper",
-                "quantity": "1/8 tsp",
-                "price": "$3.00/lb"
+                "name": "Sesame Oil",
+                "quantity": "1 tbsp"
             },
             {
-                "name": "Butter",
-                "quantity": "1 tbsp",
-                "price": "$5.00/lb"
+                "name": "Garlic",
+                "quantity": "1 tsp"
             },
             {
-                "name": "Cheese",
-                "quantity": "1/4 cup",
-                "price": "$5.00/lb"
+                "name": "Ginger",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "Cornstarch",
+                "quantity": "1/2 tsp mixed with 2 tbsp water"
             }
         ],
         "instructions": [
-            "In a bowl, beat the eggs until well mixed, adding salt and pepper to taste.",
-            "Heat a non-stick skillet over medium heat and melt butter.",
-            "Pour the eggs into the skillet, tilting to spread them evenly.",
-            "As the edges begin to set, gently lift them with a spatula, allowing uncooked egg to flow underneath.",
-            "Once almost set, sprinkle cheese on one half and fold the omelette.",
-            "Cook for an additional minute until cheese is melted, then serve."
+            "Saute garlic and ginger in sesame oil.",
+            "Add vegetables, stir-fry for 5-7 mins.",
+            "Mix soy sauce with cornstarch, add to vegetables, and cook until thickened."
         ],
-        "estimatedPrice": 2,
-        "cookTime": 5,
-        "additionalTips": "Add veggies or ham for extra flavor.",
+        "estimatedPrice": 8.00,
+        "cookTime": 20,
+        "additionalTips": "Top with sesame seeds or scallions.",
         "labels": [
-            "Vegetarian",
-            "Gluten-Free"
+            "Vegan",
+            "Stir-Fry"
         ]
     },
     {
         "id": 7,
-        "title": "Chicken Quesadilla",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYjivxMKfupKbKpr7AFH2O1GHat2Lr54EGZg&s",
+        "title": "Beef and Broccoli Stir-Fry",
+        "image": "https://eatthegains.com/wp-content/uploads/2018/09/Beef-and-Broccoli-10-500x500.jpg",
         "ingredients": [
             {
-                "name": "Tortilla",
-                "quantity": "1 piece",
-                "price": "$3.00/lb"
+                "name": "Beef",
+                "quantity": "1/2 lb, thinly sliced"
             },
             {
-                "name": "Cheese",
-                "quantity": "1/2 cup",
-                "price": "$5.00/lb"
+                "name": "Broccoli",
+                "quantity": "2 cups"
             },
             {
-                "name": "Cooked Chicken",
-                "quantity": "1/2 cup",
-                "price": "$4.50/lb"
+                "name": "Soy Sauce",
+                "quantity": "2 tbsp"
             },
             {
-                "name": "Salsa",
-                "quantity": "2 tbsp",
-                "price": "$3.50/lb"
+                "name": "Oyster Sauce",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Cornstarch",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Water",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Vegetable Oil",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Garlic",
+                "quantity": "1 tsp"
             }
         ],
         "instructions": [
-            "Place a tortilla in a skillet over medium heat.",
-            "Spread a layer of cheese on half of the tortilla.",
-            "Add cooked chicken pieces and some salsa on top of the cheese.",
-            "Fold the tortilla over and cook for 2-3 minutes until the cheese melts.",
-            "Flip carefully and cook for another 1-2 minutes until golden brown.",
-            "Cut into wedges and serve with additional salsa on the side."
+            "Marinate beef in soy sauce and cornstarch.",
+            "Stir-fry beef until browned. Remove beef, stir-fry broccoli.",
+            "Add beef back, mix sauces, and cook until thickened."
         ],
-        "estimatedPrice": 4,
-        "cookTime": 10,
-        "additionalTips": "Serve with guacamole or sour cream.",
+        "estimatedPrice": 15.00,
+        "cookTime": 25,
+        "additionalTips": "Serve over rice or noodles.",
         "labels": [
-            "Contains Meat"
+            "Stir-Fry"
         ]
     },
     {
         "id": 8,
-        "title": "Vegetable Soup",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIQH49waX_-KXhT09Z5dF19nv292n22KbwZQ&s",
+        "title": "Chicken Stir-Fry",
+        "image": "https://www.eatingonadime.com/wp-content/uploads/2022/05/chicken-stir-fry-6-2.jpg",
         "ingredients": [
             {
-                "name": "Carrots",
-                "quantity": "1 cup",
-                "price": "$2.50/cup"
+                "name": "Chicken Breast",
+                "quantity": "1/2 lb, sliced"
             },
             {
-                "name": "Potatoes",
-                "quantity": "1 cup",
-                "price": "$1.50/cup"
+                "name": "Mixed Vegetables",
+                "quantity": "2 cups"
             },
             {
-                "name": "Celery",
-                "quantity": "1/2 cup",
-                "price": "$2.50/cup"
+                "name": "Soy Sauce",
+                "quantity": "2 tbsp"
             },
             {
-                "name": "Onion",
-                "quantity": "1/2 piece",
-                "price": "$2.00/lb"
+                "name": "Honey",
+                "quantity": "1 tbsp"
             },
             {
-                "name": "Broth",
-                "quantity": "2 cups",
-                "price": "$3.50/cup"
+                "name": "Garlic",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "Vegetable Oil",
+                "quantity": "1 tbsp"
             }
         ],
         "instructions": [
-            "Chop all vegetables into bite-sized pieces.",
-            "In a large pot, heat broth over medium heat until simmering.",
-            "Add chopped vegetables and cook for about 20-25 minutes until tender.",
-            "Season with salt and pepper to taste.",
-            "For added heartiness, consider adding beans or small pasta."
+            "Stir-fry chicken until cooked through. Remove and stir-fry vegetables.",
+            "Mix sauces, add chicken back, and cook for 2-3 mins."
         ],
-        "estimatedPrice": 3,
-        "cookTime": 30,
-        "additionalTips": "Add beans or pasta for a heartier soup.",
+        "estimatedPrice": 12.00,
+        "cookTime": 20,
+        "additionalTips": "Use low-sodium soy sauce for a healthier option.",
         "labels": [
-            "Vegan",
-            "Gluten-Free"
+            "Stir-Fry"
         ]
     },
     {
         "id": 9,
-        "title": "Fruit Smoothie",
-        "image": "https://www.acouplecooks.com/wp-content/uploads/2020/11/Chia-Seed-Smoothie-004.jpg",
+        "title": "Tofu Stir-Fry",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/190130-tofu-stir-fry-horizontal-150-1549302524.jpg?crop=0.8893333333333334xw:1xh;center,top&resize=1200:*",
         "ingredients": [
             {
-                "name": "Banana",
-                "quantity": "1 piece",
-                "price": "$0.50/lb"
+                "name": "Tofu",
+                "quantity": "1 block, cubed"
             },
             {
-                "name": "Strawberries",
-                "quantity": "1 cup",
-                "price": "$4.00/cup"
+                "name": "Vegetables",
+                "quantity": "2 cups"
             },
             {
-                "name": "Yogurt",
-                "quantity": "1/2 cup",
-                "price": "$3.50/cup"
+                "name": "Soy Sauce",
+                "quantity": "2 tbsp"
             },
             {
-                "name": "Milk",
-                "quantity": "1/2 cup",
-                "price": "$3.50/cup"
+                "name": "Sesame Oil",
+                "quantity": "1 tbsp"
             },
             {
-                "name": "Honey",
-                "quantity": "1 tbsp",
-                "price": "$7.00/lb"
+                "name": "Garlic",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "Ginger",
+                "quantity": "1 tsp"
             }
         ],
         "instructions": [
-            "In a blender, combine banana, strawberries, yogurt, milk, and honey.",
-            "Blend until smooth and creamy.",
-            "If the mixture is too thick, add more milk to reach desired consistency.",
-            "Pour into a glass and enjoy immediately."
+            "Pan-fry tofu until crispy. Remove, stir-fry garlic and vegetables.",
+            "Add tofu back with sauce, and cook until heated through."
         ],
-        "estimatedPrice": 2,
-        "cookTime": 3,
-        "additionalTips": "Add protein powder for an energy boost.",
+        "estimatedPrice": 10.00,
+        "cookTime": 25,
+        "additionalTips": "Press tofu before cooking to remove excess moisture.",
         "labels": [
             "Vegetarian",
-            "Gluten-Free"
+            "Vegan",
+            "Stir-Fry"
         ]
     },
     {
         "id": 10,
-        "title": "Grilled Cheese Sandwich",
-        "image": "https://static01.nyt.com/images/2023/02/28/multimedia/ep-air-fryer-grilled-cheese-vpmf/ep-air-fryer-grilled-cheese-vpmf-superJumbo.jpg",
+        "title": "Shrimp Stir-Fry",
+        "image": "https://healthyrecipesblogs.com/wp-content/uploads/2021/03/shrimp-stir-fry-featured-2022.jpg",
         "ingredients": [
             {
-                "name": "Bread",
-                "quantity": "2 slices",
-                "price": "$3.00/lb"
+                "name": "Shrimp",
+                "quantity": "1/2 lb, peeled"
             },
             {
-                "name": "Cheese",
-                "quantity": "2 slices",
-                "price": "$5.00/lb"
+                "name": "Vegetables",
+                "quantity": "2 cups"
             },
             {
-                "name": "Butter",
-                "quantity": "1 tbsp",
-                "price": "$5.00/lb"
+                "name": "Soy Sauce",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Chili Sauce",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "Vegetable Oil",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Garlic",
+                "quantity": "1 tsp"
             }
         ],
         "instructions": [
-            "Butter one side of each slice of bread.",
-            "Place one slice butter-side down in a skillet over medium heat.",
-            "Add cheese on top and cover with the second slice, butter-side up.",
-            "Cook for about 2-4 minutes until golden brown, then flip carefully.",
-            "Cook the other side until cheese is melted and golden brown.",
-            "Cut in half and serve hot."
+            "Saute shrimp until pink. Remove and stir-fry vegetables.",
+            "Add shrimp back with sauces, and cook for 2-3 mins."
         ],
-        "estimatedPrice": 2,
-        "cookTime": 5,
-        "additionalTips": "Add tomato or ham for extra flavor.",
+        "estimatedPrice": 15.00,
+        "cookTime": 20,
+        "additionalTips": "Add lime juice for a zesty flavor.",
         "labels": [
-            "Vegetarian"
+            "Stir-Fry"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Veggie Wrap",
+        "image": "https://www.bowlofdelicious.com/wp-content/uploads/2014/01/Veggie-Wraps-square-500x500.jpg",
+        "ingredients": [
+            {
+                "name": "Large Tortilla",
+                "quantity": "1"
+            },
+            {
+                "name": "Spinach",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Shredded Carrots",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Sliced Cucumber",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Avocado",
+                "quantity": "1/4, sliced"
+            },
+            {
+                "name": "Vegan Mayo",
+                "quantity": "1 tbsp"
+            }
+        ],
+        "instructions": [
+            "Spread mayo on the tortilla, layer veggies, roll tightly, and slice in half."
+        ],
+        "estimatedPrice": 6.00,
+        "cookTime": 10,
+        "additionalTips": "Use whole-grain tortillas for added fiber.",
+        "labels": [
+            "Vegan",
+            "Wrap"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Hummus and Veggie Wrap",
+        "image": "https://www.healthyseasonalrecipes.com/wp-content/uploads/2022/08/easy-spinach-wraps-with-hummus-and-veggies-sq-0809.jpg",
+        "ingredients": [
+            {
+                "name": "Large Tortilla",
+                "quantity": "1"
+            },
+            {
+                "name": "Hummus",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Lettuce",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Sliced Bell Peppers",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Shredded Zucchini",
+                "quantity": "1/4 cup"
+            }
+        ],
+        "instructions": [
+            "Spread hummus on the tortilla, layer veggies, roll tightly, and serve."
+        ],
+        "estimatedPrice": 5.00,
+        "cookTime": 10,
+        "additionalTips": "Add a sprinkle of lemon juice for freshness.",
+        "labels": [
+            "Vegan",
+            "Wrap"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Chicken Wrap",
+        "image": "https://easyweeknightrecipes.com/wp-content/uploads/2023/12/buffalo-chicken-wraps-1.jpg",
+        "ingredients": [
+            {
+                "name": "Large Tortilla",
+                "quantity": "1"
+            },
+            {
+                "name": "Cooked Chicken",
+                "quantity": "1/2 cup, shredded"
+            },
+            {
+                "name": "Lettuce",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Ranch Dressing",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Shredded Cheese",
+                "quantity": "1/4 cup"
+            }
+        ],
+        "instructions": [
+            "Spread ranch dressing on the tortilla, add chicken, cheese, and lettuce. Roll tightly and enjoy."
+        ],
+        "estimatedPrice": 8.00,
+        "cookTime": 15,
+        "additionalTips": "Warm the wrap for 30 seconds in a skillet or microwave for a softer texture.",
+        "labels": [
+            "Wrap"
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Turkey Wrap",
+        "image": "https://anexpressionoffood.com/wp-content/uploads/2024/05/turkey-bacon-wrap-featured-image.jpg",
+        "ingredients": [
+            {
+                "name": "Large Tortilla",
+                "quantity": "1"
+            },
+            {
+                "name": "Turkey",
+                "quantity": "3 slices"
+            },
+            {
+                "name": "Lettuce",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Sliced Tomatoes",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Mustard",
+                "quantity": "1 tbsp"
+            }
+        ],
+        "instructions": [
+            "Spread mustard on the tortilla, layer turkey and veggies, roll tightly, and serve."
+        ],
+        "estimatedPrice": 7.00,
+        "cookTime": 10,
+        "additionalTips": "Use flavored tortillas like spinach or tomato basil for variety.",
+        "labels": [
+            "Wrap"
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Falafel Wrap",
+        "image": "https://www.wearesovegan.com/wp-content/uploads/2019/08/howtomakeveganfalafel-h1.jpg",
+        "ingredients": [
+            {
+                "name": "Large Tortilla",
+                "quantity": "1"
+            },
+            {
+                "name": "Falafel Balls",
+                "quantity": "3, pre-made or frozen"
+            },
+            {
+                "name": "Lettuce",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Tahini Sauce",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Sliced Cucumbers",
+                "quantity": "1/4 cup"
+            }
+        ],
+        "instructions": [
+            "Warm falafel, layer with veggies on the tortilla, drizzle tahini sauce, roll tightly, and serve."
+        ],
+        "estimatedPrice": 8.00,
+        "cookTime": 20,
+        "additionalTips": "Serve with a side of tzatziki or pickled vegetables.",
+        "labels": [
+            "Vegetarian",
+            "Vegan",
+            "Wrap"
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Mug Cake",
+        "image": "https://tastesbetterfromscratch.com/wp-content/uploads/2022/12/Chocolate-Mug-Cake-1.jpg",
+        "ingredients": [
+            {
+                "name": "All-Purpose Flour",
+                "quantity": "4 tbsp"
+            },
+            {
+                "name": "Sugar",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Baking Powder",
+                "quantity": "1/4 tsp"
+            },
+            {
+                "name": "Milk",
+                "quantity": "3 tbsp"
+            },
+            {
+                "name": "Vegetable Oil",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Cocoa Powder",
+                "quantity": "1 tbsp (optional)"
+            }
+        ],
+        "instructions": [
+            "Mix ingredients in a microwave-safe mug. Microwave for 1-2 mins."
+        ],
+        "estimatedPrice": 4.00,
+        "cookTime": 5,
+        "additionalTips": "Add chocolate chips or a dollop of whipped cream on top.",
+        "labels": [
+            "Vegetarian",
+            "Dessert"
+        ]
+    },
+    {
+        "id": 17,
+        "title": "Flourless Chocolate Cake",
+        "image": "https://simply-delicious-food.com/wp-content/uploads/2019/04/flourless-chocolate-cake-1.jpg",
+        "ingredients": [
+            {
+                "name": "Dark Chocolate Chips",
+                "quantity": "1 cup"
+            },
+            {
+                "name": "Butter",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Sugar",
+                "quantity": "3/4 cup"
+            },
+            {
+                "name": "Eggs",
+                "quantity": "3"
+            },
+            {
+                "name": "Cocoa Powder",
+                "quantity": "1/2 cup"
+            }
+        ],
+        "instructions": [
+            "Melt chocolate and butter. Mix in sugar and eggs. Fold in cocoa powder. Bake at 350°F (175°C) for 25 mins."
+        ],
+        "estimatedPrice": 10.00,
+        "cookTime": 30,
+        "additionalTips": "Dust with powdered sugar or serve with fresh berries.",
+        "labels": [
+            "Gluten-Free",
+            "Dessert"
+        ]
+    },
+    {
+        "id": 18,
+        "title": "Chia Pudding",
+        "image": "https://www.eatingbirdfood.com/wp-content/uploads/2023/12/chia-pudding-angled-500x500.jpg",
+        "ingredients": [
+            {
+                "name": "Chia Seeds",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Almond Milk",
+                "quantity": "1 cup"
+            },
+            {
+                "name": "Maple Syrup",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Vanilla Extract",
+                "quantity": "1/2 tsp"
+            }
+        ],
+        "instructions": [
+            "Mix all ingredients in a bowl. Refrigerate for 2-3 hours or overnight until set."
+        ],
+        "estimatedPrice": 6.00,
+        "cookTime": 10,
+        "additionalTips": "Top with fresh fruits, nuts, or granola for added texture.",
+        "labels": [
+            "Vegan",
+            "Gluten-Free",
+            "Dessert"
+        ]
+    },
+    {
+        "id": 19,
+        "title": "Fruit Salad",
+        "image": "https://images.themodernproper.com/billowy-turkey/production/posts/2022/FruitSalad_Shot4_20.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1654019861&s=87525c9421fdbec36ca9a3da465dc8cc",
+        "ingredients": [
+            {
+                "name": "Mixed Fruits",
+                "quantity": "1 cup (berries, apple slices, orange segments)"
+            },
+            {
+                "name": "Honey",
+                "quantity": "1 tbsp (optional)"
+            },
+            {
+                "name": "Lemon Juice",
+                "quantity": "1 tsp"
+            }
+        ],
+        "instructions": [
+            "Combine all fruits in a bowl, drizzle with honey and lemon juice, and mix gently."
+        ],
+        "estimatedPrice": 5.00,
+        "cookTime": 10,
+        "additionalTips": "Use seasonal fruits for the freshest flavor.",
+        "labels": [
+            "Vegan",
+            "Gluten-Free",
+            "Dessert"
+        ]
+    },
+    {
+        "id": 20,
+        "title": "Fruit Smoothie",
+        "image": "https://tatyanaseverydayfood.com/wp-content/uploads/2015/01/Fruit-Smoothie.jpg",
+        "ingredients": [
+            {
+                "name": "Banana",
+                "quantity": "1"
+            },
+            {
+                "name": "Orange Juice",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Frozen Mango Chunks",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Frozen Pineapple Chunks",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Almond Milk",
+                "quantity": "1/2 cup"
+            }
+        ],
+        "instructions": [
+            "Blend all ingredients until smooth. Serve immediately."
+        ],
+        "estimatedPrice": 5.00,
+        "cookTime": 5,
+        "additionalTips": "Add a handful of spinach for extra nutrients.",
+        "labels": [
+            "Vegan",
+            "Gluten-Free",
+            "Beverage"
+        ]
+    },
+    {
+        "id": 21,
+        "title": "Green Smoothie",
+        "image": "https://www.themediterraneandish.com/wp-content/uploads/2023/07/Mint-Green-Smoothie-WEB-9.jpg",
+        "ingredients": [
+            {
+                "name": "Spinach",
+                "quantity": "1 cup"
+            },
+            {
+                "name": "Almond Milk",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Frozen Banana Slices",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Frozen Pineapple",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Chia Seeds",
+                "quantity": "1 tsp"
+            }
+        ],
+        "instructions": [
+            "Blend all ingredients until smooth. Serve immediately."
+        ],
+        "estimatedPrice": 5.00,
+        "cookTime": 5,
+        "additionalTips": "Use coconut water instead of almond milk for a lighter flavor.",
+        "labels": [
+            "Vegan",
+            "Gluten-Free",
+            "Beverage"
+        ]
+    },
+    {
+        "id": 22,
+        "title": "Protein Smoothie",
+        "image": "https://joyfoodsunshine.com/wp-content/uploads/2022/08/protein-smoothie-recipe-7.jpg",
+        "ingredients": [
+            {
+                "name": "Vanilla Protein Powder",
+                "quantity": "1 scoop"
+            },
+            {
+                "name": "Greek Yogurt",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Almond Milk",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Frozen Banana Slices",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Peanut Butter",
+                "quantity": "1 tbsp"
+            }
+        ],
+        "instructions": [
+            "Blend all ingredients until smooth. Serve immediately."
+        ],
+        "estimatedPrice": 6.00,
+        "cookTime": 5,
+        "additionalTips": "Add 1/4 cup oats for extra fiber and thickness.",
+        "labels": [
+            "Vegetarian",
+            "Gluten-Free",
+            "Beverage"
+        ]
+    },
+    {
+        "id": 23,
+        "title": "Berry Smoothie",
+        "image": "https://www.spendwithpennies.com/wp-content/uploads/2018/12/SpendWithPennies-Mixed-Berry-Smoothie-24.jpg",
+        "ingredients": [
+            {
+                "name": "Mixed Berries",
+                "quantity": "1 cup (strawberries, blueberries, raspberries)"
+            },
+            {
+                "name": "Almond Milk",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Frozen Banana Slices",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Honey",
+                "quantity": "1 tsp (optional)"
+            }
+        ],
+        "instructions": [
+            "Blend all ingredients until smooth. Serve immediately."
+        ],
+        "estimatedPrice": 5.00,
+        "cookTime": 5,
+        "additionalTips": "Add a pinch of cinnamon or nutmeg for warmth and depth.",
+        "labels": [
+            "Vegan",
+            "Gluten-Free",
+            "Beverage"
+        ]
+    },
+    {
+        "id": 24,
+        "title": "Tropical Smoothie",
+        "image": "https://flavorthemoments.com/wp-content/uploads/2022/02/tropical-smoothie-recipe-1.jpg",
+        "ingredients": [
+            {
+                "name": "Coconut Milk",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Orange Juice",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Frozen Pineapple Chunks",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Frozen Mango Chunks",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Turmeric Powder",
+                "quantity": "1/4 tsp (optional)"
+            }
+        ],
+        "instructions": [
+            "Blend all ingredients until smooth. Serve immediately."
+        ],
+        "estimatedPrice": 5.00,
+        "cookTime": 5,
+        "additionalTips": "Garnish with shredded coconut or a slice of fresh pineapple.",
+        "labels": [
+            "Vegan",
+            "Gluten-Free",
+            "Beverage"
+        ]
+    },
+    {
+        "id": 25,
+        "title": "Fried Rice",
+        "image": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2024-04-fried-rice%2Ffried-rice-060_1",
+        "ingredients": [
+            {
+                "name": "Cooked Rice",
+                "quantity": ""
+            },
+            {
+                "name": "Eggs",
+                "quantity": ""
+            },
+            {
+                "name": "Soy Sauce",
+                "quantity": ""
+            },
+            {
+                "name": "Garlic",
+                "quantity": ""
+            },
+            {
+                "name": "Carrots",
+                "quantity": ""
+            },
+            {
+                "name": "Peas",
+                "quantity": ""
+            },
+            {
+                "name": "Optional Protein",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Stir-fry garlic and veggies, push to the side, scramble eggs, mix everything with soy sauce."
+        ],
+        "estimatedPrice": 5.00,
+        "cookTime": 20,
+        "additionalTips": "Use day-old rice for the best texture.",
+        "labels": [
+            "Vegetarian",
+            "Rice"
+        ]
+    },
+    {
+        "id": 26,
+        "title": "Kimchi Fried Rice",
+        "image": "https://www.recipetineats.com/uploads/2021/03/Kimchi-Fried-Rice-Skillet.jpg",
+        "ingredients": [
+            {
+                "name": "Cooked Rice",
+                "quantity": ""
+            },
+            {
+                "name": "Kimchi",
+                "quantity": ""
+            },
+            {
+                "name": "Soy Sauce",
+                "quantity": ""
+            },
+            {
+                "name": "Sesame Oil",
+                "quantity": ""
+            },
+            {
+                "name": "Gochujang",
+                "quantity": ""
+            },
+            {
+                "name": "Fried Egg",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Stir-fry kimchi, add rice and gochujang, mix, top with a fried egg, and drizzle with sesame oil."
+        ],
+        "estimatedPrice": 8.00,
+        "cookTime": 20,
+        "additionalTips": "Add leftover meat for more flavor.",
+        "labels": [
+            "Vegetarian",
+            "Rice"
+        ]
+    },
+    {
+        "id": 27,
+        "title": "Egg Rice (Tamago Gohan)",
+        "image": "https://foodmymuse.com/wp-content/uploads/2024/03/tamago-koke-gohan-scaled.jpg",
+        "ingredients": [
+            {
+                "name": "Warm Rice",
+                "quantity": ""
+            },
+            {
+                "name": "Fresh Egg",
+                "quantity": ""
+            },
+            {
+                "name": "Soy Sauce",
+                "quantity": ""
+            },
+            {
+                "name": "Green Onions",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Crack the egg over warm rice, stir until creamy, and season with soy sauce and green onions."
+        ],
+        "estimatedPrice": 3.00,
+        "cookTime": 5,
+        "additionalTips": "Use pasteurized eggs for safety.",
+        "labels": [
+            "Vegetarian",
+            "Rice"
+        ]
+    },
+    {
+        "id": 28,
+        "title": "Coconut Rice",
+        "image": "https://www.inspiredtaste.net/wp-content/uploads/2022/12/How-to-Make-Coconut-Rice-1-1200.jpg",
+        "ingredients": [
+            {
+                "name": "Rice",
+                "quantity": ""
+            },
+            {
+                "name": "Coconut Milk",
+                "quantity": ""
+            },
+            {
+                "name": "Water",
+                "quantity": ""
+            },
+            {
+                "name": "Salt",
+                "quantity": ""
+            },
+            {
+                "name": "Sugar",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Cook rice with coconut milk, water, a pinch of salt, and sugar until fluffy."
+        ],
+        "estimatedPrice": 6.00,
+        "cookTime": 25,
+        "additionalTips": "Serve with curries or grilled proteins.",
+        "labels": [
+            "Vegetarian",
+            "Vegan",
+            "Rice"
+        ]
+    },
+    {
+        "id": 29,
+        "title": "Bibimbap",
+        "image": "https://www.recipetineats.com/tachyon/2019/05/Bibimbap_3.jpg?resize=500%2C500",
+        "ingredients": [
+            {
+                "name": "Rice",
+                "quantity": ""
+            },
+            {
+                "name": "Assorted Veggies",
+                "quantity": ""
+            },
+            {
+                "name": "Gochujang",
+                "quantity": ""
+            },
+            {
+                "name": "Fried Egg",
+                "quantity": ""
+            },
+            {
+                "name": "Sesame Oil",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Saute veggies, assemble rice in a bowl, top with veggies and egg, drizzle with sesame oil, and mix with gochujang."
+        ],
+        "estimatedPrice": 8.00,
+        "cookTime": 25,
+        "additionalTips": "Use leftovers for quick assembly.",
+        "labels": [
+            "Rice"
+        ]
+    },
+    {
+        "id": 30,
+        "title": "Garlic Soy Sauce Noodles",
+        "image": "https://www.allrecipes.com/thmb/K0rliBG9KK5j3TCNxZgF5XoAY-s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/270770-garlic-noodles-ddmfs-4x3-0189-95ad30c68efd42e592a70ec82d24f0b9.jpg",
+        "ingredients": [
+            {
+                "name": "Noodles",
+                "quantity": ""
+            },
+            {
+                "name": "Garlic",
+                "quantity": ""
+            },
+            {
+                "name": "Soy Sauce",
+                "quantity": ""
+            },
+            {
+                "name": "Sesame Oil",
+                "quantity": ""
+            },
+            {
+                "name": "Green Onions",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Cook noodles, stir-fry garlic in sesame oil, toss noodles with soy sauce and garlic."
+        ],
+        "estimatedPrice": 4.00,
+        "cookTime": 15,
+        "additionalTips": "Add chili flakes for spice.",
+        "labels": [
+            "Vegetarian",
+            "Noodles"
+        ]
+    },
+    {
+        "id": 31,
+        "title": "Ramen Stir-Fry",
+        "image": "https://bellyfull.net/wp-content/uploads/2020/04/Beef-Broccoli-Stir-Fry-blog-3.jpg",
+        "ingredients": [
+            {
+                "name": "Instant Ramen",
+                "quantity": ""
+            },
+            {
+                "name": "Soy Sauce",
+                "quantity": ""
+            },
+            {
+                "name": "Broccoli",
+                "quantity": ""
+            },
+            {
+                "name": "Bell Peppers",
+                "quantity": ""
+            },
+            {
+                "name": "Sesame Oil",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Cook ramen, stir-fry veggies, toss noodles with soy sauce and sesame oil."
+        ],
+        "estimatedPrice": 5.00,
+        "cookTime": 15,
+        "additionalTips": "Skip seasoning packet for a healthier dish.",
+        "labels": [
+            "Noodles"
+        ]
+    },
+    {
+        "id": 32,
+        "title": "Peanut Butter Noodles",
+        "image": "https://i1.wp.com/thetwincookingproject.net/wp-content/uploads/2020/03/10-Minute-Peanut-Rice-Noodles-6-scaled.jpg?fit=1707%2C2560&ssl=1",
+        "ingredients": [
+            {
+                "name": "Noodles",
+                "quantity": ""
+            },
+            {
+                "name": "Peanut Butter",
+                "quantity": ""
+            },
+            {
+                "name": "Soy Sauce",
+                "quantity": ""
+            },
+            {
+                "name": "Sesame Oil",
+                "quantity": ""
+            },
+            {
+                "name": "Garlic",
+                "quantity": ""
+            },
+            {
+                "name": "Chili Sauce",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Mix peanut butter, soy sauce, sesame oil, and garlic, toss cooked noodles with the sauce."
+        ],
+        "estimatedPrice": 4.00,
+        "cookTime": 10,
+        "additionalTips": "Add shredded carrots or cucumbers for crunch.",
+        "labels": [
+            "Vegetarian",
+            "Noodles"
+        ]
+    },
+    {
+        "id": 33,
+        "title": "Pad Thai (Simplified)",
+        "image": "https://fullofplants.com/wp-content/uploads/2022/03/easy-vegan-pad-thai-noodle-dish-with-bean-sprouts-thumb.jpg",
+        "ingredients": [
+            {
+                "name": "Rice Noodles",
+                "quantity": ""
+            },
+            {
+                "name": "Scrambled Egg",
+                "quantity": ""
+            },
+            {
+                "name": "Soy Sauce",
+                "quantity": ""
+            },
+            {
+                "name": "Lime Juice",
+                "quantity": ""
+            },
+            {
+                "name": "Peanuts",
+                "quantity": ""
+            },
+            {
+                "name": "Green Onions",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Cook noodles, stir-fry with egg, toss with soy sauce and lime juice, garnish with peanuts and green onions."
+        ],
+        "estimatedPrice": 8.00,
+        "cookTime": 20,
+        "additionalTips": "Add a splash of fish sauce for authenticity.",
+        "labels": [
+            "Noodles"
+        ]
+    },
+    {
+        "id": 34,
+        "title": "Cold Sesame Noodles",
+        "image": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-02-Sesame-Noodles%2FIMG_7199",
+        "ingredients": [
+            {
+                "name": "Noodles",
+                "quantity": ""
+            },
+            {
+                "name": "Sesame Oil",
+                "quantity": ""
+            },
+            {
+                "name": "Soy Sauce",
+                "quantity": ""
+            },
+            {
+                "name": "Vinegar",
+                "quantity": ""
+            },
+            {
+                "name": "Sesame Seeds",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Cook noodles, toss with sesame oil, soy sauce, and vinegar, chill, and sprinkle sesame seeds on top."
+        ],
+        "estimatedPrice": 5.00,
+        "cookTime": 10,
+        "additionalTips": "Serve with cucumbers for a refreshing touch.",
+        "labels": [
+            "Vegan",
+            "Noodles"
+        ]
+    },
+    {
+        "id": 35,
+        "title": "Taco Salad",
+        "image": "https://assets.epicurious.com/photos/59779886c832582d52fd0090/16:9/w_2000,h_1125,c_limit/taco-salad-avocado-lime-dressing-072517.jpg",
+        "ingredients": [
+            {
+                "name": "Lettuce",
+                "quantity": ""
+            },
+            {
+                "name": "Black Beans",
+                "quantity": ""
+            },
+            {
+                "name": "Corn",
+                "quantity": ""
+            },
+            {
+                "name": "Cherry Tomatoes",
+                "quantity": ""
+            },
+            {
+                "name": "Avocado",
+                "quantity": ""
+            },
+            {
+                "name": "Cheese",
+                "quantity": ""
+            },
+            {
+                "name": "Tortilla Chips",
+                "quantity": ""
+            },
+            {
+                "name": "Salsa",
+                "quantity": ""
+            },
+            {
+                "name": "Sour Cream",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Toss lettuce, beans, corn, and tomatoes. Top with avocado, cheese, chips, and drizzle with salsa and sour cream."
+        ],
+        "estimatedPrice": 7.00,
+        "cookTime": 15,
+        "additionalTips": "Use ground beef or chicken for a non-veg version.",
+        "labels": [
+            "Vegetarian",
+            "Salad"
+        ]
+    },
+    {
+        "id": 36,
+        "title": "Greek Salad",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/greek-salad-index-642f292397bbf.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*",
+        "ingredients": [
+            {
+                "name": "Cucumbers",
+                "quantity": ""
+            },
+            {
+                "name": "Tomatoes",
+                "quantity": ""
+            },
+            {
+                "name": "Red Onion",
+                "quantity": ""
+            },
+            {
+                "name": "Olives",
+                "quantity": ""
+            },
+            {
+                "name": "Feta Cheese",
+                "quantity": ""
+            },
+            {
+                "name": "Olive Oil",
+                "quantity": ""
+            },
+            {
+                "name": "Lemon Juice",
+                "quantity": ""
+            },
+            {
+                "name": "Oregano",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Combine chopped cucumbers, tomatoes, onions, and olives. Top with feta and drizzle with olive oil, lemon juice, and oregano."
+        ],
+        "estimatedPrice": 6.00,
+        "cookTime": 10,
+        "additionalTips": "Serve with pita bread for a complete meal.",
+        "labels": [
+            "Vegetarian",
+            "Vegan",
+            "Salad"
+        ]
+    },
+    {
+        "id": 37,
+        "title": "Caesar Salad",
+        "image": "https://feelgoodfoodie.net/wp-content/uploads/2020/04/Caesar-Salad-TIMG.jpg",
+        "ingredients": [
+            {
+                "name": "Romaine Lettuce",
+                "quantity": ""
+            },
+            {
+                "name": "Croutons",
+                "quantity": ""
+            },
+            {
+                "name": "Parmesan Cheese",
+                "quantity": ""
+            },
+            {
+                "name": "Caesar Dressing",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Toss lettuce with croutons, parmesan, and dressing."
+        ],
+        "estimatedPrice": 6.00,
+        "cookTime": 10,
+        "additionalTips": "Add grilled chicken for extra protein.",
+        "labels": [
+            "Vegetarian",
+            "Salad"
+        ]
+    },
+    {
+        "id": 38,
+        "title": "Grain Bowl",
+        "image": "https://www.foodandwine.com/thmb/BGtLheBPk4IaIfPHJNw6Qt4a8VU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/How-to-Build-a-Grain-Bowl-FT-BLOG0423-d0afa56da37a4769b7066c5e01c7b6bd.jpg",
+        "ingredients": [
+            {
+                "name": "Quinoa or Brown Rice",
+                "quantity": ""
+            },
+            {
+                "name": "Chickpeas",
+                "quantity": ""
+            },
+            {
+                "name": "Roasted Veggies",
+                "quantity": "(carrots, sweet potatoes)"
+            },
+            {
+                "name": "Avocado",
+                "quantity": ""
+            },
+            {
+                "name": "Tahini Dressing",
+                "quantity": ""
+            }
+        ],
+        "instructions": [
+            "Layer grains, roasted veggies, and chickpeas in a bowl. Top with avocado and drizzle with tahini dressing."
+        ],
+        "estimatedPrice": 7.00,
+        "cookTime": 20,
+        "additionalTips": "Use any leftover grains for a quick base.",
+        "labels": [
+            "Vegan",
+            "Salad"
+        ]
+    },
+    {
+        "id": 39,
+        "title": "Sweet and Sour Chicken",
+        "image": "https://www.swankyrecipes.com/wp-content/uploads/2022/05/Best-Sweet-and-Sour-Chicken.jpg",
+        "ingredients": [
+            {
+                "name": "Chicken Breasts",
+                "quantity": "2, cubed"
+            },
+            {
+                "name": "Bell Pepper",
+                "quantity": "1, diced"
+            },
+            {
+                "name": "Pineapple Chunks",
+                "quantity": "1 cup"
+            },
+            {
+                "name": "Small Onion",
+                "quantity": "1, diced"
+            },
+            {
+                "name": "Soy Sauce",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "White Vinegar",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Ketchup",
+                "quantity": "3 tbsp"
+            },
+            {
+                "name": "Sugar",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Cornstarch",
+                "quantity": "1 tsp (mixed with 2 tbsp water)"
+            },
+            {
+                "name": "Garlic",
+                "quantity": "2 cloves, minced"
+            },
+            {
+                "name": "Vegetable Oil",
+                "quantity": "2 tbsp"
+            }
+        ],
+        "instructions": [
+            "Stir-fry chicken in 1 tbsp oil until browned and cooked through. Remove and set aside.",
+            "In the same pan, add 1 tbsp oil, garlic, bell pepper, onion, and pineapple, cooking until softened.",
+            "In a bowl, mix soy sauce, vinegar, ketchup, sugar, and cornstarch slurry.",
+            "Add sauce to the pan with chicken, stirring until thickened."
+        ],
+        "estimatedPrice": 10.00,
+        "cookTime": 25,
+        "additionalTips": "Serve over rice or noodles. Use pre-chopped veggies for convenience.",
+        "labels": [
+            "Other"
+        ]
+    },
+    {
+        "id": 40,
+        "title": "Veggie Omelette",
+        "image": "https://www.liveeatlearn.com/wp-content/uploads/2020/12/vegetarian-denver-omelette-vert.jpg",
+        "ingredients": [
+            {
+                "name": "Large Eggs",
+                "quantity": "3"
+            },
+            {
+                "name": "Milk",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Chopped Spinach",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "Diced Bell Peppers",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Diced Tomatoes",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Shredded Cheese",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "Salt",
+                "quantity": ""
+            },
+            {
+                "name": "Pepper",
+                "quantity": ""
+            },
+            {
+                "name": "Butter",
+                "quantity": "1 tbsp"
+            }
+        ],
+        "instructions": [
+            "Whisk eggs with milk, salt, and pepper.",
+            "Heat butter in a skillet over medium heat. Add spinach, bell peppers, and tomatoes, cooking for 2-3 minutes.",
+            "Pour in eggs, tilting the pan to spread evenly. Add cheese on one side, fold the omelette in half, and cook until set."
+        ],
+        "estimatedPrice": 4.00,
+        "cookTime": 10,
+        "additionalTips": "Use your favorite vegetables for variety. Pair with toast for a complete breakfast.",
+        "labels": [
+            "Other"
         ]
     }
 ]
