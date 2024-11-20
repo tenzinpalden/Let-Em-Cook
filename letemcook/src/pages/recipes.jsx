@@ -53,7 +53,16 @@ function Recipes() {
           <option value="Vegan">Vegan</option>
           <option value="Vegetarian">Vegetarian</option>
           <option value="Gluten-Free">Gluten-Free</option>
-          <option value="Contains Meat">Contains Meat</option>
+
+          <option value="Pasta">Pasta</option>
+          <option value="Stir-Fry">Stir-Fry</option>
+          <option value="Wrap">Wrap</option>
+          <option value="Dessert">Dessert</option>
+          <option value="Smoothie">Smoothie</option>
+          <option value="Rice">Rice</option>
+          <option value="Noodle">Noodle</option>
+          <option value="Salad">Salad</option>
+          <option value="Other">Other</option>
         </select>
       </div>
 
@@ -64,8 +73,8 @@ function Recipes() {
               <img src={recipe.image} alt={recipe.title} className="recipe-image" />
               <div className="recipe-info">
                 <h2>{recipe.title}</h2>
-                <p>Estimated Price: ${recipe.estimatedPrice}</p>
-                <p>Cook Time: {recipe.cookTime} minutes</p>
+                <p>Estimated Price: ${recipe.estimatedPrice}.00</p>
+                <p>Total Time: {recipe.cookTime} minutes</p>
               </div>
             </Link>
             <button
