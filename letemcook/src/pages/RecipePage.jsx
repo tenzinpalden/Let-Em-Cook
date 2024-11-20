@@ -58,17 +58,16 @@ function RecipePage() {
       <div className={styles.recipeImageContainer}>
         <img src={recipe.image} alt={recipe.title} className={styles.recipeImage} />
       </div>
-      <p><strong>Estimated Price:</strong> ${recipe.estimatedPrice}</p>
-      <p><strong>Cook Time:</strong> {recipe.cookTime} minutes</p>
+      <p><strong>Estimated Price:</strong> ${recipe.estimatedPrice}.00</p>
+      <p><strong>Total Time:</strong> {recipe.cookTime} minutes</p>
 
       <div className={styles.ingredientsContainer}>
         <h3>Ingredients:</h3>
         <ul className={styles.ingredientsList}>
           {recipe.ingredients.map((ingredient, index) => (
             <li key={index}>
+              {ingredient.quantity && `${ingredient.quantity} of `} 
               {ingredient.name} 
-              {ingredient.quantity && ` - ${ingredient.quantity}`} 
-              {ingredient.price && ` - $${ingredient.price}`}
             </li>
           ))}
         </ul>

@@ -100,8 +100,8 @@ function HomePage() {
                 </div>
                 <h3>{recipe.title}</h3>
                 <div className="recipe-details">
-                  <p>Estimated Price: ${recipe.estimatedPrice}</p>
-                  <p>Cook Time: {recipe.cookTime} minutes</p>
+                  <p>Estimated Price: ${recipe.estimatedPrice}.00</p>
+                  <p>Total Time: {recipe.cookTime} minutes</p>
                 </div>
               </Link>
               <button

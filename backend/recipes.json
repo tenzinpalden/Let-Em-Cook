@@ -48,9 +48,10 @@
         ],
         "estimatedPrice": 10.00,
         "cookTime": 30,
-        "additionalTips": "Add grated parmesan or nutritional yeast for extra flavor.",
+        "additionalTips": "Add grated parmesan for extra flavor.",
         "labels": [
-            "Vegetarian"
+            "Vegetarian",
+            "Pasta"
         ]
     },
     {
@@ -87,8 +88,8 @@
         "cookTime": 20,
         "additionalTips": "Use cherry tomatoes or pine nuts for garnish.",
         "labels": [
-            "Vegan (with Tofu)",
-            "Gluten-Free (check soy sauce)"
+            "Vegan",
+            "Pasta"
         ]
     },
     {
@@ -141,7 +142,7 @@
         "cookTime": 30,
         "additionalTips": "Add red chili flakes for extra heat.",
         "labels": [
-            "Vegetarian"
+            "Pasta"
         ]
     },
     {
@@ -188,7 +189,8 @@
         "cookTime": 25,
         "additionalTips": "Use breadcrumbs on top for a crispy finish. Bake for 5 mins if desired.",
         "labels": [
-          "Vegetarian"
+          "Vegetarian",
+            "Pasta"
         ]
     },
     {
@@ -682,7 +684,6 @@
         "cookTime": 5,
         "additionalTips": "Add chocolate chips or a dollop of whipped cream on top.",
         "labels": [
-            "Vegetarian",
             "Dessert"
         ]
     },
@@ -822,7 +823,7 @@
         "labels": [
             "Vegan",
             "Gluten-Free",
-            "Beverage"
+            "Smoothie"
         ]
     },
     {
@@ -860,7 +861,7 @@
         "labels": [
             "Vegan",
             "Gluten-Free",
-            "Beverage"
+            "Smoothie"
         ]
     },
     {
@@ -898,7 +899,7 @@
         "labels": [
             "Vegetarian",
             "Gluten-Free",
-            "Beverage"
+            "Smoothie"
         ]
     },
     {
@@ -932,7 +933,7 @@
         "labels": [
             "Vegan",
             "Gluten-Free",
-            "Beverage"
+            "Smoothie"
         ]
     },
     {
@@ -970,7 +971,7 @@
         "labels": [
             "Vegan",
             "Gluten-Free",
-            "Beverage"
+            "Smoothie"
         ]
     },
     {
@@ -1282,7 +1283,7 @@
     },
     {
         "id": 33,
-        "title": "Pad Thai (Simplified)",
+        "title": "Pad Thai Noodles",
         "image": "https://fullofplants.com/wp-content/uploads/2022/03/easy-vegan-pad-thai-noodle-dish-with-bean-sprouts-thumb.jpg",
         "ingredients": [
             {
