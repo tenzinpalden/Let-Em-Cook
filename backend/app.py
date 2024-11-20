@@ -16,6 +16,12 @@ def get_recipes():
     recipes = recipe_service.get_all_recipes()
     return jsonify(recipes), 200
 
+@app.route('/recipes', methods=['POST'])
+def add_recipe():
+    data = request.json
+    new_recipe = recipe_service.add_recipe(data)
+    return jsonify(new_recipe), 201
+
 @app.route('/recipes/<int:recipe_id>', methods=['GET'])
 def get_recipe(recipe_id):
     """Endpoint to get a recipe by ID."""

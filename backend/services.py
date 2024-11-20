@@ -13,7 +13,13 @@ class RecipeService:
                 recipes_data = json.load(file)
                 recipes = []
                 for data in recipes_data:
-                    ingredients = [Ingredient(name=item) for item in data.get("ingredients", [])]
+                    ingredients = [
+                        Ingredient(
+                            name=item['name'], 
+                            quantity=item.get('quantity', ''),
+                            price=item.get('price', 0)
+                        ) for item in data.get("ingredients", [])
+                    ]
                     recipe = Recipe(
                         id=data["id"],
                         title=data["title"],
@@ -31,6 +37,13 @@ class RecipeService:
             print(f"Error loading recipes: {e}")
             return []
 
+    def save_recipes(self):
+        try:
+            with open(self.data_file, 'w') as file:
+                json.dump([recipe.to_dict() for recipe in self.recipes], file, indent=4)
+        except IOError as e:
+            print(f"Error saving recipes: {e}")
+
     def get_all_recipes(self):
         return [recipe.to_dict() for recipe in self.recipes]
 
@@ -39,6 +52,23 @@ class RecipeService:
             if recipe.id == recipe_id:
                 return recipe.to_dict()
         return None
+
+    def add_recipe(self, data):
+        ingredients = [Ingredient(name=item) for item in data.get("ingredients", [])]
+        new_recipe = Recipe(
+            id=max(recipe.id for recipe in self.recipes) + 1 if self.recipes else 1,
+            title=data["title"],
+            image=data["image"],
+            ingredients=ingredients,
+            instructions=data["instructions"],
+            estimatedPrice=data["estimatedPrice"],
+            cookTime=data["cookTime"],
+            additionalTips=data["additionalTips"],
+            labels=data["labels"]
+        )
+        self.recipes.append(new_recipe)
+        self.save_recipes()
+        return new_recipe.to_dict()
 
     def get_favorites(self, user_id):
         return self.favorites.get(user_id, [])
