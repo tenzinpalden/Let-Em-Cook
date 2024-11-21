@@ -6,35 +6,43 @@
         "ingredients": [
             {
                 "name": "Broccoli Florets",
-                "quantity": "1 cup"
+                "quantity": "1 cup",
+                "price": 0
             },
             {
                 "name": "Sliced Bell Peppers",
-                "quantity": "1 cup"
+                "quantity": "1 cup",
+                "price": 0
             },
             {
                 "name": "Cherry Tomatoes",
-                "quantity": "1 cup"
+                "quantity": "1 cup",
+                "price": 0
             },
             {
                 "name": "Pasta",
-                "quantity": "2 cups"
+                "quantity": "2 cups",
+                "price": 0
             },
             {
                 "name": "Olive Oil",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": "1 tsp"
+                "quantity": "1 tsp",
+                "price": 0
             },
             {
                 "name": "Salt",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Pepper",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
@@ -46,7 +54,7 @@
             "Toss cooked pasta with vegetables.",
             "Season with salt and pepper to taste."
         ],
-        "estimatedPrice": 10.00,
+        "estimatedPrice": 10.0,
         "cookTime": 30,
         "additionalTips": "Add grated parmesan for extra flavor.",
         "labels": [
@@ -57,34 +65,39 @@
     {
         "id": 2,
         "title": "Zucchini Noodles with Pesto",
-        "image": "https://onepotrecipes.com/wp-content/uploads/2022/04/Zucchini-Noddles-or-Zoodles-With-Pesto-Sauce-500x500.jpg",        
+        "image": "https://onepotrecipes.com/wp-content/uploads/2022/04/Zucchini-Noddles-or-Zoodles-With-Pesto-Sauce-500x500.jpg",
         "ingredients": [
             {
                 "name": "Zucchini",
-                "quantity": "3 pieces"
+                "quantity": "3 pieces",
+                "price": 0
             },
             {
                 "name": "Basil Pesto",
-                "quantity": "1 cup"
+                "quantity": "1 cup",
+                "price": 0
             },
             {
                 "name": "Olive Oil",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Salt",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Pepper",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Saute zucchini noodles in olive oil for 3-5 mins.",
             "Mix with pesto."
         ],
-        "estimatedPrice": 8.00,
+        "estimatedPrice": 8.0,
         "cookTime": 20,
         "additionalTips": "Use cherry tomatoes or pine nuts for garnish.",
         "labels": [
@@ -99,35 +112,43 @@
         "ingredients": [
             {
                 "name": "Spaghetti",
-                "quantity": "200g"
+                "quantity": "200g",
+                "price": 0
             },
             {
                 "name": "Ground Beef",
-                "quantity": "1/2 lb"
+                "quantity": "1/2 lb",
+                "price": 0
             },
             {
                 "name": "Tomato Sauce",
-                "quantity": "1 cup"
+                "quantity": "1 cup",
+                "price": 0
             },
             {
                 "name": "Chopped Onion",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": "1 Clove"
+                "quantity": "1 Clove",
+                "price": 0
             },
             {
                 "name": "Olive Oil",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Salt",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Pepper",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
@@ -138,7 +159,7 @@
             "Add tomato sauce, simmer for 10 mins.",
             "Combine with cooked spaghetti."
         ],
-        "estimatedPrice": 12.00,
+        "estimatedPrice": 12.0,
         "cookTime": 30,
         "additionalTips": "Add red chili flakes for extra heat.",
         "labels": [
@@ -152,44 +173,51 @@
         "ingredients": [
             {
                 "name": "Elbow Pasta",
-                "quantity": "2 cups"
+                "quantity": "2 cups",
+                "price": 0
             },
             {
                 "name": "Shredded Cheese",
-                "quantity": "2 cups"
+                "quantity": "2 cups",
+                "price": 0
             },
             {
                 "name": "Milk",
-                "quantity": "1 cup"
+                "quantity": "1 cup",
+                "price": 0
             },
             {
                 "name": "Butter",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Flour",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Salt",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Pepper",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
-          "Cook pasta.",
-          "Melt butter, whisk in flour, and slowly add milk to make a roux.",
-          "Mix in cheese until melted.",
-          "Combine with cooked pasta."
+            "Cook pasta.",
+            "Melt butter, whisk in flour, and slowly add milk to make a roux.",
+            "Mix in cheese until melted.",
+            "Combine with cooked pasta."
         ],
-        "estimatedPrice": 8.00,
+        "estimatedPrice": 8.0,
         "cookTime": 25,
         "additionalTips": "Use breadcrumbs on top for a crispy finish. Bake for 5 mins if desired.",
         "labels": [
-          "Vegetarian",
+            "Vegetarian",
             "Pasta"
         ]
     },
@@ -200,31 +228,38 @@
         "ingredients": [
             {
                 "name": "Fettuccine",
-                "quantity": "200g"
+                "quantity": "200g",
+                "price": 0
             },
             {
                 "name": "Heavy Cream",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Butter",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Grated Parmesan Cheese",
-                "quantity": "1 cup"
+                "quantity": "1 cup",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": "1 clove, minced"
+                "quantity": "1 clove, minced",
+                "price": 0
             },
             {
                 "name": "Salt",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Pepper",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
@@ -233,7 +268,7 @@
             "Stir in parmesan.",
             "Toss pasta with sauce."
         ],
-        "estimatedPrice": 12.00,
+        "estimatedPrice": 12.0,
         "cookTime": 30,
         "additionalTips": "Serve with parsley and a side of garlic bread.",
         "labels": [
@@ -248,27 +283,33 @@
         "ingredients": [
             {
                 "name": "Mixed Vegetables",
-                "quantity": "2 cups (carrots, broccoli, bell peppers)"
+                "quantity": "2 cups (carrots, broccoli, bell peppers)",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Sesame Oil",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": "1 tsp"
+                "quantity": "1 tsp",
+                "price": 0
             },
             {
                 "name": "Ginger",
-                "quantity": "1 tsp"
+                "quantity": "1 tsp",
+                "price": 0
             },
             {
                 "name": "Cornstarch",
-                "quantity": "1/2 tsp mixed with 2 tbsp water"
+                "quantity": "1/2 tsp mixed with 2 tbsp water",
+                "price": 0
             }
         ],
         "instructions": [
@@ -276,7 +317,7 @@
             "Add vegetables, stir-fry for 5-7 mins.",
             "Mix soy sauce with cornstarch, add to vegetables, and cook until thickened."
         ],
-        "estimatedPrice": 8.00,
+        "estimatedPrice": 8.0,
         "cookTime": 20,
         "additionalTips": "Top with sesame seeds or scallions.",
         "labels": [
@@ -291,35 +332,43 @@
         "ingredients": [
             {
                 "name": "Beef",
-                "quantity": "1/2 lb, thinly sliced"
+                "quantity": "1/2 lb, thinly sliced",
+                "price": 0
             },
             {
                 "name": "Broccoli",
-                "quantity": "2 cups"
+                "quantity": "2 cups",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Oyster Sauce",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             },
             {
                 "name": "Cornstarch",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             },
             {
                 "name": "Water",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Vegetable Oil",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": "1 tsp"
+                "quantity": "1 tsp",
+                "price": 0
             }
         ],
         "instructions": [
@@ -327,7 +376,7 @@
             "Stir-fry beef until browned. Remove beef, stir-fry broccoli.",
             "Add beef back, mix sauces, and cook until thickened."
         ],
-        "estimatedPrice": 15.00,
+        "estimatedPrice": 15.0,
         "cookTime": 25,
         "additionalTips": "Serve over rice or noodles.",
         "labels": [
@@ -341,34 +390,40 @@
         "ingredients": [
             {
                 "name": "Chicken Breast",
-                "quantity": "1/2 lb, sliced"
+                "quantity": "1/2 lb, sliced",
+                "price": 0
             },
             {
                 "name": "Mixed Vegetables",
-                "quantity": "2 cups"
+                "quantity": "2 cups",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Honey",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": "1 tsp"
+                "quantity": "1 tsp",
+                "price": 0
             },
             {
                 "name": "Vegetable Oil",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             }
         ],
         "instructions": [
             "Stir-fry chicken until cooked through. Remove and stir-fry vegetables.",
             "Mix sauces, add chicken back, and cook for 2-3 mins."
         ],
-        "estimatedPrice": 12.00,
+        "estimatedPrice": 12.0,
         "cookTime": 20,
         "additionalTips": "Use low-sodium soy sauce for a healthier option.",
         "labels": [
@@ -382,34 +437,40 @@
         "ingredients": [
             {
                 "name": "Tofu",
-                "quantity": "1 block, cubed"
+                "quantity": "1 block, cubed",
+                "price": 0
             },
             {
                 "name": "Vegetables",
-                "quantity": "2 cups"
+                "quantity": "2 cups",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Sesame Oil",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": "1 tsp"
+                "quantity": "1 tsp",
+                "price": 0
             },
             {
                 "name": "Ginger",
-                "quantity": "1 tsp"
+                "quantity": "1 tsp",
+                "price": 0
             }
         ],
         "instructions": [
             "Pan-fry tofu until crispy. Remove, stir-fry garlic and vegetables.",
             "Add tofu back with sauce, and cook until heated through."
         ],
-        "estimatedPrice": 10.00,
+        "estimatedPrice": 10.0,
         "cookTime": 25,
         "additionalTips": "Press tofu before cooking to remove excess moisture.",
         "labels": [
@@ -425,34 +486,40 @@
         "ingredients": [
             {
                 "name": "Shrimp",
-                "quantity": "1/2 lb, peeled"
+                "quantity": "1/2 lb, peeled",
+                "price": 0
             },
             {
                 "name": "Vegetables",
-                "quantity": "2 cups"
+                "quantity": "2 cups",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Chili Sauce",
-                "quantity": "1 tsp"
+                "quantity": "1 tsp",
+                "price": 0
             },
             {
                 "name": "Vegetable Oil",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": "1 tsp"
+                "quantity": "1 tsp",
+                "price": 0
             }
         ],
         "instructions": [
             "Saute shrimp until pink. Remove and stir-fry vegetables.",
             "Add shrimp back with sauces, and cook for 2-3 mins."
         ],
-        "estimatedPrice": 15.00,
+        "estimatedPrice": 15.0,
         "cookTime": 20,
         "additionalTips": "Add lime juice for a zesty flavor.",
         "labels": [
@@ -466,33 +533,39 @@
         "ingredients": [
             {
                 "name": "Large Tortilla",
-                "quantity": "1"
+                "quantity": "1",
+                "price": 0
             },
             {
                 "name": "Spinach",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Shredded Carrots",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Sliced Cucumber",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Avocado",
-                "quantity": "1/4, sliced"
+                "quantity": "1/4, sliced",
+                "price": 0
             },
             {
                 "name": "Vegan Mayo",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             }
         ],
         "instructions": [
             "Spread mayo on the tortilla, layer veggies, roll tightly, and slice in half."
         ],
-        "estimatedPrice": 6.00,
+        "estimatedPrice": 6.0,
         "cookTime": 10,
         "additionalTips": "Use whole-grain tortillas for added fiber.",
         "labels": [
@@ -507,29 +580,34 @@
         "ingredients": [
             {
                 "name": "Large Tortilla",
-                "quantity": "1"
+                "quantity": "1",
+                "price": 0
             },
             {
                 "name": "Hummus",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Lettuce",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Sliced Bell Peppers",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Shredded Zucchini",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             }
         ],
         "instructions": [
             "Spread hummus on the tortilla, layer veggies, roll tightly, and serve."
         ],
-        "estimatedPrice": 5.00,
+        "estimatedPrice": 5.0,
         "cookTime": 10,
         "additionalTips": "Add a sprinkle of lemon juice for freshness.",
         "labels": [
@@ -544,29 +622,34 @@
         "ingredients": [
             {
                 "name": "Large Tortilla",
-                "quantity": "1"
+                "quantity": "1",
+                "price": 0
             },
             {
                 "name": "Cooked Chicken",
-                "quantity": "1/2 cup, shredded"
+                "quantity": "1/2 cup, shredded",
+                "price": 0
             },
             {
                 "name": "Lettuce",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Ranch Dressing",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Shredded Cheese",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             }
         ],
         "instructions": [
             "Spread ranch dressing on the tortilla, add chicken, cheese, and lettuce. Roll tightly and enjoy."
         ],
-        "estimatedPrice": 8.00,
+        "estimatedPrice": 8.0,
         "cookTime": 15,
         "additionalTips": "Warm the wrap for 30 seconds in a skillet or microwave for a softer texture.",
         "labels": [
@@ -580,29 +663,34 @@
         "ingredients": [
             {
                 "name": "Large Tortilla",
-                "quantity": "1"
+                "quantity": "1",
+                "price": 0
             },
             {
                 "name": "Turkey",
-                "quantity": "3 slices"
+                "quantity": "3 slices",
+                "price": 0
             },
             {
                 "name": "Lettuce",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Sliced Tomatoes",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Mustard",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             }
         ],
         "instructions": [
             "Spread mustard on the tortilla, layer turkey and veggies, roll tightly, and serve."
         ],
-        "estimatedPrice": 7.00,
+        "estimatedPrice": 7.0,
         "cookTime": 10,
         "additionalTips": "Use flavored tortillas like spinach or tomato basil for variety.",
         "labels": [
@@ -616,29 +704,34 @@
         "ingredients": [
             {
                 "name": "Large Tortilla",
-                "quantity": "1"
+                "quantity": "1",
+                "price": 0
             },
             {
                 "name": "Falafel Balls",
-                "quantity": "3, pre-made or frozen"
+                "quantity": "3, pre-made or frozen",
+                "price": 0
             },
             {
                 "name": "Lettuce",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Tahini Sauce",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Sliced Cucumbers",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             }
         ],
         "instructions": [
             "Warm falafel, layer with veggies on the tortilla, drizzle tahini sauce, roll tightly, and serve."
         ],
-        "estimatedPrice": 8.00,
+        "estimatedPrice": 8.0,
         "cookTime": 20,
         "additionalTips": "Serve with a side of tzatziki or pickled vegetables.",
         "labels": [
@@ -654,33 +747,39 @@
         "ingredients": [
             {
                 "name": "All-Purpose Flour",
-                "quantity": "4 tbsp"
+                "quantity": "4 tbsp",
+                "price": 0
             },
             {
                 "name": "Sugar",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Baking Powder",
-                "quantity": "1/4 tsp"
+                "quantity": "1/4 tsp",
+                "price": 0
             },
             {
                 "name": "Milk",
-                "quantity": "3 tbsp"
+                "quantity": "3 tbsp",
+                "price": 0
             },
             {
                 "name": "Vegetable Oil",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             },
             {
                 "name": "Cocoa Powder",
-                "quantity": "1 tbsp (optional)"
+                "quantity": "1 tbsp (optional)",
+                "price": 0
             }
         ],
         "instructions": [
             "Mix ingredients in a microwave-safe mug. Microwave for 1-2 mins."
         ],
-        "estimatedPrice": 4.00,
+        "estimatedPrice": 4.0,
         "cookTime": 5,
         "additionalTips": "Add chocolate chips or a dollop of whipped cream on top.",
         "labels": [
@@ -694,29 +793,34 @@
         "ingredients": [
             {
                 "name": "Dark Chocolate Chips",
-                "quantity": "1 cup"
+                "quantity": "1 cup",
+                "price": 0
             },
             {
                 "name": "Butter",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Sugar",
-                "quantity": "3/4 cup"
+                "quantity": "3/4 cup",
+                "price": 0
             },
             {
                 "name": "Eggs",
-                "quantity": "3"
+                "quantity": "3",
+                "price": 0
             },
             {
                 "name": "Cocoa Powder",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             }
         ],
         "instructions": [
-            "Melt chocolate and butter. Mix in sugar and eggs. Fold in cocoa powder. Bake at 350°F (175°C) for 25 mins."
+            "Melt chocolate and butter. Mix in sugar and eggs. Fold in cocoa powder. Bake at 350\u00c2\u00b0F (175\u00c2\u00b0C) for 25 mins."
         ],
-        "estimatedPrice": 10.00,
+        "estimatedPrice": 10.0,
         "cookTime": 30,
         "additionalTips": "Dust with powdered sugar or serve with fresh berries.",
         "labels": [
@@ -731,25 +835,29 @@
         "ingredients": [
             {
                 "name": "Chia Seeds",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Almond Milk",
-                "quantity": "1 cup"
+                "quantity": "1 cup",
+                "price": 0
             },
             {
                 "name": "Maple Syrup",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             },
             {
                 "name": "Vanilla Extract",
-                "quantity": "1/2 tsp"
+                "quantity": "1/2 tsp",
+                "price": 0
             }
         ],
         "instructions": [
             "Mix all ingredients in a bowl. Refrigerate for 2-3 hours or overnight until set."
         ],
-        "estimatedPrice": 6.00,
+        "estimatedPrice": 6.0,
         "cookTime": 10,
         "additionalTips": "Top with fresh fruits, nuts, or granola for added texture.",
         "labels": [
@@ -765,21 +873,24 @@
         "ingredients": [
             {
                 "name": "Mixed Fruits",
-                "quantity": "1 cup (berries, apple slices, orange segments)"
+                "quantity": "1 cup (berries, apple slices, orange segments)",
+                "price": 0
             },
             {
                 "name": "Honey",
-                "quantity": "1 tbsp (optional)"
+                "quantity": "1 tbsp (optional)",
+                "price": 0
             },
             {
                 "name": "Lemon Juice",
-                "quantity": "1 tsp"
+                "quantity": "1 tsp",
+                "price": 0
             }
         ],
         "instructions": [
             "Combine all fruits in a bowl, drizzle with honey and lemon juice, and mix gently."
         ],
-        "estimatedPrice": 5.00,
+        "estimatedPrice": 5.0,
         "cookTime": 10,
         "additionalTips": "Use seasonal fruits for the freshest flavor.",
         "labels": [
@@ -795,29 +906,34 @@
         "ingredients": [
             {
                 "name": "Banana",
-                "quantity": "1"
+                "quantity": "1",
+                "price": 0
             },
             {
                 "name": "Orange Juice",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Frozen Mango Chunks",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Frozen Pineapple Chunks",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Almond Milk",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             }
         ],
         "instructions": [
             "Blend all ingredients until smooth. Serve immediately."
         ],
-        "estimatedPrice": 5.00,
+        "estimatedPrice": 5.0,
         "cookTime": 5,
         "additionalTips": "Add a handful of spinach for extra nutrients.",
         "labels": [
@@ -833,29 +949,34 @@
         "ingredients": [
             {
                 "name": "Spinach",
-                "quantity": "1 cup"
+                "quantity": "1 cup",
+                "price": 0
             },
             {
                 "name": "Almond Milk",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Frozen Banana Slices",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Frozen Pineapple",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Chia Seeds",
-                "quantity": "1 tsp"
+                "quantity": "1 tsp",
+                "price": 0
             }
         ],
         "instructions": [
             "Blend all ingredients until smooth. Serve immediately."
         ],
-        "estimatedPrice": 5.00,
+        "estimatedPrice": 5.0,
         "cookTime": 5,
         "additionalTips": "Use coconut water instead of almond milk for a lighter flavor.",
         "labels": [
@@ -871,29 +992,34 @@
         "ingredients": [
             {
                 "name": "Vanilla Protein Powder",
-                "quantity": "1 scoop"
+                "quantity": "1 scoop",
+                "price": 0
             },
             {
                 "name": "Greek Yogurt",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Almond Milk",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Frozen Banana Slices",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Peanut Butter",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             }
         ],
         "instructions": [
             "Blend all ingredients until smooth. Serve immediately."
         ],
-        "estimatedPrice": 6.00,
+        "estimatedPrice": 6.0,
         "cookTime": 5,
         "additionalTips": "Add 1/4 cup oats for extra fiber and thickness.",
         "labels": [
@@ -909,25 +1035,29 @@
         "ingredients": [
             {
                 "name": "Mixed Berries",
-                "quantity": "1 cup (strawberries, blueberries, raspberries)"
+                "quantity": "1 cup (strawberries, blueberries, raspberries)",
+                "price": 0
             },
             {
                 "name": "Almond Milk",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Frozen Banana Slices",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Honey",
-                "quantity": "1 tsp (optional)"
+                "quantity": "1 tsp (optional)",
+                "price": 0
             }
         ],
         "instructions": [
             "Blend all ingredients until smooth. Serve immediately."
         ],
-        "estimatedPrice": 5.00,
+        "estimatedPrice": 5.0,
         "cookTime": 5,
         "additionalTips": "Add a pinch of cinnamon or nutmeg for warmth and depth.",
         "labels": [
@@ -943,29 +1073,34 @@
         "ingredients": [
             {
                 "name": "Coconut Milk",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Orange Juice",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Frozen Pineapple Chunks",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Frozen Mango Chunks",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Turmeric Powder",
-                "quantity": "1/4 tsp (optional)"
+                "quantity": "1/4 tsp (optional)",
+                "price": 0
             }
         ],
         "instructions": [
             "Blend all ingredients until smooth. Serve immediately."
         ],
-        "estimatedPrice": 5.00,
+        "estimatedPrice": 5.0,
         "cookTime": 5,
         "additionalTips": "Garnish with shredded coconut or a slice of fresh pineapple.",
         "labels": [
@@ -981,37 +1116,44 @@
         "ingredients": [
             {
                 "name": "Cooked Rice",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Eggs",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Carrots",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Peas",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Optional Protein",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Stir-fry garlic and veggies, push to the side, scramble eggs, mix everything with soy sauce."
         ],
-        "estimatedPrice": 5.00,
+        "estimatedPrice": 5.0,
         "cookTime": 20,
         "additionalTips": "Use day-old rice for the best texture.",
         "labels": [
@@ -1026,33 +1168,39 @@
         "ingredients": [
             {
                 "name": "Cooked Rice",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Kimchi",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Sesame Oil",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Gochujang",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Fried Egg",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Stir-fry kimchi, add rice and gochujang, mix, top with a fried egg, and drizzle with sesame oil."
         ],
-        "estimatedPrice": 8.00,
+        "estimatedPrice": 8.0,
         "cookTime": 20,
         "additionalTips": "Add leftover meat for more flavor.",
         "labels": [
@@ -1067,25 +1215,29 @@
         "ingredients": [
             {
                 "name": "Warm Rice",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Fresh Egg",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Green Onions",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Crack the egg over warm rice, stir until creamy, and season with soy sauce and green onions."
         ],
-        "estimatedPrice": 3.00,
+        "estimatedPrice": 3.0,
         "cookTime": 5,
         "additionalTips": "Use pasteurized eggs for safety.",
         "labels": [
@@ -1100,29 +1252,34 @@
         "ingredients": [
             {
                 "name": "Rice",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Coconut Milk",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Water",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Salt",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Sugar",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Cook rice with coconut milk, water, a pinch of salt, and sugar until fluffy."
         ],
-        "estimatedPrice": 6.00,
+        "estimatedPrice": 6.0,
         "cookTime": 25,
         "additionalTips": "Serve with curries or grilled proteins.",
         "labels": [
@@ -1138,29 +1295,34 @@
         "ingredients": [
             {
                 "name": "Rice",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Assorted Veggies",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Gochujang",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Fried Egg",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Sesame Oil",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Saute veggies, assemble rice in a bowl, top with veggies and egg, drizzle with sesame oil, and mix with gochujang."
         ],
-        "estimatedPrice": 8.00,
+        "estimatedPrice": 8.0,
         "cookTime": 25,
         "additionalTips": "Use leftovers for quick assembly.",
         "labels": [
@@ -1174,29 +1336,34 @@
         "ingredients": [
             {
                 "name": "Noodles",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Sesame Oil",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Green Onions",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Cook noodles, stir-fry garlic in sesame oil, toss noodles with soy sauce and garlic."
         ],
-        "estimatedPrice": 4.00,
+        "estimatedPrice": 4.0,
         "cookTime": 15,
         "additionalTips": "Add chili flakes for spice.",
         "labels": [
@@ -1211,29 +1378,34 @@
         "ingredients": [
             {
                 "name": "Instant Ramen",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Broccoli",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Bell Peppers",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Sesame Oil",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Cook ramen, stir-fry veggies, toss noodles with soy sauce and sesame oil."
         ],
-        "estimatedPrice": 5.00,
+        "estimatedPrice": 5.0,
         "cookTime": 15,
         "additionalTips": "Skip seasoning packet for a healthier dish.",
         "labels": [
@@ -1247,33 +1419,39 @@
         "ingredients": [
             {
                 "name": "Noodles",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Peanut Butter",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Sesame Oil",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Chili Sauce",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Mix peanut butter, soy sauce, sesame oil, and garlic, toss cooked noodles with the sauce."
         ],
-        "estimatedPrice": 4.00,
+        "estimatedPrice": 4.0,
         "cookTime": 10,
         "additionalTips": "Add shredded carrots or cucumbers for crunch.",
         "labels": [
@@ -1288,33 +1466,39 @@
         "ingredients": [
             {
                 "name": "Rice Noodles",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Scrambled Egg",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Lime Juice",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Peanuts",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Green Onions",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Cook noodles, stir-fry with egg, toss with soy sauce and lime juice, garnish with peanuts and green onions."
         ],
-        "estimatedPrice": 8.00,
+        "estimatedPrice": 8.0,
         "cookTime": 20,
         "additionalTips": "Add a splash of fish sauce for authenticity.",
         "labels": [
@@ -1328,29 +1512,34 @@
         "ingredients": [
             {
                 "name": "Noodles",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Sesame Oil",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Vinegar",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Sesame Seeds",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Cook noodles, toss with sesame oil, soy sauce, and vinegar, chill, and sprinkle sesame seeds on top."
         ],
-        "estimatedPrice": 5.00,
+        "estimatedPrice": 5.0,
         "cookTime": 10,
         "additionalTips": "Serve with cucumbers for a refreshing touch.",
         "labels": [
@@ -1365,45 +1554,54 @@
         "ingredients": [
             {
                 "name": "Lettuce",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Black Beans",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Corn",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Cherry Tomatoes",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Avocado",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Cheese",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Tortilla Chips",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Salsa",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Sour Cream",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Toss lettuce, beans, corn, and tomatoes. Top with avocado, cheese, chips, and drizzle with salsa and sour cream."
         ],
-        "estimatedPrice": 7.00,
+        "estimatedPrice": 7.0,
         "cookTime": 15,
         "additionalTips": "Use ground beef or chicken for a non-veg version.",
         "labels": [
@@ -1418,41 +1616,49 @@
         "ingredients": [
             {
                 "name": "Cucumbers",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Tomatoes",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Red Onion",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Olives",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Feta Cheese",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Olive Oil",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Lemon Juice",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Oregano",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Combine chopped cucumbers, tomatoes, onions, and olives. Top with feta and drizzle with olive oil, lemon juice, and oregano."
         ],
-        "estimatedPrice": 6.00,
+        "estimatedPrice": 6.0,
         "cookTime": 10,
         "additionalTips": "Serve with pita bread for a complete meal.",
         "labels": [
@@ -1468,25 +1674,29 @@
         "ingredients": [
             {
                 "name": "Romaine Lettuce",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Croutons",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Parmesan Cheese",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Caesar Dressing",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Toss lettuce with croutons, parmesan, and dressing."
         ],
-        "estimatedPrice": 6.00,
+        "estimatedPrice": 6.0,
         "cookTime": 10,
         "additionalTips": "Add grilled chicken for extra protein.",
         "labels": [
@@ -1501,29 +1711,34 @@
         "ingredients": [
             {
                 "name": "Quinoa or Brown Rice",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Chickpeas",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Roasted Veggies",
-                "quantity": "(carrots, sweet potatoes)"
+                "quantity": "(carrots, sweet potatoes)",
+                "price": 0
             },
             {
                 "name": "Avocado",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Tahini Dressing",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             }
         ],
         "instructions": [
             "Layer grains, roasted veggies, and chickpeas in a bowl. Top with avocado and drizzle with tahini dressing."
         ],
-        "estimatedPrice": 7.00,
+        "estimatedPrice": 7.0,
         "cookTime": 20,
         "additionalTips": "Use any leftover grains for a quick base.",
         "labels": [
@@ -1538,47 +1753,58 @@
         "ingredients": [
             {
                 "name": "Chicken Breasts",
-                "quantity": "2, cubed"
+                "quantity": "2, cubed",
+                "price": 0
             },
             {
                 "name": "Bell Pepper",
-                "quantity": "1, diced"
+                "quantity": "1, diced",
+                "price": 0
             },
             {
                 "name": "Pineapple Chunks",
-                "quantity": "1 cup"
+                "quantity": "1 cup",
+                "price": 0
             },
             {
                 "name": "Small Onion",
-                "quantity": "1, diced"
+                "quantity": "1, diced",
+                "price": 0
             },
             {
                 "name": "Soy Sauce",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "White Vinegar",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Ketchup",
-                "quantity": "3 tbsp"
+                "quantity": "3 tbsp",
+                "price": 0
             },
             {
                 "name": "Sugar",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             },
             {
                 "name": "Cornstarch",
-                "quantity": "1 tsp (mixed with 2 tbsp water)"
+                "quantity": "1 tsp (mixed with 2 tbsp water)",
+                "price": 0
             },
             {
                 "name": "Garlic",
-                "quantity": "2 cloves, minced"
+                "quantity": "2 cloves, minced",
+                "price": 0
             },
             {
                 "name": "Vegetable Oil",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             }
         ],
         "instructions": [
@@ -1587,7 +1813,7 @@
             "In a bowl, mix soy sauce, vinegar, ketchup, sugar, and cornstarch slurry.",
             "Add sauce to the pan with chicken, stirring until thickened."
         ],
-        "estimatedPrice": 10.00,
+        "estimatedPrice": 10.0,
         "cookTime": 25,
         "additionalTips": "Serve over rice or noodles. Use pre-chopped veggies for convenience.",
         "labels": [
@@ -1601,39 +1827,48 @@
         "ingredients": [
             {
                 "name": "Large Eggs",
-                "quantity": "3"
+                "quantity": "3",
+                "price": 0
             },
             {
                 "name": "Milk",
-                "quantity": "2 tbsp"
+                "quantity": "2 tbsp",
+                "price": 0
             },
             {
                 "name": "Chopped Spinach",
-                "quantity": "1/2 cup"
+                "quantity": "1/2 cup",
+                "price": 0
             },
             {
                 "name": "Diced Bell Peppers",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Diced Tomatoes",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Shredded Cheese",
-                "quantity": "1/4 cup"
+                "quantity": "1/4 cup",
+                "price": 0
             },
             {
                 "name": "Salt",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Pepper",
-                "quantity": ""
+                "quantity": "",
+                "price": 0
             },
             {
                 "name": "Butter",
-                "quantity": "1 tbsp"
+                "quantity": "1 tbsp",
+                "price": 0
             }
         ],
         "instructions": [
@@ -1641,7 +1876,7 @@
             "Heat butter in a skillet over medium heat. Add spinach, bell peppers, and tomatoes, cooking for 2-3 minutes.",
             "Pour in eggs, tilting the pan to spread evenly. Add cheese on one side, fold the omelette in half, and cook until set."
         ],
-        "estimatedPrice": 4.00,
+        "estimatedPrice": 4.0,
         "cookTime": 10,
         "additionalTips": "Use your favorite vegetables for variety. Pair with toast for a complete breakfast.",
         "labels": [

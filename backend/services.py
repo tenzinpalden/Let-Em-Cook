@@ -52,14 +52,24 @@ class RecipeService:
             if recipe.id == recipe_id:
                 return recipe.to_dict()
         return None
-
+    
     def add_recipe(self, data):
-        ingredients = [Ingredient(name=item) for item in data.get("ingredients", [])]
+        ingredients = []
+        # Split ingredients by comma and process each part
+        raw_ingredients = data.get("ingredients", "").split(',')
+        for i in range(0, len(raw_ingredients), 2):
+            if i + 1 < len(raw_ingredients):
+                ingredients.append({
+                    "name": raw_ingredients[i + 1].strip(),
+                    "quantity": raw_ingredients[i].strip(),
+                    "price": None
+                })
+        
         new_recipe = Recipe(
             id=max(recipe.id for recipe in self.recipes) + 1 if self.recipes else 1,
             title=data["title"],
             image=data["image"],
-            ingredients=ingredients,
+            ingredients=[Ingredient(name=ing['name'], quantity=ing['quantity']) for ing in ingredients],
             instructions=data["instructions"],
             estimatedPrice=data["estimatedPrice"],
             cookTime=data["cookTime"],
