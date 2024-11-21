@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
 
+// home page has search bar and suggested recipes
 function HomePage() {
   const [recipes, setRecipes] = useState([]);
   const [favorites, setFavorites] = useState([]);

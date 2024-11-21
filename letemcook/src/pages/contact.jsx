@@ -1,6 +1,7 @@
 import React from 'react';
 import './ContactPage.css'; // CSS file for styling
 
+// everyones contacts
 const SimpleContactPage = () => {
   const members = [
     { name: "Tyler John Layton", email: "laytot@rpi.edu", image: "/members/tyler.png" },

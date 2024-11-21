@@ -59,6 +59,7 @@
   animation: fadeOut 0.5s forwards;
 }
 
+/* used to fade the success box in and out */
 @keyframes fadeIn {
   from {
     opacity: 0;

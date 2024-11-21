@@ -1,6 +1,7 @@
 import React from 'react';
 import './FAQPage.css';
 
+// frequently asked questions
 const FAQPage = () => {
   const faqs = [
     {

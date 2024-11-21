@@ -10,18 +10,21 @@ CORS(app)
 DATA_FILE = os.path.join(os.path.dirname(__file__), 'recipes.json')
 recipe_service = RecipeService(DATA_FILE)
 
+# reads all of the recipes from the json
 @app.route('/recipes', methods=['GET'])
 def get_recipes():
     """Endpoint to get all recipes."""
     recipes = recipe_service.get_all_recipes()
     return jsonify(recipes), 200
 
+# adds a recipe to the json
 @app.route('/recipes', methods=['POST'])
 def add_recipe():
     data = request.json
     new_recipe = recipe_service.add_recipe(data)
     return jsonify(new_recipe), 201
 
+# gets a recipe by id
 @app.route('/recipes/<int:recipe_id>', methods=['GET'])
 def get_recipe(recipe_id):
     """Endpoint to get a recipe by ID."""
@@ -31,6 +34,7 @@ def get_recipe(recipe_id):
     else:
         return jsonify({"error": "Recipe not found"}), 404
 
+# get a favorite recipe
 @app.route('/favorites', methods=['GET'])
 def get_favorites():
     """Get all favorite recipes for a specific user."""
@@ -42,6 +46,7 @@ def get_favorites():
     favorite_recipes = [recipe_service.get_recipe_by_id(recipe_id) for recipe_id in favorite_ids]
     return jsonify(favorite_recipes), 200
 
+# adds a recipe to favorite
 @app.route('/favorites', methods=['POST'])
 def add_favorite():
     """Add a recipe to user's favorites."""
@@ -55,6 +60,7 @@ def add_favorite():
     recipe_service.add_favorite(user_id, recipe_id)
     return jsonify({"message": "Recipe added to favorites"}), 201
 
+# removes a recipe from favorite
 @app.route('/favorites/<int:recipe_id>', methods=['DELETE'])
 def remove_favorite(recipe_id):
     """Remove a recipe from user's favorites."""

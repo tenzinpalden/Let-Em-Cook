@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './createrecipe.css';
 
+// sets all conditions to blank
 function CreateRecipe() {
   const [title, setTitle] = useState('');
   const [image, setImage] = useState('');
@@ -12,6 +13,7 @@ function CreateRecipe() {
   const [labels, setLabels] = useState('');
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
+  // reads all of the text boxes for recipe creation
   const handleSubmit = async (event) => {
     event.preventDefault();
    

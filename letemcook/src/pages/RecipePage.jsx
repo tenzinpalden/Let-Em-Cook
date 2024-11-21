@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './RecipePage.module.css';
 
+// recipe page display a recipe
 function RecipePage() {
   const { id } = useParams(); // Get recipe ID from the route
   const [recipe, setRecipe] = useState(null);
