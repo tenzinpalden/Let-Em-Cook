@@ -14,16 +14,18 @@ function CreateRecipe() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+   
     const newRecipe = { 
       title, 
       image, 
-      ingredients: ingredients.split(','), 
+      ingredients,
       instructions: instructions.split(','), 
       estimatedPrice, 
       cookTime, 
       additionalTips, 
       labels: labels.split(',')
     };
+
 
     try {
       const response = await fetch(`${process.env.REACT_APP_API_URL}/recipes`, {
@@ -71,7 +73,7 @@ function CreateRecipe() {
           <input type="text" value={image} onChange={(e) => setImage(e.target.value)} required />
         </label>
         <label>
-          Ingredients (comma-separated):
+          Ingredients (e.g. 1tbs, butter, 2cups, water):
           <textarea value={ingredients} onChange={(e) => setIngredients(e.target.value)} required />
         </label>
         <label>
