@@ -6,6 +6,8 @@ function Recipes() {
   const [recipes, setRecipes] = useState([]);
   const [favorites, setFavorites] = useState([]);
   const [filter, setFilter] = useState("All");
+  const [priceFilter, setPriceFilter] = useState("");
+  const [cookTimeFilter, setCookTimeFilter] = useState("");
 
   useEffect(() => {
     // Fetch recipes from the Flask backend
@@ -36,34 +38,79 @@ function Recipes() {
     localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
   };
 
-  // Filter recipes based on the selected label
-  const filteredRecipes = filter === "All"
-    ? recipes
-    : recipes.filter((recipe) => recipe.labels && recipe.labels.includes(filter));
+  // Filter recipes based on label, price, and cook time
+  const filteredRecipes = recipes.filter((recipe) => {
+    const labelMatch = filter === "All" || (recipe.labels && recipe.labels.includes(filter));
+    
+    const priceMatch = priceFilter === "" || 
+      (priceFilter === "0-5" && recipe.estimatedPrice <= 5) ||
+      (priceFilter === "6-10" && recipe.estimatedPrice > 5 && recipe.estimatedPrice <= 10) ||
+      (priceFilter === "11-15" && recipe.estimatedPrice > 10 && recipe.estimatedPrice <= 15) ||
+      (priceFilter === "15+" && recipe.estimatedPrice > 15);
+    
+    const cookTimeMatch = cookTimeFilter === "" || 
+      (cookTimeFilter === "0-5" && recipe.cookTime <= 5) ||
+      (cookTimeFilter === "6-10" && recipe.cookTime > 5 && recipe.cookTime <= 10) ||
+      (cookTimeFilter === "11-20" && recipe.cookTime > 10 && recipe.cookTime <= 20) ||
+      (cookTimeFilter === "21-30" && recipe.cookTime > 20 && recipe.cookTime <= 30);
+
+    return labelMatch && priceMatch && cookTimeMatch;
+  });
 
   return (
     <div className="recipes-container">
       <h1>All Recipes</h1>
 
-      {/* Filter Dropdown */}
+      {/* Filter Containers */}
       <div className="filter-container">
-        <label htmlFor="filter">Filter by:</label>
-        <select id="filter" value={filter} onChange={(e) => setFilter(e.target.value)}>
-          <option value="All">All</option>
-          <option value="Vegan">Vegan</option>
-          <option value="Vegetarian">Vegetarian</option>
-          <option value="Gluten-Free">Gluten-Free</option>
+        <div>
+          <label htmlFor="filter">Filter by Label:</label>
+          <select id="filter" value={filter} onChange={(e) => setFilter(e.target.value)}>
+            <option value="All">All</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Gluten-Free">Gluten-Free</option>
+            <option value="Pasta">Pasta</option>
+            <option value="Stir-Fry">Stir-Fry</option>
+            <option value="Wrap">Wrap</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Smoothie">Smoothie</option>
+            <option value="Rice">Rice</option>
+            <option value="Noodle">Noodle</option>
+            <option value="Salad">Salad</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
 
-          <option value="Pasta">Pasta</option>
-          <option value="Stir-Fry">Stir-Fry</option>
-          <option value="Wrap">Wrap</option>
-          <option value="Dessert">Dessert</option>
-          <option value="Smoothie">Smoothie</option>
-          <option value="Rice">Rice</option>
-          <option value="Noodle">Noodle</option>
-          <option value="Salad">Salad</option>
-          <option value="Other">Other</option>
-        </select>
+        <div>
+          <label htmlFor="priceFilter">Filter by Price:</label>
+          <select 
+            id="priceFilter" 
+            value={priceFilter} 
+            onChange={(e) => setPriceFilter(e.target.value)}
+          >
+            <option value="">Any Price</option>
+            <option value="0-5">$0 - $5</option>
+            <option value="6-10">$6 - $10</option>
+            <option value="11-15">$11 - $15</option>
+            <option value="15+">$15+</option>
+          </select>
+        </div>
+
+        <div>
+          <label htmlFor="cookTimeFilter">Filter by Cook Time:</label>
+          <select 
+            id="cookTimeFilter" 
+            value={cookTimeFilter} 
+            onChange={(e) => setCookTimeFilter(e.target.value)}
+          >
+            <option value="">Any Time</option>
+            <option value="0-5">0 - 5 mins</option>
+            <option value="6-10">6 - 10 mins</option>
+            <option value="11-20">11 - 20 mins</option>
+            <option value="21-30">21 - 30 mins</option>
+          </select>
+        </div>
       </div>
 
       <div className="recipes-list">
