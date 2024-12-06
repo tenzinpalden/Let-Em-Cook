@@ -28,6 +28,23 @@ Users can view, upload, and share recipes. The project consists of a React front
 
 ## Setup
 
+### Prerequisites
+
+Before setting up the project, make sure you have the following installed on your system:
+
+1. Python 3.6+
+   - Check if Python is installed:
+     python --version
+   - If not installed, download it here:
+     https://www.python.org/downloads/
+
+2. Node.js and npm
+   - Check if Node.js and npm are installed:
+     node --version
+     npm --version
+   - If not installed, download it here:
+     https://nodejs.org/
+
 ### 1. How to run the executable
    To set up and run the "Let 'Em Cook" application, follow these steps:
 
