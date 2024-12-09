@@ -1,0 +1,60 @@
+<project name="LetEmCook" default="setup-and-run" basedir=".">
+    <!-- Properties -->
+    <property name="backend.dir" value="backend" />
+    <property name="frontend.dir" value="letemcook" />
+    <property name="git.repo" value="https://github.com/tenzinpalden/let-em-cook.git" />
+
+    <!-- Clone repository -->
+    <target name="clone">
+        <exec executable="git">
+            <arg value="clone" />
+            <arg value="${git.repo}" />
+        </exec>
+    </target>
+
+    <!-- Backend setup -->
+    <target name="setup-backend">
+        <echo message="Setting up backend..." />
+        <exec executable="pip">
+            <arg value="install" />
+            <arg value="-r" />
+            <arg value="${backend.dir}/requirements.txt" />
+        </exec>
+    </target>
+
+    <!-- Frontend setup -->
+    <target name="setup-frontend">
+        <echo message="Setting up frontend..." />
+        <exec executable="npm">
+            <arg value="install" />
+            <arg value="--prefix" />
+            <arg value="${frontend.dir}" />
+        </exec>
+        <exec executable="npm">
+            <arg value="install" />
+            <arg value="concurrently" />
+            <arg value="--save-dev" />
+            <arg value="--prefix" />
+            <arg value="${frontend.dir}" />
+        </exec>
+    </target>
+
+    <!-- Full setup -->
+    <target name="setup" depends="clone,setup-backend,setup-frontend">
+        <echo message="Setup complete!" />
+    </target>
+
+    <!-- Run application -->
+    <target name="run">
+        <echo message="Starting the application..." />
+        <exec executable="npm">
+            <arg value="run" />
+            <arg value="dev" />
+            <arg value="--prefix" />
+            <arg value="${frontend.dir}" />
+        </exec>
+    </target>
+
+    <!-- Combined target -->
+    <target name="setup-and-run" depends="setup,run" />
+</project>
