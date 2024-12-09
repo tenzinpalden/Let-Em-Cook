@@ -130,8 +130,13 @@ Before setting up the project, make sure you have the following installed on you
 
 ### Running the Build File
 
-1. Download the `build.xml` file from the GitHub repository
-2. Run Ant to set up and start the project.
+1. Ensure the repository has been cloned:
+   ```bash
+   git clone https://github.com/tenzinpalden/let-em-cook.git
+   cd let-em-cook
+   ```
+2. Ensure you have the `build.xml` file in the root directory of the project.
+3. Run Ant to set up and start the project.
 
 #### Mac/Linux:
    ```bash
@@ -144,7 +149,8 @@ Before setting up the project, make sure you have the following installed on you
    ```
 
 This will:
-- Clone the repository if not already cloned.
 - Install backend dependencies.
 - Install frontend dependencies.
 - Start both the Flask backend and React frontend.
+
+For any issues during installation or execution, please raise an issue on the [GitHub repository](https://github.com/tenzinpalden/let-em-cook).

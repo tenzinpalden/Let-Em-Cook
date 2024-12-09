@@ -2,15 +2,6 @@
     <!-- Properties -->
     <property name="backend.dir" value="backend" />
     <property name="frontend.dir" value="letemcook" />
-    <property name="git.repo" value="https://github.com/tenzinpalden/let-em-cook.git" />
-
-    <!-- Clone repository -->
-    <target name="clone">
-        <exec executable="git">
-            <arg value="clone" />
-            <arg value="${git.repo}" />
-        </exec>
-    </target>
 
     <!-- Backend setup -->
     <target name="setup-backend">
@@ -40,7 +31,7 @@
     </target>
 
     <!-- Full setup -->
-    <target name="setup" depends="clone,setup-backend,setup-frontend">
+    <target name="setup" depends="setup-backend,setup-frontend">
         <echo message="Setup complete!" />
     </target>
 
