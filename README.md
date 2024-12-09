@@ -8,6 +8,7 @@ Users can view, upload, and share recipes. The project consists of a React front
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Setup](#setup)
+- [Installing and Running with Ant](#installing-and-running-with-ant)
 
 ## Features
 
@@ -34,14 +35,18 @@ Before setting up the project, make sure you have the following installed on you
 
 1. Python 3.6+
    - Check if Python is installed:
+     ```bash
      python --version
+     ```
    - If not installed, download it here:
      https://www.python.org/downloads/
 
 2. Node.js and npm
    - Check if Node.js and npm are installed:
+     ```bash
      node --version
      npm --version
+     ```
    - If not installed, download it here:
      https://nodejs.org/
 
@@ -51,7 +56,7 @@ Before setting up the project, make sure you have the following installed on you
    Linux/Mac Users:
    1. Download the `setup_and_run.sh` script.
    2. Open the terminal.
-   3. cd into the directory where you want to clone the repository.
+   3. `cd` into the directory where you want to clone the repository.
    4. Make the script executable:
       ```bash
       chmod +x setup_and_run.sh
@@ -63,7 +68,7 @@ Before setting up the project, make sure you have the following installed on you
 
    Windows Users:
    1. Download the `setup_and_run.bat` script.
-   2. cd into the directory where you want to clone the repository.
+   2. `cd` into the directory where you want to clone the repository.
    3. Double-click the `setup_and_run.bat` file to run it, or execute it in the terminal:
       ```cmd
       setup_and_run.bat
@@ -98,3 +103,48 @@ Before setting up the project, make sure you have the following installed on you
       ```bash
       npm run dev
       ```
+
+## Installing and Running with Ant
+
+### Installing Ant
+
+#### Mac Users:
+1. Install Homebrew if not already installed:
+
+2. Use Homebrew to install Ant:
+   ```bash
+   brew install ant
+   ```
+3. Verify installation:
+   ```bash
+   ant -version
+   ```
+
+#### Windows Users:
+1. Download Ant from the official Apache website:
+   https://ant.apache.org/bindownload.cgi
+2. Verify installation by opening the Command Prompt and running:
+   ```cmd
+   ant -version
+   ```
+
+### Running the Build File
+
+1. Download the `build.xml` file from the GitHub repository
+2. Run Ant to set up and start the project.
+
+#### Mac/Linux:
+   ```bash
+   ant setup-and-run
+   ```
+
+#### Windows:
+   ```cmd
+   ant setup-and-run
+   ```
+
+This will:
+- Clone the repository if not already cloned.
+- Install backend dependencies.
+- Install frontend dependencies.
+- Start both the Flask backend and React frontend.
