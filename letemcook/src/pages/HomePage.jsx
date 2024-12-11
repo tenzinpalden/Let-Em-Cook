@@ -72,7 +72,6 @@ function HomePage() {
               placeholder="Search for recipes..."
               className="search-input"
             />
-            <button type="submit" className="search-button">Search</button>
           </form>
           {filteredRecipes.length > 0 && (
             <div className="dropdown">

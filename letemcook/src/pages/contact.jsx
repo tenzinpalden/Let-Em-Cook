@@ -4,11 +4,11 @@ import './ContactPage.css'; // CSS file for styling
 // everyones contacts
 const SimpleContactPage = () => {
   const members = [
-    { name: "Tyler John Layton", email: "laytot@rpi.edu", image: "/members/tyler.png" },
-    { name: "Nancy John Zhang", email: "zhangn7@rpi.edu", image: "/members/nancy.png" },
-    { name: "Annabel JongJohnJohnjoHNLinLin Choi", email: "choia7@rpi.edu", image: "/members/annab.png" },
-    { name: "Benson John Cheng", email: "chengb2@rpi.edu", image: "/members/benson.png" },
-    { name: "Tenzin John Palden", email: "tpalden@rpi.edu", image: "/members/tp.png" },
+    { name: "Tyler Layton", email: "laytot@rpi.edu", image: "/members/tylerCat.png" },
+    { name: "Nancy Zhang", email: "zhangn7@rpi.edu", image: "/members/nancyCat.png" },
+    { name: "Annabelle Choi", email: "choia7@rpi.edu", image: "/members/annabelleCat.png" },
+    { name: "Benson Cheng", email: "chengb2@rpi.edu", image: "/members/bensonCat.png" },
+    { name: "Tenzin Palden", email: "tpalden@rpi.edu", image: "/members/tenzinCat.png" },
   ];
 
   return (
