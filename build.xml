@@ -2,7 +2,14 @@
     <!-- Properties -->
     <property name="backend.dir" value="backend" />
     <property name="frontend.dir" value="letemcook" />
-    <property name="npm.executable" value="C:\Program Files\nodejs\npm.cmd" />
+
+    <!-- Conditional OS-based npm executable setup -->
+    <condition property="npm.executable" value="npm">
+        <os family="unix" />
+    </condition>
+    <condition property="npm.executable" value="C:\Program Files\nodejs\npm.cmd">
+        <os family="windows" />
+    </condition>
 
     <!-- Backend setup -->
     <target name="setup-backend">
