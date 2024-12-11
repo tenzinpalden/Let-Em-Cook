@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './recipes.css';
 
-// displays recipes based on the filters
+// displays recipes based on the filters, acts as an observer updating all objects with reacts useState and useEffect functions
 function Recipes() {
   const [recipes, setRecipes] = useState([]);
   const [favorites, setFavorites] = useState([]);

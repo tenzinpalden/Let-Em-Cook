@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './savedrecipes.css';
 
+// shows all saved recipes
 function SavedRecipes() {
   const [recipes, setRecipes] = useState([]);
   const [favorites, setFavorites] = useState([]);
