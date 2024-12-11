@@ -2,6 +2,7 @@
     <!-- Properties -->
     <property name="backend.dir" value="backend" />
     <property name="frontend.dir" value="letemcook" />
+    <property name="npm.executable" value="C:\Program Files\nodejs\npm.cmd" />
 
     <!-- Backend setup -->
     <target name="setup-backend">
@@ -16,12 +17,12 @@
     <!-- Frontend setup -->
     <target name="setup-frontend">
         <echo message="Setting up frontend..." />
-        <exec executable="npm">
+        <exec executable="${npm.executable}">
             <arg value="install" />
             <arg value="--prefix" />
             <arg value="${frontend.dir}" />
         </exec>
-        <exec executable="npm">
+        <exec executable="${npm.executable}">
             <arg value="install" />
             <arg value="concurrently" />
             <arg value="--save-dev" />
@@ -38,7 +39,7 @@
     <!-- Run application -->
     <target name="run">
         <echo message="Starting the application..." />
-        <exec executable="npm">
+        <exec executable="${npm.executable}">
             <arg value="run" />
             <arg value="dev" />
             <arg value="--prefix" />
